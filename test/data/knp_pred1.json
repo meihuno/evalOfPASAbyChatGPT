@@ -1,0 +1,190 @@
+{
+    "w201106-0000060050": {
+        "S-ID:w201106-0000060050-1": [
+            {
+                "surface_case": "ガ",
+                "gr": "主語",
+                "rel_dist": "outer",
+                "rel_type": "zero",
+                "pred": "トス",
+                "pred_bunsetsu": "コイントスを",
+                "target": "不特定:人",
+                "target_sid": "none"
+            },
+            {
+                "surface_case": "ヲ",
+                "gr": "目的語",
+                "rel_dist": "intra_sentence",
+                "rel_type": "same_bunsetsu",
+                "pred": "トス",
+                "pred_bunsetsu": "コイントスを",
+                "target": "コイン",
+                "target_sid": "S-ID:w201106-0000060050-1"
+            },
+            {
+                "surface_case": "ガ",
+                "gr": "主語",
+                "rel_dist": "outer",
+                "rel_type": "zero",
+                "pred": "行う",
+                "pred_bunsetsu": "行う",
+                "target": "不特定:人",
+                "target_sid": "none"
+            },
+            {
+                "surface_case": "ガ",
+                "gr": "主語",
+                "rel_dist": "outer",
+                "rel_type": "zero",
+                "pred": "行う",
+                "pred_bunsetsu": "行う",
+                "target": "読者",
+                "target_sid": "none"
+            },
+            {
+                "surface_case": "ガ",
+                "gr": "主語",
+                "rel_dist": "outer",
+                "rel_type": "zero",
+                "pred": "行う",
+                "pred_bunsetsu": "行う",
+                "target": "著者",
+                "target_sid": "none"
+            },
+            {
+                "surface_case": "ヲ",
+                "gr": "目的語",
+                "rel_dist": "intra_sentence",
+                "rel_type": "dep",
+                "pred": "行う",
+                "pred_bunsetsu": "行う",
+                "target": "トス",
+                "target_sid": "S-ID:w201106-0000060050-1"
+            },
+            {
+                "surface_case": "ガ",
+                "gr": "主語",
+                "rel_dist": "intra_sentence",
+                "rel_type": "rentai",
+                "pred": "行う",
+                "pred_bunsetsu": "行う",
+                "target": "俺たち",
+                "target_sid": "S-ID:w201106-0000060050-1"
+            }
+        ],
+        "S-ID:w201106-0000060050-2": [
+            {
+                "surface_case": "ガ",
+                "gr": "主語",
+                "rel_dist": "intra_sentence",
+                "rel_type": "dep",
+                "pred": "出た",
+                "pred_bunsetsu": "出た",
+                "target": "表",
+                "target_sid": "S-ID:w201106-0000060050-2"
+            },
+            {
+                "surface_case": "ヲ",
+                "gr": "目的語",
+                "rel_dist": "intra_sentence",
+                "rel_type": "dep",
+                "pred": "破壊する。",
+                "pred_bunsetsu": "破壊する。",
+                "target": "モンスター",
+                "target_sid": "S-ID:w201106-0000060050-2"
+            },
+            {
+                "surface_case": "ガ",
+                "gr": "主語",
+                "rel_dist": "outer",
+                "rel_type": "zero",
+                "pred": "破壊する。",
+                "pred_bunsetsu": "破壊する。",
+                "target": "不特定:状況",
+                "target_sid": "none"
+            }
+        ],
+        "S-ID:w201106-0000060050-3": [
+            {
+                "surface_case": "ニ",
+                "gr": "ニ格",
+                "rel_dist": "intra_sentence",
+                "rel_type": "dep",
+                "pred": "１度",
+                "pred_bunsetsu": "１度だけ",
+                "target": "ターン",
+                "target_sid": "S-ID:w201106-0000060050-3"
+            },
+            {
+                "surface_case": "ガ",
+                "gr": "主語",
+                "rel_dist": "intra_sentence",
+                "rel_type": "same_bunsetsu",
+                "pred": "メイン",
+                "pred_bunsetsu": "メインフェイズに",
+                "target": "フェイズ",
+                "target_sid": "S-ID:w201106-0000060050-3"
+            },
+            {
+                "surface_case": "ガ",
+                "gr": "主語",
+                "rel_dist": "outer",
+                "rel_type": "zero",
+                "pred": "使用する事",
+                "pred_bunsetsu": "使用する事ができる。",
+                "target": "不特定:人",
+                "target_sid": "none"
+            },
+            {
+                "surface_case": "ヲ",
+                "gr": "目的語",
+                "rel_dist": "intra_sentence",
+                "rel_type": "dep",
+                "pred": "使用する事",
+                "pred_bunsetsu": "使用する事ができる。",
+                "target": "効果",
+                "target_sid": "S-ID:w201106-0000060050-3"
+            },
+            {
+                "surface_case": "ガ",
+                "gr": "主語",
+                "rel_dist": "outer",
+                "rel_type": "zero",
+                "pred": "使用する事",
+                "pred_bunsetsu": "使用する事ができる。",
+                "target": "著者",
+                "target_sid": "none"
+            },
+            {
+                "surface_case": "ガ",
+                "gr": "主語",
+                "rel_dist": "outer",
+                "rel_type": "zero",
+                "pred": "使用する事",
+                "pred_bunsetsu": "使用する事ができる。",
+                "target": "読者",
+                "target_sid": "none"
+            },
+            {
+                "surface_case": "ニ",
+                "gr": "ニ格",
+                "rel_dist": "intra_sentence",
+                "rel_type": "dep",
+                "pred": "使用する事",
+                "pred_bunsetsu": "使用する事ができる。",
+                "target": "フェイズ",
+                "target_sid": "S-ID:w201106-0000060050-3"
+            },
+            {
+                "surface_case": "ガ",
+                "gr": "主語",
+                "rel_dist": "inter_sentence",
+                "rel_type": "zero",
+                "pred": "使用する事",
+                "pred_bunsetsu": "使用する事ができる。",
+                "target": "俺たち",
+                "target_sid": "S-ID:w201106-0000060050-1"
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "w201106-0000060050": {
+        "status": "ok",
+        "response": {
+            "id": "dummy",
+            "object": "chat.completion",
+            "created": 1685858533,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 749,
+                "completion_tokens": 164,
+                "total_tokens": 913
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|行う|不特定:人、俺たち、読者、著者|コイントス|-|\n|1|トス|不特定:人|コイン|-|\n|2|出た|表|-|-|\n|2|破壊する|不特定:状況|モンスター|-|\n|3|１度|-|-|ターン|\n|3|メイン|フェイズ|-|-|\n|3|使用する事ができる|不特定:人、著者、読者、俺たち|効果|フェイズ|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    }
+}
