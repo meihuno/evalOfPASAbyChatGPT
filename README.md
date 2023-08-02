@@ -47,7 +47,7 @@ These jsons has the following contents. The ChatGPT's response is contained in r
 
 ### evaluation scripts（parse_knp_file.py/eval_conversation.py）
  Python 3.7.9 or later
-### Predicate arguments structure analysis by using ChatGPT()
+### Predicate arguments structure analysis by using ChatGPT(AnaphoraResolutionbyUsingGPT3.ipynb)
  Google Colab
 
 ### Evaluation Corpus Preparation
@@ -55,7 +55,7 @@ These jsons has the following contents. The ChatGPT's response is contained in r
 Download KWDLC from https://github.com/ku-nlp/KWDLC in the root directory of the repository.
 
 # How to Use
- 1. Conduct the Japanese Predicate argument structure analysis in Google Colab （ See ipynb ）.
+ 1. Conduct the Japanese Predicate argument structure analysis in Google Colab （ See AnaphoraResolutionbyUsingGPT3.ipynb ）.
  2. Download the output jsons by ChatGPT into the root directory of the repository such as './ok_result_dev/'
  3. Making intermediate data from KWDLC to compare the correct results of KWDLC and the output jsons by ChatGPT.
 ``` 
