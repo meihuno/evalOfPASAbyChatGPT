@@ -9,7 +9,9 @@ The evaluation details is reported in the following blog post.
 
 ## Existing Predicate arguments structure analysis results
 
-The exisitng predicate argument structure analysis results which I conducted by using gpt-3.5-turbo-0301 is contained in ./ok_result_dev and ./ok_result_test. These jsons has the following contents. The ChatGPT's response is contained in results dictionary's value indicated by the dictionary key such as ["f{id of document}"]["responce"]["content"]["choices"][0]["message"]["content"]. The ChatGPT's response is　written in table format.
+The exisitng predicate argument structure analysis results which I conducted by using gpt-3.5-turbo-0301 is contained in ./ok_result_dev and ./ok_result_test. Also see AnaphoraResolutionbyUsingGPT3.ipynb.
+
+These jsons has the following contents. The ChatGPT's response is contained in results dictionary's value indicated by the dictionary key such as ["f{id of document}"]["responce"]["content"]["choices"][0]["message"]["content"]. The ChatGPT's response is　written in table format.
 
 ```json
 {
