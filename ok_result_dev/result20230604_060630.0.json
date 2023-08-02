@@ -1,0 +1,27 @@
+{
+    "w201106-0002000000": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbAWBZHPipxItrOuZAk758Cel1YF",
+            "object": "chat.completion",
+            "created": 1685858776,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 686,
+                "completion_tokens": 162,
+                "total_tokens": 848
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|関わる|作家、ゲスト|「ドラゴン」シリーズ| |\n|2|手がける|矢野了平|「トリビアの泉」、「田村ゆかりのいたずら黒うさぎ」| |\n|3|呼ばれる| |「まぢおにさん」| |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    }
+}

@@ -1,0 +1,2282 @@
+{
+    "w201106-0000060560": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdVp5LBGRDpk7USH9Wictlhparze",
+            "object": "chat.completion",
+            "created": 1685152801,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 503,
+                "completion_tokens": 445,
+                "total_tokens": 948
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n- 文1: 「関心有る」「探しています」\n- 文2: 「紹介できる」「設けました」\n- 文3: 「申し上げます」\n\n【主語と目的語の候補の列挙】\n- 「関心有る」: エンドユーザー、病気\n- 「探しています」: エンドユーザー、ドクター\n- 「紹介できる」: 筆者、全国のドクター\n- 「設けました」: 筆者、コーナー\n- 「申し上げます」: 筆者、ドクターの皆様\n\n【主語と目的語の候補の3つ組の作成】\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| 関心有る | エンドユーザー | 病気 |\n| 関心有る | 病気 | - |\n| 探しています | エンドユーザー | ドクター |\n| 探しています | ドクター | - |\n| 紹介できる | 筆者 | 全国のドクター |\n| 紹介できる | 全国のドクター | - |\n| 設けました | 筆者 | コーナー |\n| 設けました | コーナー | - |\n| 申し上げます | 筆者 | ドクターの皆様 |\n| 申し上げます | ドクターの皆様 | - |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000062172": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdWJdyPhhFHMj8Qb7RM7Y1QOSjq0",
+            "object": "chat.completion",
+            "created": 1685152831,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 544,
+                "completion_tokens": 395,
+                "total_tokens": 939
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 体感する\n文2: お手伝いする\n文3: ご用意する、お待ちする\n\n【主語と目的語の候補の列挙】\n\n体感する: 主語(なし)、目的語(先進のモデルハウス)\nお手伝いする: 主語(川越ハウジングギャラリー)、目的語(あなただけの住まいづくり)\nご用意する: 主語(なし)、目的語(楽しいイベント、うれしいプレゼント)\nお待ちする: 主語(なし)、目的語(みなさまのご来場)\n\n【述語ごとの主語と目的語の候補の3つ組】\n\n| 述語 | 主語候補1 | 主語候補2 | 目的語候補 |\n| --- | --- | --- | --- |\n| 体感する | なし | 先進のモデルハウス |  |\n| お手伝いする | 川越ハウジングギャラリー | あなただけの住まいづくり |  |\n| ご用意する | なし | 楽しいイベント、うれしいプレゼント |  |\n| お待ちする | なし | みなさまのご来場 |  |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000068335": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdWnmphvqBcJomdE1NtmEiqvT4Gu",
+            "object": "chat.completion",
+            "created": 1685152861,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 520,
+                "completion_tokens": 224,
+                "total_tokens": 744
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: なっています\n- 主語の候補: 陽\n- 目的語の候補: アタマ\n\n文2:\n- 述語: 掲載します\n- 主語の候補: 筆者\n- 目的語の候補: ラズナーとホークスの今季対戦成績\n\n文3:\n- 述語1: 残しています\n- 主語の候補1: ラズナー\n- 目的語の候補1: 成績\n- 述語2: 先発登板し\n- 主語の候補2: ラズナー\n- 目的語の候補2: ソフトバンク戦に下記の３試合"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000073770": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdX8fS9dJ0sIk9D8GKTxKWk5Hbxu",
+            "object": "chat.completion",
+            "created": 1685152882,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 510,
+                "completion_tokens": 479,
+                "total_tokens": 989
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 目的とする\n- 主語の候補: 無し（省略されている）\n- 目的語の候補: 猫と同じ空間でくつろぐこと\n\n文2:\n- 述語1: 可能である\n- 主語の候補1: 飲食が可能である\n- 目的語の候補1: 無し（述語が自己完結している）\n\n- 述語2: 分離されている\n- 主語の候補2: 飲食スペースが分離されている店舗\n- 目的語の候補2: 猫との接触が可能な場所\n\n文3:\n- 述語: 増えている\n- 主語の候補: 今猫カフェに通う男子\n- 目的語の候補: 無し（述語が自己完結している）\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 目的とする | 無し（省略されている） | 猫と同じ空間でくつろぐこと |\n| 可能である | 飲食が可能である | 無し（述語が自己完結している） |\n| 分離されている | 飲食スペースが分離されている店舗 | 猫との接触が可能な場所 |\n| 増えている | 今猫カフェに通う男子 | 無し（述語が自己完結している） |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000075666": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdXjpbw7HM1Vrf3TxaHeL8DBL31g",
+            "object": "chat.completion",
+            "created": 1685152919,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 490,
+                "completion_tokens": 364,
+                "total_tokens": 854
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 試着し、写真撮影をしていただけます。\n- 主語の候補: なし（省略されている）\n- 目的語の候補: 戦国武将の兜、陣羽織、写真\n\n文2:\n- 述語: ご参加ください。\n- 主語の候補: お友達同士、お一人様\n- 目的語の候補: なし\n\n文3:\n- 述語: ご用意しております。\n- 主語の候補: なし（筆者）\n- 目的語の候補: 女性用の小袖\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\n試着し | なし（省略されている） | 戦国武将の兜、陣羽織、写真\n写真撮影をしていただけます | なし（省略されている） | 戦国武将の兜、陣羽織、写真\nご参加ください | お友達同士、お一人様 | なし\nご用意しております | なし（筆者） | 女性用の小袖"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000080833": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdYBrd3LgAfKCWCuDDsR2xgvyUdM",
+            "object": "chat.completion",
+            "created": 1685152947,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 512,
+                "completion_tokens": 519,
+                "total_tokens": 1031
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1：\n- 述語：発行されました\n- 主語の候補：機関紙「自由民主」２３０５号\n- 目的語の候補：なし\n\n文2：\n- 述語1：お伝えします\n- 主語の候補1：現状\n- 目的語の候補1：国民の年金不信を増大させた“年金記録問題”\n- 述語2：増大させた\n- 主語の候補2：なし\n- 目的語の候補2：国民の年金不信\n\n文3：\n- 述語1：進んでいます\n- 主語の候補1：未統合の年金記録へのチェック\n- 目的語の候補1：なし\n- 述語2：着実に\n- 主語の候補2：なし\n- 目的語の候補2：未統合の年金記録へのチェック\n- 述語3：公約通り\n- 主語の候補3：なし\n- 目的語の候補3：なし\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\n発行されました | 機関紙「自由民主」２３０５号 | なし\nお伝えします | 現状 | 国民の年金不信を増大させた“年金記録問題”\n増大させた | なし | 国民の年金不信\n進んでいます | 未統合の年金記録へのチェック | なし\n着実に | なし | 未統合の年金記録へのチェック\n公約通り | なし | なし"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000080964": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdYpesGvYFcV5yo1bLK6ycJHeB5K",
+            "object": "chat.completion",
+            "created": 1685152987,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 550,
+                "completion_tokens": 327,
+                "total_tokens": 877
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 呼ばれています\n- 主語の候補: 養老保険\n- 目的語の候補: 貯蓄性保険、貯蓄型保険、こども保険、個人年金保険\n\n文2:\n- 述語: なります\n- 主語の候補: 養老保険\n- 目的語の候補: 死亡保険金、満期保険金\n\n文3:\n- 述語: 受け取れます\n- 主語の候補: 解約者\n- 目的語の候補: 解約返戻金\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\n呼ばれています | 養老保険 | 貯蓄性保険、貯蓄型保険、こども保険、個人年金保険\nなります | 養老保険 | 死亡保険金、満期保険金\n受け取れます | 解約者 | 解約返戻金"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000083361": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdZDLs6T2swlQ1KQbrz9wS2HdXE8",
+            "object": "chat.completion",
+            "created": 1685153011,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 504,
+                "completion_tokens": 264,
+                "total_tokens": 768
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: あります\n- 主語の候補: これが何を指しているかは文脈によって異なるため、特定できない\n- 目的語の候補: 拠点\n\n文2:\n- 述語1: お約束いたします\n- 主語の候補1: チサン\n- 目的語の候補1: 皆様の快適なご宿泊\n- 述語2: あります\n- 主語の候補2: これが何を指しているかは文脈によって異なるため、特定できない\n- 目的語の候補2: 位置\n\n文3:\n- 述語: ご利用ください\n- 主語の候補: 幅広く\n- 目的語の候補: 何でも、北海道の拠点として"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000086915": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdZZE3NzepaA1bIis7jEHEu7q7KF",
+            "object": "chat.completion",
+            "created": 1685153033,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 469,
+                "completion_tokens": 375,
+                "total_tokens": 844
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n- 文1: 直結する\n- 文2: お立ち寄りください\n- 文3: なっている\n\n【主語と目的語の候補の列挙】\n- 直結する\n  - 主語: 省略されている (「駅」が候補)\n  - 目的語: 省略されている (「当ホテル」が候補)\n- お立ち寄りください\n  - 主語: 省略されている (「お客様」が候補)\n  - 目的語: 省略されている (「当店」が候補)\n- なっている\n  - 主語: 省略されている (「営業所」が候補)\n  - 目的語: 省略されている (「最寄」が候補)\n\n【述語ごとの主語と目的語の候補の3つ組】\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 直結する | 駅 | 当ホテル |\n| お立ち寄りください | お客様 | 当店 |\n| なっている | 営業所 | 最寄 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000090243": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Kda1HoIQpDlIctnMKoU4B0wKnJOV",
+            "object": "chat.completion",
+            "created": 1685153061,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 460,
+                "completion_tokens": 391,
+                "total_tokens": 851
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n- 文1: 提供しています\n- 文2: 存在する\n- 文3: 信じています\n\n【主語と目的語の候補の列挙】\n- 「詩に関する様々なサービスを提供しています。」\n  - 主語の候補: 私たち\n  - 目的語の候補: 詩に関する様々なサービス\n- 「詩を必要としている孤独な魂はたくさん存在する。」\n  - 主語の候補: 孤独な魂\n  - 目的語の候補: 詩\n- 「私たちはそう信じています。」\n  - 主語の候補: 私たち\n  - 目的語の候補: なし（信じていることが目的語）\n\n【主語と目的語の候補の3つ組の作成】\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 提供しています | 私たち | 詩に関する様々なサービス |\n| 存在する | 孤独な魂 | 詩 |\n| 信じています | 私たち | なし（信じていることが目的語） |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000092302": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdaR0Lc8huP8aP5kVw3HhlQ5p5fz",
+            "object": "chat.completion",
+            "created": 1685153087,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 535,
+                "completion_tokens": 373,
+                "total_tokens": 908
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1：\n- 述語: 認められている\n- 主語の候補: 紹介予定派遣\n- 目的語の候補: 派遣先、事前面接、履歴書\n\n文2：\n- 述語: 禁じられている\n- 主語の候補: 一般労働者派遣\n- 目的語の候補: 派遣スタッフ個人、特定すること\n\n文3：\n- 述語: 求めることはできない\n- 主語の候補: 筆者、派遣先\n- 目的語の候補: 派遣スタッフ、面接、履歴書\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\n認められている | 紹介予定派遣 | 派遣先、事前面接、履歴書\n禁じられている | 一般労働者派遣 | 派遣スタッフ個人、特定すること\n求めることはできない | 筆者、派遣先 | 派遣スタッフ、面接、履歴書"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000104324": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdazEsZly868LM2DZToignu2DUWc",
+            "object": "chat.completion",
+            "created": 1685153121,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 546,
+                "completion_tokens": 249,
+                "total_tokens": 795
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 設立されました\n  - 主語の候補: 日本スモール・ハンドレッド協会\n  - 目的語の候補: 改造電気自動車のビジネス化・産業化を支援するために\n\n文2:\n- 述語: ふさわしい組織形態にしていきます\n  - 主語の候補: 現時点では任意団体\n  - 目的語の候補: よりふさわしい組織形態に\n\n文3:\n- 述語: です\n  - 主語の候補: スモール・ハンドレッド活動\n  - 目的語の候補: ２１世紀型のオープンかつ自由なもの"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000106658": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdbJ3BZPlPLu4uWrvBfRkYLCwXuh",
+            "object": "chat.completion",
+            "created": 1685153141,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 522,
+                "completion_tokens": 375,
+                "total_tokens": 897
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n- 文1: 指導を行います\n- 文2: サポートしていきます\n- 文3: 対応していきます\n\n【主語と目的語の候補の列挙】\n\n- 指導を行います\n  - 主語: 桐学舎の講師陣\n  - 目的語: なし\n- サポートしていきます\n  - 主語: なし (省略されている)\n  - 目的語: 生徒ひとりひとり\n- 対応していきます\n  - 主語: 担当講師\n  - 目的語: レポートの作成、学習内容、進路に関する相談\n\n【述語ごとの主語と目的語の候補の3つ組】\n\n| 述語 | 主語 | 目的語 |\n| --- | --- | --- |\n| 指導を行います | 桐学舎の講師陣 | なし |\n| サポートしていきます | なし (省略されている) | 生徒ひとりひとり |\n| 対応していきます | 担当講師 | レポートの作成、学習内容、進路に関する相談 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000107443": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Kdbmq6L38LnxQUkQ3Udg5GDU6BWX",
+            "object": "chat.completion",
+            "created": 1685153170,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 552,
+                "completion_tokens": 393,
+                "total_tokens": 945
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 設置する、受ける\n文2: ございます、相談する\n文3: 異なる、問い合わせる\n\n【主語と目的語の候補の列挙】\n\n設置する: 茨城県宅建協会\n受ける: 一般消費者の御相談\nございます: トラブル、ご相談\n相談する: トラブル、不動産売買、ご相談\n異なる: 相談日\n問い合わせる: 事前、お問い合わせ\n\n【述語ごとの主語と目的語の候補の3つ組】\n\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| 設置する | 茨城県宅建協会 | 不動産無料相談所 |\n| 受ける | 茨城県宅建協会 | 一般消費者の御相談 |\n| ございます | トラブル、ご相談 | - |\n| 相談する | - | トラブル、不動産売買、ご相談 |\n| 異なる | 各相談所 | 相談日 |\n| 問い合わせる | - | 事前、お問い合わせ |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000108121": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdcCv3CaRaWLWd8OnfbYE8zfCYqK",
+            "object": "chat.completion",
+            "created": 1685153196,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 500,
+                "completion_tokens": 203,
+                "total_tokens": 703
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1：\n- 述語：誘発する\n- 主語の候補：いびき\n- 目的語の候補：さまざまな病気\n\n文2：\n- 述語1：きたす\n- 主語の候補1：花粉症や鼻炎\n- 目的語の候補1：生活に支障\n- 述語2：わずらわしい\n- 主語の候補2：花粉症や鼻炎\n\n文3：\n- 述語：治療する\n- 主語の候補：いずれも\n- 目的語の候補：レーザーで安全に"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000119121": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdcRPxlbXtJO2YkwNWC6C3Bf6Eai",
+            "object": "chat.completion",
+            "created": 1685153211,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 500,
+                "completion_tokens": 303,
+                "total_tokens": 803
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 異なる可能性があります\n文2: いたしかねます\n文3: 帰属します\n\n【主語と目的語の候補の列挙】\n\n異なる可能性があります\n- 主語の候補: 現状\n- 目的語の候補: なし\n\nいたしかねます\n- 主語の候補: なし\n- 目的語の候補: ご回答\n\n帰属します\n- 主語の候補: 著作権\n- 目的語の候補: 著作者\n\n【主語と目的語の候補の3つ組の作成】\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 異なる可能性があります | 現状 | なし |\n| いたしかねます | なし | ご回答 |\n| 帰属します | 著作権 | 著作者 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000124069": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdcpiRdSdgZVwIbYctglCkkP95XR",
+            "object": "chat.completion",
+            "created": 1685153235,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 505,
+                "completion_tokens": 386,
+                "total_tokens": 891
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1：\n- 述語：いかない\n  - 主語の候補：恋愛\n  - 目的語の候補：なし\n\n文2：\n- 述語1：でかければいい\n  - 主語の候補：なし\n  - 目的語の候補：出会い、異性、場所\n- 述語2：求めている\n  - 主語の候補：なし\n  - 目的語の候補：出会い\n\n文3：\n- 述語1：押すべき\n  - 主語の候補：片思い中の人\n  - 目的語の候補：時\n- 述語2：引いた方がいい\n  - 主語の候補：片思い中の人\n  - 目的語の候補：時\n\n【テーブル形式】\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| いかない | 恋愛 | なし |\n| でかければいい | なし | 出会い、異性、場所 |\n| 求めている | なし | 出会い |\n| 押すべき | 片思い中の人 | 時 |\n| 引いた方がいい | 片思い中の人 | 時 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000124264": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KddMjWHr34xzyDySDAspHhpGiCsQ",
+            "object": "chat.completion",
+            "created": 1685153268,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 496,
+                "completion_tokens": 197,
+                "total_tokens": 693
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 生まれる\n- 主語の候補: 無し\n- 目的語の候補: 無し\n\n文2:\n- 述語: 入学する\n- 主語の候補: 無し\n- 目的語の候補: プリンストン大学\n\n文3:\n- 述語1: 着手する\n- 主語の候補1: 無し\n- 目的語の候補1: 《ブラック・シリーズ》\n- 述語2: 登場する\n- 主語の候補2: 無し\n- 目的語の候補2: 画壇"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000127160": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KddduvkYzNAIg6cDn4vrfeLRVeCx",
+            "object": "chat.completion",
+            "created": 1685153285,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 487,
+                "completion_tokens": 332,
+                "total_tokens": 819
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 行かれた\n- 主語の候補: 皆さん\n- 目的語の候補: 初詣、どこ\n\n文2:\n- 述語: お参りした\n- 主語の候補: 受験生の方、方\n- 目的語の候補: 天神様\n\n文3:\n- 述語1: 切っても切れない\n- 主語の候補1: 天神様、牛の話\n- 目的語の候補1: なし\n- 述語2: です\n- 主語の候補2: 今日\n- 目的語の候補2: 牛の話、天神様\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\n行かれた | 皆さん | 初詣、どこ\nお参りした | 受験生の方、方 | 天神様\n切っても切れない | 天神様、牛の話 | なし\nです | 今日 | 牛の話、天神様"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000127315": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Kde3bt1e1eouOum90F91iYQYKfpV",
+            "object": "chat.completion",
+            "created": 1685153311,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 492,
+                "completion_tokens": 359,
+                "total_tokens": 851
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n- 文1: 募集しています\n- 文2: ためらわずエントリーしてみてください\n- 文3: お待ちしております\n\n【主語と目的語の候補の列挙】\n\n- 募集しています\n  - 主語の候補: 三菱自動車\n  - 目的語の候補: 人材\n- ためらわずエントリーしてみてください\n  - 主語の候補: なし（省略されている）\n  - 目的語の候補: なし\n- お待ちしております\n  - 主語の候補: 皆様\n  - 目的語の候補: エントリー\n\n【主語と目的語の候補の3つ組の作成】\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 募集しています | 三菱自動車 | 人材 |\n| ためらわずエントリーしてみてください | なし（省略されている） | なし |\n| お待ちしております | 皆様 | エントリー |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000132551": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdeRMzR8KYxlUWCIwABSLOyJV4zj",
+            "object": "chat.completion",
+            "created": 1685153335,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 547,
+                "completion_tokens": 282,
+                "total_tokens": 829
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 立って花を咲かせている\n- 主語の候補: ホトケノザ\n- 目的語の候補: なし\n\n文2:\n- 述語1: 生えています\n- 主語の候補1: ヒメオドリコソウ\n- 目的語の候補1: なし\n- 述語2: 群がって生えています\n- 主語の候補2: ヒメオドリコソウ\n- 目的語の候補2: なし\n\n文3:\n- 述語1: 見られます\n- 主語の候補1: オドリコソウ\n- 目的語の候補1: なし\n- 述語2: 遠ざかりつつあります\n- 主語の候補2: オドリコソウ\n- 目的語の候補2: 私たちの目"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000135464": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Kdenbt2XnXWxQlghkV0xI8K1LU9o",
+            "object": "chat.completion",
+            "created": 1685153357,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 557,
+                "completion_tokens": 342,
+                "total_tokens": 899
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1：\n- 述語：知られている\n  - 主語の候補：ワイヤー・フォックス・テリア\n  - 目的語の候補：なし\n\n文2：\n- 述語1：伝える\n  - 主語の候補：イギリス犬種\n  - 目的語の候補：典型的なテリアの気質\n- 述語2：人気が高い\n  - 主語の候補：イギリス犬種\n  - 目的語の候補：なし\n\n文3：\n- 述語1：潜む\n  - 主語の候補：穴に\n  - 目的語の候補：小型害獣\n- 述語2：駆除する\n  - 主語の候補：ワイヤー・フォックス・テリア\n  - 目的語の候補：小型害獣\n- 述語3：活躍する\n  - 主語の候補：ワイヤー・フォックス・テリア\n  - 目的語の候補：狐"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000136607": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdfAW3TRdnZOytCzCdXoN6yPfRY3",
+            "object": "chat.completion",
+            "created": 1685153380,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 476,
+                "completion_tokens": 321,
+                "total_tokens": 797
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1：\n- 述語：気分よく酔いたい\n- 主語の候補：省略されているが、文脈から「私」などが考えられる\n- 目的語の候補：省略されている\n\n文2：\n- 述語1：酔う\n- 主語の候補1：省略されているが、文脈から「私」などが考えられる\n- 目的語の候補1：省略されている\n- 述語2：酔いたい\n- 主語の候補2：「その時の気分」\n- 目的語の候補2：省略されている\n\n文3：\n- 述語1：酔える\n- 主語の候補1：「人生の中で気分に酔える瞬間」\n- 目的語の候補1：省略されている\n- 述語2：なる\n- 主語の候補2：省略されている\n- 目的語の候補2：「貴重だろう」"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000137320": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdfYxbhNRuTXllxjFyrz0QZC1Xt3",
+            "object": "chat.completion",
+            "created": 1685153404,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 589,
+                "completion_tokens": 540,
+                "total_tokens": 1129
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 判定する\n- 主語の候補: 超音波スポット溶接検査\n- 目的語の候補: スポット溶接の良否\n\n文2:\n- 述語1: 行われている\n- 主語の候補1: 超音波でのスポット溶接検査\n- 述語2: 中心にある\n- 主語の候補2: 自動車業界\n- 目的語の候補2: 鉄道、航空機など様々な分野\n\n文3:\n- 述語: 行います\n- 主語の候補: 超音波スポット溶接検査\n- 目的語の候補: トランスデューサー、超音波センサー、溶接部\n\n文4:\n- 述語: 省略されているため不明\n- 主語の候補: 不明\n- 目的語の候補: 探触子、プローブ\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\n判定する | 超音波スポット溶接検査 | スポット溶接の良否\n行われている | 超音波でのスポット溶接検査 | 鉄道、航空機など様々な分野\n中心にある | 自動車業界 | 鉄道、航空機など様々な分野\n行います | 超音波スポット溶接検査 | トランスデューサー、超音波センサー、溶接部\n省略されているため不明 | 不明 | 探触子、プローブ"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000140934": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdgC750ZRwJ0FveHxTzyPvM8ejxp",
+            "object": "chat.completion",
+            "created": 1685153444,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 544,
+                "completion_tokens": 247,
+                "total_tokens": 791
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 言われています\n  - 主語の候補: 不特定多数の人々\n  - 目的語の候補: 「個食」や「孤食」\n- 述語: なっている\n  - 主語の候補: 食卓の「いま」\n  - 目的語の候補: なし\n\n文2:\n- 述語: 見えてきました\n  - 主語の候補: 不特定多数の人々\n  - 目的語の候補: すれ違う親子の姿\n\n文3:\n- 述語: ふやしてほしいです\n  - 主語の候補: 筆者\n  - 目的語の候補: いっしょに食べられる機会"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000142944": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdgS7XXtqtbBY66eJERrKB8wqK9y",
+            "object": "chat.completion",
+            "created": 1685153460,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 525,
+                "completion_tokens": 285,
+                "total_tokens": 810
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1：\n- 述語：ございます\n  - 主語の候補：省略されている\n  - 目的語の候補：幅広く弊社製品の採用実績\n\n文2：\n- 述語1：重視し\n  - 主語の候補：省略されている\n  - 目的語の候補：優美・堅牢そして安全性\n- 述語2：させていただいております\n  - 主語の候補：私たち\n  - 目的語の候補：お客様のコンセプトに沿う提案\n\n文3：\n- 述語1：生かし\n  - 主語の候補：私たち\n  - 目的語の候補：独創性\n- 述語2：致します\n  - 主語の候補：私たち\n  - 目的語の候補：商品の開発提案"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000143536": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdgoSzxtybojuK5d0yOWqtDA20rw",
+            "object": "chat.completion",
+            "created": 1685153482,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 503,
+                "completion_tokens": 518,
+                "total_tokens": 1021
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n- 文1: 開催する\n- 文2: 見る、いただく\n- 文3: ある、見逃す、お見逃し無く\n\n【主語と目的語の候補の列挙】\n\n- 開催する: 主語「私たち」、目的語「鉄筋コンクリート造５階建ビルの構造見学会」\n- 見る: 主語「ご覧いただけます」、目的語「１階から３階までの建築状況」\n- いただく: 主語「ご覧いただけます」、目的語「１階から３階までの建築状況」\n- ある: 主語「工事中の現場を見る機会」\n- 見逃す: 主語「あなた」、目的語「この機会」\n- お見逃し無く: 主語「あなた」、目的語「この機会」\n\n【主語と目的語の候補の3つ組の作成】\n\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| 開催する | 私たち | 鉄筋コンクリート造５階建ビルの構造見学会 |\n| 見る | ご覧いただけます | １階から３階までの建築状況 |\n| いただく | ご覧いただけます | １階から３階までの建築状況 |\n| ある | 工事中の現場を見る機会 | - |\n| 見逃す | あなた | この機会 |\n| お見逃し無く | あなた | この機会 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000143548": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdhR6wiSMN2VrjiiWLfA6KUvzZNk",
+            "object": "chat.completion",
+            "created": 1685153521,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 498,
+                "completion_tokens": 403,
+                "total_tokens": 901
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 近年、種々の理由からウェブサイト更新の意欲を失っており\n  - 主語の候補: 筆者\n  - 目的語の候補: ウェブサイト更新の意欲\n- ２００７年を最後に更新停止状態となっていました。\n  - 主語の候補: ウェブサイト\n  - 目的語の候補: 更新停止状態\n\n文2:\n- 「区切りをつける」という意味から、本日ここに正式に更新停止を宣言します。\n  - 主語の候補: 筆者\n  - 目的語の候補: 更新停止\n\n文3:\n- 再開の予定はありません。\n  - 主語の候補: 筆者\n  - 目的語の候補: 再開の予定\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\nウェブサイト更新の意欲を失っており | 筆者 | ウェブサイト更新の意欲\n２００７年を最後に更新停止状態となっていました | ウェブサイト | 更新停止状態\n更新停止を宣言します | 筆者 | 更新停止\n再開の予定はありません | 筆者 | 再開の予定"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000143794": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdhwRWe2rgT75R4YGtbzecRovxsx",
+            "object": "chat.completion",
+            "created": 1685153552,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 508,
+                "completion_tokens": 377,
+                "total_tokens": 885
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n- 文1: 寝る、温まる、ダイエットする\n- 文2: 出る、驚く\n- 文3: 効果抜群だ\n\n【主語と目的語の候補の列挙】\n\n- 寝る: 主語(省略)、目的語(省略)\n- 温まる: 主語(省略)、目的語(体の心)\n- ダイエットする: 主語(省略)、目的語(体)\n- 出る: 主語(汗)、目的語(省略)\n- 驚く: 主語(省略)、目的語(多量の汗)\n- 効果抜群だ: 主語(省略)、目的語(省略)\n\n【主語と目的語の候補の3つ組】\n\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| 寝る | 省略 | 省略 |\n| 温まる | 省略 | 体の心 |\n| ダイエットする | 省略 | 体 |\n| 出る | 汗 | 省略 |\n| 驚く | 省略 | 多量の汗 |\n| 効果抜群だ | 省略 | 省略 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000144304": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdiVURmzDxC7F8khdV9KQjYjyPyb",
+            "object": "chat.completion",
+            "created": 1685153587,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 521,
+                "completion_tokens": 248,
+                "total_tokens": 769
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 発掘した\n- 主語の候補: モース博士\n- 目的語の候補: 大森貝塚\n\n文2:\n- 述語: 作られています\n- 主語の候補: 同地、誰か（省略されている）\n- 目的語の候補: 大森貝塚遺跡庭園\n\n文3:\n- 述語: なし\n- 主語の候補: 品川区大井６−２１−６\n- 目的語の候補: なし\n\n文4:\n- 述語: お立ち寄りください\n- 主語の候補: ぜひ、お客様（筆者）\n- 目的語の候補: 品川歴史館"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000144829": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Kdimti4FwhUIGX6OS7wKEi85Hd9J",
+            "object": "chat.completion",
+            "created": 1685153604,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 504,
+                "completion_tokens": 335,
+                "total_tokens": 839
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語1: お送りする\n  - 主語の候補: 新しい才能\n  - 目的語の候補: 無し\n- 述語2: する\n  - 主語の候補: 新しいディレクター達\n  - 目的語の候補: 番組\n\n文2:\n- 述語1: 変わる\n  - 主語の候補: ディレクター\n  - 目的語の候補: 無し\n\n文3:\n- 述語1: 変わる\n  - 主語の候補: 番組の作りそのもの\n  - 目的語の候補: 無し\n\nテーブル形式:\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| お送りする | 新しい才能 | 無し |\n| する | 新しいディレクター達 | 番組 |\n| 変わる | ディレクター | 無し |\n| 変わる | 番組の作りそのもの | 無し |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000150790": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Kdj9XtEDVlSWkETg816rHtYyDYzj",
+            "object": "chat.completion",
+            "created": 1685153627,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 460,
+                "completion_tokens": 282,
+                "total_tokens": 742
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 読みます\n文2: 思っていました\n文3: ある\n\n【主語と目的語の候補の列挙】\n\n- 「読みます」の主語の候補: これ\n- 「思っていました」の主語の候補: 私\n- 「ある」の主語の候補: なし\n- 「読みます」の目的語の候補: なし\n- 「思っていました」の目的語の候補: はちたき\n- 「ある」の目的語の候補: 段差\n\n【述語ごとの主語と目的語の候補の3つ組】\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 読みます | これ | なし |\n| 思っていました | 私 | はちたき |\n| ある | なし | 段差 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000152159": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdjTphYfHDzm2cUFPaJGqh2EXslZ",
+            "object": "chat.completion",
+            "created": 1685153647,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 530,
+                "completion_tokens": 370,
+                "total_tokens": 900
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n- 文1: 生かし、作っています\n- 文2: 生産してきた、紹介していきます\n- 文3: あります、ご活用いただければ\n\n【主語と目的語の候補の列挙】\n\n- 生かし: 中田工芸\n- 作っています: 様々な製品\n- 生産してきた: これまでの商品\n- 紹介していきます: 画像\n- あります: 現在生産を中止している商品\n- ご活用いただければ: 今後の企画など\n\n【述語ごとの主語と目的語の候補の3つ組】\n\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| 生かし | 中田工芸 | 様々な製品 |\n| 作っています | 中田工芸 | 様々な製品 |\n| 生産してきた | 中田工芸、筆者 | これまでの商品 |\n| 紹介していきます | 筆者 | 画像 |\n| あります | 筆者 | 現在生産を中止している商品 |\n| ご活用いただければ | 筆者 | 今後の企画など |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000152448": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdjuI00DmnoCrtaN6DlW1FonY6xO",
+            "object": "chat.completion",
+            "created": 1685153674,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 516,
+                "completion_tokens": 439,
+                "total_tokens": 955
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 受けられる\n文2: 組み合わせ、行います\n文3: ご相談いただけます\n\n【主語と目的語の候補の列挙】\n\n- 受けられる\n  - 主語: 何も明示されていないため不明\n  - 目的語: 本格的な漢方マッサージ\n- 組み合わせ\n  - 主語: 最先端の理学療法機器と中国伝統の手技療法\n  - 目的語: 何も明示されていないため不明\n- 行います\n  - 主語: 一人一人に合った最善の治療\n  - 目的語: 何も明示されていないため不明\n- ご相談いただけます\n  - 主語: 何も明示されていないため不明\n  - 目的語: 気になる点\n\n【主語と目的語の候補の3つ組の作成】\n\n| 述語 | 主語 | 目的語 |\n| --- | --- | --- |\n| 受けられる | 不明 | 本格的な漢方マッサージ |\n| 組み合わせ、行います | 最先端の理学療法機器と中国伝統の手技療法 | 不明 |\n| 行います | 一人一人に合った最善の治療 | 不明 |\n| ご相談いただけます | 不明 | 気になる点 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000155626": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdkRWDdDekKnUMjh6IjdXFC0Wgwu",
+            "object": "chat.completion",
+            "created": 1685153707,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 505,
+                "completion_tokens": 277,
+                "total_tokens": 782
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1の述語: 異なる\n\n- 主語の候補: 公文式\n- 目的語の候補: 学び方\n\n文2の述語: 使う、伸ばす\n\n- 主語の候補: 公文式、プリント、お子さんの学力\n- 目的語の候補: なし（使う）、学力（伸ばす）\n\n文3の述語: いわれる\n\n- 主語の候補: 学習方法\n- 目的語の候補: 欧米方式、近い\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 異なる | 公文式 | 学び方 |\n| 使う | 公文式、プリント | なし |\n| 伸ばす | お子さんの学力 | 学力 |\n| いわれる | 学習方法 | 欧米方式、近い |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000157499": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdkmyZFCMvVUahB1vc6aoDg1b3G6",
+            "object": "chat.completion",
+            "created": 1685153728,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 534,
+                "completion_tokens": 465,
+                "total_tokens": 999
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 祀っている\n- 主語の候補: 神社\n- 目的語の候補: 高皇産霊尊\n\n文2:\n- 述語: なし\n- 主語の候補: たかむすびのみこと\n- 目的語の候補: なし\n\n文3:\n- 述語: なし\n- 主語の候補: まつ\n- 目的語の候補: なし\n\n文4:\n- 述語: 焼失した、再建しました\n- 主語の候補: 忍城主・阿部正能\n- 目的語の候補: なし\n\n文5:\n- 述語: なし\n- 主語の候補: １５９０\n- 目的語の候補: なし\n\n文6:\n- 述語: 行われます\n- 主語の候補: なし\n- 目的語の候補: 胎内くぐり、酉の市\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\n祀っている | 神社 | 高皇産霊尊\nなし | たかむすびのみこと | なし\nなし | まつ | なし\n焼失した | 忍城主・阿部正能 | なし\n再建しました | 忍城主・阿部正能 | なし\nなし | １５９０ | なし\n行われます | なし | 胎内くぐり、酉の市"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000157913": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdlLcwAQgJMjCGPvyJSQTfvPdJrT",
+            "object": "chat.completion",
+            "created": 1685153763,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 512,
+                "completion_tokens": 448,
+                "total_tokens": 960
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n- 文1: 推進する\n- 文2: する、倍増する\n- 文3: 誘致する、実施される\n\n【主語と目的語の候補の列挙】\n\n- 推進する\n  - 主語: 政府\n  - 目的語: 「観光立国」政策\n- する\n  - 主語: 計画\n  - 目的語: 訪日外国人の数\n- 倍増する\n  - 主語: 訪日外国人の数\n  - 目的語: 無し（自動詞）\n- 誘致する\n  - 主語: 日本全国各地\n  - 目的語: 海外からの観光客\n- 実施される\n  - 主語: 様々な観光キャンペーン\n  - 目的語: 無し（自動詞）\n\n【主語と目的語の候補の3つ組の作成】\n\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| 推進する | 政府 | 「観光立国」政策 |\n| する | 計画 | 訪日外国人の数 |\n| 倍増する | 訪日外国人の数 | 無し |\n| 誘致する | 日本全国各地 | 海外からの観光客 |\n| 実施される | 様々な観光キャンペーン | 無し |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000164202": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Kdlt2ZwfZY02rbKX9WCWzfVvk22t",
+            "object": "chat.completion",
+            "created": 1685153797,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 515,
+                "completion_tokens": 365,
+                "total_tokens": 880
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n- 文1: 処理に時間がかかっている\n- 文2: 中止させる\n- 文3: 再開する\n\n【主語と目的語の候補の列挙】\n\n- 処理に時間がかかっている\n  - 主語の候補: 現在、リンク集への掲載のご依頼が多く\n  - 目的語の候補: なし\n- 中止させる\n  - 主語の候補: なし\n  - 目的語の候補: 新規のお申し込み受付\n- 再開する\n  - 主語の候補: 登録作業\n  - 目的語の候補: なし\n\n【主語と目的語の候補の3つ組の作成】\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 処理に時間がかかっている | 現在、リンク集への掲載のご依頼が多く | なし |\n| 中止させる | なし | 新規のお申し込み受付 |\n| 再開する | 登録作業 | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000164425": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdmLRuFCYbzZGd9nNqFBS5Ak0iOW",
+            "object": "chat.completion",
+            "created": 1685153825,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 476,
+                "completion_tokens": 361,
+                "total_tokens": 837
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 立つ、なる\n- 主語の候補: 上に立つ人、大臣、首相\n- 目的語の候補: 責任、影響の範囲、一つの行動\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 立つ | 上に立つ人 | - |\n| なる | 大臣、首相 | - |\n\n文2:\n- 述語: 重みが違う\n- 主語の候補: 一言\n- 目的語の候補: -\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 重みが違う | 一言 | - |\n\n文3:\n- 述語: なる、及ぼす\n- 主語の候補: 大臣、首相、一つの行動\n- 目的語の候補: 大きな影響\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| なる | 大臣、首相 | - |\n| 及ぼす | 一つの行動 | 大きな影響 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000164949": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdmmuiTs3ensmmeL4zPUA0D0WFz8",
+            "object": "chat.completion",
+            "created": 1685153852,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 463,
+                "completion_tokens": 357,
+                "total_tokens": 820
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n- 文1: 貰えます(morae-masu)\n- 文2: 作った(tsukutta)\n- 文3: ありません(arimasen)\n\n【主語と目的語の候補の列挙】\n\n- 貰えます(morae-masu)\n  - 主語の候補: グループ(group)\n  - 目的語の候補: ラッキーレター(lucky letter)\n- 作った(tsukutta)\n  - 主語の候補: 筆者(author)\n  - 目的語の候補: 眼鏡(glasses)\n- ありません(arimasen)\n  - 主語の候補: 筆者(author)\n  - 目的語の候補: 期間(period)\n\n【主語と目的語の候補の3つ組の作成】\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 貰えます(morae-masu) | グループ(group) | ラッキーレター(lucky letter) |\n| 作った(tsukutta) | 筆者(author) | 眼鏡(glasses) |\n| ありません(arimasen) | 筆者(author) | 期間(period) |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000166416": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdnDFmeJ9TbnJ9kVamdz14KPkFcE",
+            "object": "chat.completion",
+            "created": 1685153879,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 450,
+                "completion_tokens": 317,
+                "total_tokens": 767
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 指導\n- 主語の候補: 筆者、誰か特定の人物、省略されている\n- 目的語の候補: なし\n\n文2:\n- 述語1: 草刈り\n- 主語の候補1: 筆者、誰か特定の人物、省略されている\n- 目的語の候補1: 水田\n- 述語2: する\n- 主語の候補2: 筆者、誰か特定の人物、省略されている\n- 目的語の候補2: なし\n\n文3:\n- 述語1: 置く\n- 主語の候補1: 筆者、誰か特定の人物、省略されている\n- 目的語の候補1: なし\n- 述語2: 刈る\n- 主語の候補2: 筆者、誰か特定の人物、省略されている\n- 目的語の候補2: 草"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000169039": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdnaUqRjCbrfxumUnAvOQTkIIHjn",
+            "object": "chat.completion",
+            "created": 1685153902,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 493,
+                "completion_tokens": 263,
+                "total_tokens": 756
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1：\n- 述語：集めました\n- 主語の候補：筆者、ハイドロゲンの人気商品を集めた人\n- 目的語の候補：なし\n\n文2：\n- 述語1：なる\n- 主語の候補：これからの季節\n- 目的語の候補：なし\n- 述語2：着こなしたい\n- 主語の候補：筆者、人\n- 目的語の候補：人気のアウター\n\n文3：\n- 述語1：参考にしやすくなっています\n- 主語の候補：口コミ、筆者\n- 目的語の候補：なし\n- 述語2：見つけてください\n- 主語の候補：読者、筆者\n- 目的語の候補：お気に入りのアイテム"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000177090": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdnvT31PhVkucVxbql9jgSCTwcKW",
+            "object": "chat.completion",
+            "created": 1685153923,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 482,
+                "completion_tokens": 219,
+                "total_tokens": 701
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1：\n- 述語：目につく\n- 主語の候補：紫陽花\n- 目的語の候補：なし\n\n文2：\n- 述語：好きです\n- 主語の候補：僕\n- 目的語の候補：佇まい\n\n文3：\n- 述語：感じがします\n- 主語の候補：私、梅雨、夏\n- 目的語の候補：なし\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\n目につく | 紫陽花 | なし\n好きです | 僕 | 佇まい\n感じがします | 私、梅雨、夏 | なし"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000177696": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdoDds9JadDWGsdlIiQOcKcfsqdp",
+            "object": "chat.completion",
+            "created": 1685153941,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 507,
+                "completion_tokens": 309,
+                "total_tokens": 816
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 展示しています\n- 主語の候補: なら仏像館\n- 目的語の候補: すぐれた仏像を数多く\n\n文2:\n- 述語: 展示しています\n- 主語の候補: なら仏像館\n- 目的語の候補: 中国・朝鮮半島の仏像\n\n文3:\n- 述語: なっています\n- 主語の候補: もっとも充実した仏像の展示\n- 目的語の候補: なし\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 展示しています | なら仏像館 | すぐれた仏像を数多く |\n| 展示しています | なら仏像館 | 中国・朝鮮半島の仏像 |\n| なっています | もっとも充実した仏像の展示 | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000178147": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdobXtCrYt6TAM8xaObyQXI3Ec1b",
+            "object": "chat.completion",
+            "created": 1685153965,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 527,
+                "completion_tokens": 204,
+                "total_tokens": 731
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: されて、です\n- 主語の候補: ご愛顧、ラビット引越センター\n- 目的語の候補: なし\n\n文2:\n- 述語: お答えしております\n- 主語の候補: 現在、ラビット引越センター\n- 目的語の候補: お客様一番\n\n文3:\n- 述語: 対応しております、ご依頼下さいませ\n- 主語の候補: ラビット引越センター、どうぞ\n- 目的語の候補: お引越し、ご依頼"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000180457": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdoqRE38TXylDYQVFixevfkEpj77",
+            "object": "chat.completion",
+            "created": 1685153980,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 483,
+                "completion_tokens": 223,
+                "total_tokens": 706
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 営業しております\n- 主語の候補: なし（省略されている）\n- 目的語の候補: なし\n\n文2:\n- 述語: なし\n- 主語の候補: なし\n- 目的語の候補: なし\n\n文3:\n- 述語: 変更させて頂きます\n- 主語の候補: なし（省略されている）\n- 目的語の候補: 営業時間\n\n文4:\n- 述語: お願い致します\n- 主語の候補: なし（省略されている）\n- 目的語の候補: どうぞ、宜しく"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000180710": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Kdp49NQtKiZRrBZ3WstTvpwEqjBJ",
+            "object": "chat.completion",
+            "created": 1685153994,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 482,
+                "completion_tokens": 291,
+                "total_tokens": 773
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: お聞かせください\n- 主語の候補: なし（省略されている）\n- 目的語の候補: 感想等\n\n文2:\n- 述語1: お願いします\n- 主語の候補1: なし（省略されている）\n- 目的語の候補1: キリ番報告\n- 述語2: する\n- 主語の候補2: なし（省略されている）\n- 目的語の候補2: こちら\n\n文3:\n- 述語1: 見かけたら\n- 主語の候補1: なし（省略されている）\n- 目的語の候補1: 誹謗・中傷\n- 述語2: 削除致します\n- 主語の候補2: 管理人\n- 目的語の候補2: 誹謗・中傷"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000180798": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdpPkboABIStalCoWXeqSw4vw7gg",
+            "object": "chat.completion",
+            "created": 1685154015,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 508,
+                "completion_tokens": 182,
+                "total_tokens": 690
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 視聴する、狙う\n- 主語の候補: 被験者\n- 目的語の候補: 様々なジャンルの曲、脳番地シフト効果\n\n文2:\n- 述語: 使う、行う\n- 主語の候補: これらの機材\n- 目的語の候補: なし\n\n文3:\n- 述語: 持つ\n- 主語の候補: 音楽\n- 目的語の候補: まったく違った印象"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000183021": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Kdpd9vvszysQRzk0j6WiqJzJkFO0",
+            "object": "chat.completion",
+            "created": 1685154029,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 486,
+                "completion_tokens": 270,
+                "total_tokens": 756
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 公開しています\n- 主語の候補: 当社\n- 目的語の候補: 購買方針、お取引先の選定\n\n文2:\n- 述語: 説明します\n- 主語の候補: 筆者、当社\n- 目的語の候補: 手続き等\n\n文3:\n- 述語: 行っています\n- 主語の候補: 当社\n- 目的語の候補: 環境保全を考慮した部品調達\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\n公開しています | 当社 | 購買方針、お取引先の選定\n説明します | 筆者、当社 | 手続き等\n行っています | 当社 | 環境保全を考慮した部品調達"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000184975": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Kdpye9QMBkBNaXvvdNKfzEtirvoB",
+            "object": "chat.completion",
+            "created": 1685154050,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 491,
+                "completion_tokens": 266,
+                "total_tokens": 757
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1の述語: 続いた、行ってみました\n- 続いた: 雨\n- 行ってみました: 私、四季の蔵「リスの庭」さん\n\n文2の述語: 久しぶりの、訪問です\n- 久しぶりの: 訪問\n- 訪問です: わかりません（主語が省略されています）\n\n文3の述語: 到着する、射してきました\n- 到着する: わが家\n- 射してきました: お天気\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\n続いた | 雨 | \n行ってみました | 私、四季の蔵「リスの庭」さん | \n久しぶりの | 訪問 | \n訪問です | 筆者 | \n到着する | わが家 | \n射してきました | お天気 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000185434": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdqHIIVip7e1kZx1wtPxAqxuDtkG",
+            "object": "chat.completion",
+            "created": 1685154069,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 523,
+                "completion_tokens": 264,
+                "total_tokens": 787
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 表示される\n  - 主語の候補: 測定値\n  - 目的語の候補: なし\n- 述語: さかのぼる\n  - 主語の候補: なし\n  - 目的語の候補: 過去の日付\n\n文2:\n- 述語: 記憶する\n  - 主語の候補: なし\n  - 目的語の候補: 昨年の値\n- 述語: 比較する\n  - 主語の候補: なし\n  - 目的語の候補: 昨年の値\n\n文3:\n- 述語: 計算する\n  - 主語の候補: 基礎体温の記録\n  - 目的語の候補: 次の排卵日、生理日"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000187353": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdqZ14jIzHNrna7L9XXZUd6olySS",
+            "object": "chat.completion",
+            "created": 1685154087,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 513,
+                "completion_tokens": 347,
+                "total_tokens": 860
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 位置する\n- 主語の候補: (省略)\n- 目的語の候補: 南部、地域\n\n文2:\n- 述語: からなる\n- 主語の候補: 石岡市、稲敷市、牛久市、かすみがうら市、つくば市、土浦市、取手市、竜ヶ崎市\n- 目的語の候補: (省略)\n\n文3:\n- 述語: 生産される\n- 主語の候補: (省略)\n- 目的語の候補: かぼちゃ、レンコン、梨\n\n3つ組の表:\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 位置する | (省略) | 南部、地域 |\n| からなる | 石岡市、稲敷市、牛久市、かすみがうら市、つくば市、土浦市、取手市、竜ヶ崎市 | (省略) |\n| 生産される | (省略) | かぼちゃ、レンコン、梨 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000191592": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdqxIMN1stkklkKd2GB1mI7twfg7",
+            "object": "chat.completion",
+            "created": 1685154111,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 491,
+                "completion_tokens": 241,
+                "total_tokens": 732
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 位置する、接する\n文2: 停車する\n文3: ない\n\n【主語と目的語の候補の列挙】\n\n位置する: 東京２３区、(何か)\n接する: 東側、隅田川\n停車する: 新幹線、(何か)\nない: (何か)\n\n【述語ごとの主語と目的語の候補の3つ組】\n\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| 位置する | 東京２３区 | (何か) |\n| 接する | 東側、隅田川 | (何か) |\n| 停車する | 新幹線 | (何か) |\n| ない | (何か) | (何か) |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000193061": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdrEDoEy98YzmSkyrc6l8URGy4ac",
+            "object": "chat.completion",
+            "created": 1685154128,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 539,
+                "completion_tokens": 311,
+                "total_tokens": 850
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: ある\n- 主語の候補: 堀ノ内斎場\n- 目的語の候補: なし\n\n文2:\n- 述語: ない\n- 主語の候補: ほりのうちさいじょう\n- 目的語の候補: なし\n\n文3:\n- 述語1: 運営する\n- 主語の候補1: 東京博善株式会社様\n- 目的語の候補1: ６つの斎場\n- 述語2: ある\n- 主語の候補2: 堀ノ内斎場\n- 目的語の候補2: なし\n\n文4:\n- 述語: ない\n- 主語の候補: 廣済堂グループ\n- 目的語の候補: なし\n\n文5:\n- 述語: 小さい\n- 主語の候補: 堀ノ内斎場\n- 目的語の候補: なし"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000193566": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Kdrdi1OVd5P7zaBvyKOiA78ZGseU",
+            "object": "chat.completion",
+            "created": 1685154153,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 500,
+                "completion_tokens": 495,
+                "total_tokens": 995
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 検索する、予約できる\n文2: 表示する、ある\n文3: 押さえる、便利だ\n\n【主語と目的語の候補の列挙】\n\n- 検索する\n  - 主語: (省略)\n  - 目的語: プラハのおすすめ海外ホテル・格安ホテル\n- 予約できる\n  - 主語: (省略)\n  - 目的語: プラハのおすすめ海外ホテル・格安ホテル\n- 表示する\n  - 主語: (省略)\n  - 目的語: 価格\n- ある\n  - 主語: (省略)\n  - 目的語: 最安値\n- 押さえる\n  - 主語: (省略)\n  - 目的語: お部屋\n- 便利だ\n  - 主語: (省略)\n  - 目的語: (省略)\n\n【主語と目的語の候補の3つ組の作成】\n\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| 検索する | (省略) | プラハのおすすめ海外ホテル・格安ホテル |\n| 予約できる | (省略) | プラハのおすすめ海外ホテル・格安ホテル |\n| 表示する | (省略) | 価格 |\n| ある | (省略) | 最安値 |\n| 押さえる | (省略) | お部屋 |\n| 便利だ | (省略) | (省略) |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000195170": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdsC00bFTAeGi8EtXf680WG7LxoW",
+            "object": "chat.completion",
+            "created": 1685154188,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 519,
+                "completion_tokens": 344,
+                "total_tokens": 863
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 実現できる\n文2: 得る、する\n文3: 減っていく\n\n【主語と目的語の候補の列挙】\n\n実現できる: 主語候補 - トレーニング、目的語候補 - 筋力アップ\n得る: 主語候補 - こと、目的語候補 - 結果\nする: 主語候補 - こと、目的語候補 - 結果\n減っていく: 主語候補 - 筋力、目的語候補 - 関節の痛み\n\n【述語ごとの主語と目的語の候補の3つ組】\n\n| 述語 | 主語候補1 | 主語候補2 | 目的語候補 |\n| --- | --- | --- | --- |\n| 実現できる | トレーニング | - | 筋力アップ |\n| 得る | こと | - | 結果 |\n| する | こと | - | 結果 |\n| 減っていく | 筋力 | - | 関節の痛み |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000195246": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KduKGo0a0TSCjif2bqo61aC90szU",
+            "object": "chat.completion",
+            "created": 1685154320,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 512,
+                "completion_tokens": 418,
+                "total_tokens": 930
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 迎えた: 安達太良山の紅葉の見ごろがピークを迎えた。\n  - 主語の候補: 紅葉\n  - 目的語の候補: なし\n\n文2:\n- なし\n\n文3:\n- 満喫した: 大勢の登山客や観光客が、中腹の薬師岳展望台などで絶景を満喫した。\n  - 主語の候補: 大勢の登山客や観光客\n  - 目的語の候補: 絶景\n- などで: 大勢の登山客や観光客が、中腹の薬師岳展望台などで絶景を満喫した。\n  - 主語の候補: なし\n  - 目的語の候補: なし\n\n文4:\n- 楽しめる: 紅葉は来週末まで楽しめるという。\n  - 主語の候補: 紅葉\n  - 目的語の候補: なし\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\n迎えた | 紅葉 | なし\n満喫した | 大勢の登山客や観光客 | 絶景\n楽しめる | 紅葉 | なし"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000195759": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdunJyCQeufwcoa8Tv68HzWqnp9i",
+            "object": "chat.completion",
+            "created": 1685154349,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 517,
+                "completion_tokens": 307,
+                "total_tokens": 824
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: ない\n- 主語の候補: リフレッシュ\n- 目的語の候補: なし\n\n文2:\n- 述語: おくつろぎ頂けます\n- 主語の候補: なし (省略されている)\n- 目的語の候補: なし\n\n文3:\n- 述語: 結ばれている、おすすめです\n- 主語の候補: ユネッサン、ユネッサンイン\n- 目的語の候補: 専用通路、なし\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\nない | リフレッシュ | なし\nおくつろぎ頂けます | なし (省略されている) | なし\n結ばれている | ユネッサン、ユネッサンイン | 専用通路\nおすすめです | ユネッサン、ユネッサンイン | なし"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000199183": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdwJ10XvRaf8WKl8JlwiZ85TwiOF",
+            "object": "chat.completion",
+            "created": 1685154443,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 525,
+                "completion_tokens": 251,
+                "total_tokens": 776
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 終了する\n- 主語の候補: 当割引サービス\n- 目的語の候補: 受付\n\n文2:\n- 述語: ない\n- 主語の候補: 金\n- 目的語の候補: なし\n\n文3:\n- 述語: 終了する\n- 主語の候補: お申込み受付\n- 目的語の候補: 既存のお客さま\n\n文4:\n- 述語: ない\n- 主語の候補: 月\n- 目的語の候補: なし\n\n文5:\n- 述語: ご利用いただけます\n- 主語の候補: 現在ご契約中のお客さま\n- 目的語の候補: なし"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000202620": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdwbNIN179hsMKAC8dydojD1QJI1",
+            "object": "chat.completion",
+            "created": 1685154461,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 507,
+                "completion_tokens": 244,
+                "total_tokens": 751
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 判断は、あります。\n- 主語の候補: なし（省略されている）\n- 目的語の候補: 相続放棄をすべきかどうかの判断\n\n文2:\n- 述語1: お知らせします。\n- 主語の候補1: 筆者\n- 目的語の候補1: メリットについて\n- 述語2: 依頼する\n- 主語の候補2: なし（省略されている）\n- 目的語の候補2: 相続放棄\n\n文3:\n- 述語: バタバタします。\n- 主語の候補: 人\n- 目的語の候補: 葬儀、初七日、四十九日の法要"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000205942": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Kdwu3QPR8oVQVYNU8uAxoBICMSDk",
+            "object": "chat.completion",
+            "created": 1685154480,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 492,
+                "completion_tokens": 371,
+                "total_tokens": 863
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 収穫をしました\n- 主語の候補: 筆者、筆者たち、私たち、私\n- 目的語の候補: ラッカセイ\n\n文2:\n- 述語1: 育っている\n- 主語の候補1: ピーナッツの莢\n- 目的語の候補1: なし\n- 述語2: 抜けてしまいます\n- 主語の候補2: 莢、ピーナッツの莢、それ\n- 目的語の候補2: なし\n\n文3:\n- 述語: ついていません\n- 主語の候補: 莢、ほとんど、それ\n- 目的語の候補: なし\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\n収穫をしました | 筆者、筆者たち、私たち、私 | ラッカセイ\n育っている | ピーナッツの莢 | なし\n抜けてしまいます | 莢、ピーナッツの莢、それ | なし\nついていません | 莢、ほとんど、それ | なし"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000210016": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdxK2HQqOG0R1oi5jhlydeoL6RvK",
+            "object": "chat.completion",
+            "created": 1685154506,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 518,
+                "completion_tokens": 349,
+                "total_tokens": 867
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 調べた\n文2: 変動します、保証する\n文3: 異なります\n\n【主語と目的語の候補の列挙】\n\n- 調べた\n  - 主語: 編集部\n  - 目的語: なし\n- 変動します\n  - 主語: 実際の販売価格\n  - 目的語: なし\n- 保証する\n  - 主語: この価格で販売されること\n  - 目的語: なし\n- 異なります\n  - 主語: 初期不良等の保証条件\n  - 目的語: なし\n\n【主語と目的語の候補の3つ組の作成】\n\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| 調べた | 編集部 | なし |\n| 変動します | 実際の販売価格 | なし |\n| 保証する | この価格で販売されること | なし |\n| 異なります | 初期不良等の保証条件 | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000215681": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Kdxk4OOohaqi9Qx31je1xb139Q4W",
+            "object": "chat.completion",
+            "created": 1685154532,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 480,
+                "completion_tokens": 310,
+                "total_tokens": 790
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1：\n- 述語：充実しています\n- 主語の候補：手提げ袋\n- 目的語の候補：なし\n\n文2：\n- 述語1：お伺いしてお渡しする\n- 主語の候補1：カタログギフト\n- 目的語の候補1：先様\n- 述語2：便利です\n- 主語の候補2：なし\n- 目的語の候補2：なし\n\n文3：\n- 述語：です\n- 主語の候補：手提げ袋\n- 目的語の候補：なし\n\n3つ組の表：\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 充実しています | 手提げ袋 | なし |\n| お伺いしてお渡しする | カタログギフト | 先様 |\n| 便利です | なし | なし |\n| です | 手提げ袋 | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000218253": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Kdy6IeqRWtykYPH4MaPOxd8D322H",
+            "object": "chat.completion",
+            "created": 1685154554,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 507,
+                "completion_tokens": 605,
+                "total_tokens": 1112
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 行ってきました\n文2: 延長しました、なりました\n文3: 残されている\n\n【主語と目的語の候補の列挙】\n\n- 行ってきました\n  - 主語: 省略されている (筆者と奥様が行動したことが文脈から推測できる)\n  - 目的語: 省略されている (行った場所に関する情報が文脈から推測できる)\n\n- 延長しました\n  - 主語: 三陸自動車道\n  - 目的語: 省略されている (延長した先に関する情報が文脈から推測できる)\n\n- なりました\n  - 主語: 三陸自動車道\n  - 目的語: 石巻から３０分圏内\n\n- 残されている\n  - 主語: 建物\n  - 目的語: 省略されている (建物が残されていることに関する情報が文脈から推測できる)\n\n【主語と目的語の候補の3つ組の作成】\n\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| 行ってきました | 省略されている (筆者と奥様が行動したことが文脈から推測できる) | 省略されている (行った場所に関する情報が文脈から推測できる) |\n| 延長しました | 三陸自動車道 | 省略されている (延長した先に関する情報が文脈から推測できる) |\n| なりました | 三陸自動車道 | 石巻から３０分圏内 |\n| 残されている | 建物 | 省略されている (建物が残されていることに関する情報が文脈から推測できる) |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000226378": {
+        "status": "ng",
+        "error_message": "The server had an error processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if you keep seeing this error. (Please include the request ID 6835e64fe525ad82162508f4404d2544 in your email.) {\n  \"error\": {\n    \"message\": \"The server had an error processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if you keep seeing this error. (Please include the request ID 6835e64fe525ad82162508f4404d2544 in your email.)\",\n    \"type\": \"server_error\",\n    \"param\": null,\n    \"code\": null\n  }\n}\n 500 {'error': {'message': 'The server had an error processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if you keep seeing this error. (Please include the request ID 6835e64fe525ad82162508f4404d2544 in your email.)', 'type': 'server_error', 'param': None, 'code': None}} {'Date': 'Sat, 27 May 2023 02:29:56 GMT', 'Content-Type': 'application/json', 'Content-Length': '366', 'Connection': 'keep-alive', 'access-control-allow-origin': '*', 'openai-organization': 'user-achzo9b6ggvpsu95ygkqebka', 'openai-processing-ms': '188', 'openai-version': '2020-10-01', 'strict-transport-security': 'max-age=15724800; includeSubDomains', 'x-ratelimit-limit-requests': '3500', 'x-ratelimit-limit-tokens': '90000', 'x-ratelimit-remaining-requests': '3499', 'x-ratelimit-remaining-tokens': '89649', 'x-ratelimit-reset-requests': '17ms', 'x-ratelimit-reset-tokens': '234ms', 'x-request-id': '6835e64fe525ad82162508f4404d2544', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '7cdad53fbbc44531-ATL', 'alt-svc': 'h3=\":443\"; ma=86400'}"
+    },
+    "w201106-0000227204": {
+        "status": "ng",
+        "error_message": "The server had an error while processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID ac794b1244d841e6f7ec2cdc312c7633 in your message.) {\n  \"error\": {\n    \"message\": \"The server had an error while processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID ac794b1244d841e6f7ec2cdc312c7633 in your message.)\",\n    \"type\": \"server_error\",\n    \"param\": null,\n    \"code\": null\n  }\n}\n 500 {'error': {'message': 'The server had an error while processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID ac794b1244d841e6f7ec2cdc312c7633 in your message.)', 'type': 'server_error', 'param': None, 'code': None}} {'Date': 'Sat, 27 May 2023 02:29:56 GMT', 'Content-Type': 'application/json', 'Content-Length': '366', 'Connection': 'keep-alive', 'access-control-allow-origin': '*', 'openai-processing-ms': '83', 'openai-version': '2020-10-01', 'strict-transport-security': 'max-age=15724800; includeSubDomains', 'x-ratelimit-limit-requests': '3500', 'x-ratelimit-limit-tokens': '90000', 'x-ratelimit-remaining-requests': '3499', 'x-ratelimit-remaining-tokens': '89652', 'x-ratelimit-reset-requests': '17ms', 'x-ratelimit-reset-tokens': '232ms', 'x-request-id': 'ac794b1244d841e6f7ec2cdc312c7633', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '7cdad5414db54531-ATL', 'alt-svc': 'h3=\":443\"; ma=86400'}"
+    },
+    "w201106-0000232215": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdymFuTNoiGMJcolD1vR3NR33ojv",
+            "object": "chat.completion",
+            "created": 1685154596,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 495,
+                "completion_tokens": 284,
+                "total_tokens": 779
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: オープンする、付く\n- 主語の候補: 「客室」\n- 目的語の候補: 「半露天風呂」\n\n文2:\n- 述語: 付く\n- 主語の候補: 「ロウベッド」\n- 目的語の候補: 「和室」\n\n文3:\n- 述語: なる\n- 主語の候補: 「客室の半露天風呂」\n- 目的語の候補: 「檜風呂」\n\n3つ組の表:\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| オープンする | 「客室」 | 「半露天風呂」 |\n| 付く | 「ロウベッド」 | 「和室」 |\n| なる | 「客室の半露天風呂」 | 「檜風呂」 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000233470": {
+        "status": "ng",
+        "error_message": "The server had an error while processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID 1cfda0b7be0aeef403fa4c5f126f2890 in your message.) {\n  \"error\": {\n    \"message\": \"The server had an error while processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID 1cfda0b7be0aeef403fa4c5f126f2890 in your message.)\",\n    \"type\": \"server_error\",\n    \"param\": null,\n    \"code\": null\n  }\n}\n 500 {'error': {'message': 'The server had an error while processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID 1cfda0b7be0aeef403fa4c5f126f2890 in your message.)', 'type': 'server_error', 'param': None, 'code': None}} {'Date': 'Sat, 27 May 2023 02:30:15 GMT', 'Content-Type': 'application/json', 'Content-Length': '366', 'Connection': 'keep-alive', 'access-control-allow-origin': '*', 'openai-processing-ms': '98', 'openai-version': '2020-10-01', 'strict-transport-security': 'max-age=15724800; includeSubDomains', 'x-ratelimit-limit-requests': '3500', 'x-ratelimit-limit-tokens': '90000', 'x-ratelimit-remaining-requests': '3499', 'x-ratelimit-remaining-tokens': '89611', 'x-ratelimit-reset-requests': '17ms', 'x-ratelimit-reset-tokens': '259ms', 'x-request-id': '1cfda0b7be0aeef403fa4c5f126f2890', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '7cdad5bb08174531-ATL', 'alt-svc': 'h3=\":443\"; ma=86400'}"
+    },
+    "w201106-0000242860": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Kdz5Vyt4B3FVBKVNbVyafqQ1ucdx",
+            "object": "chat.completion",
+            "created": 1685154615,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 529,
+                "completion_tokens": 272,
+                "total_tokens": 801
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1：\n- 述語：続いています\n  - 主語の候補：不明\n  - 目的語の候補：不明\n\n文2：\n- 述語1：続く\n  - 主語の候補：穏やかで柔らかな春の陽気\n  - 目的語の候補：不明\n- 述語2：待ち遠しい\n  - 主語の候補：私（筆者）\n  - 目的語の候補：穏やかで柔らかな春の陽気が続く時期\n\n文3：\n- 述語1：イメージする\n  - 主語の候補：私（筆者）\n  - 目的語の候補：春の空気感\n- 述語2：コーディネートする\n  - 主語の候補：私（筆者）\n  - 目的語の候補：テーブル"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000243365": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdzO3YaBhPwECJeQeMOyK8T738Vy",
+            "object": "chat.completion",
+            "created": 1685154634,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 449,
+                "completion_tokens": 438,
+                "total_tokens": 887
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n- 文1: 設置しております\n- 文2: なし（「集荷」はサ変名詞）\n- 文3: お問い合わせください\n\n【主語と目的語の候補の列挙】\n- 「店内に」: 主語 - なし / 目的語 - ポスト\n- 「設置しております」: 主語 - なし / 目的語 - ポスト\n- 「集荷は」: 主語 - なし / 目的語 - なし\n- 「１日２回です」: 主語 - なし / 目的語 - なし\n- 「集荷時間は」: 主語 - なし / 目的語 - なし\n- 「各店舗まで」: 主語 - なし / 目的語 - お問い合わせ\n- 「お問い合わせください」: 主語 - 各店舗 / 目的語 - 集荷時間\n\n【主語と目的語の候補の3つ組の作成】\n| 述語 | 主語候補1 | 主語候補2 | 目的語候補1 | 目的語候補2 | 目的語候補3 |\n| --- | --- | --- | --- | --- | --- |\n| 設置しております | なし | なし | ポスト | なし | なし |\n| お問い合わせください | 各店舗 | なし | お問い合わせ | なし | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000255088": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KdztYMxJO65NEz4HDFMmr6NvzoOW",
+            "object": "chat.completion",
+            "created": 1685154665,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 558,
+                "completion_tokens": 387,
+                "total_tokens": 945
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 開催される、傍聴する\n文2: 記入する\n文3: 得る、傍聴する\n\n【主語と目的語の候補の列挙】\n\n開催される：帯広市議会の本会議と各委員会\n傍聴する：その会議、希望する人、乳幼児・児童\n記入する：傍聴を希望する人、必要事項\n得る：乳幼児・児童\n傍聴する：乳幼児・児童\n\n【主語と目的語の候補の3つ組の作成】\n\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| 開催される | 帯広市議会の本会議と各委員会 | なし |\n| 傍聴する | その会議 | なし |\n| 傍聴する | 希望する人 | なし |\n| 傍聴する | 乳幼児・児童 | なし |\n| 記入する | 傍聴を希望する人 | 必要事項 |\n| 得る | 乳幼児・児童 | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000255621": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Ke0ExQTsh6M1rv0P7EBhMD1glUgn",
+            "object": "chat.completion",
+            "created": 1685154686,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 521,
+                "completion_tokens": 603,
+                "total_tokens": 1124
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 訪米した、見た、取り上げられていた\n文2: 増えている、ついてだった\n文3: 締めくくられた\n\n【主語と目的語の候補の列挙】\n\n「訪米した」\n- 主語の候補: 筆者、日本の男性\n- 目的語の候補: テレビ番組\n\n「見た」\n- 主語の候補: 筆者\n- 目的語の候補: テレビ番組の特集\n\n「取り上げられていた」\n- 主語の候補: 日本の男性\n- 目的語の候補: なし（「取り上げられていた」は自動詞）\n\n「増えている」\n- 主語の候補: 草食系男子\n- 目的語の候補: なし（「増えている」は自動詞）\n\n「ついてだった」\n- 主語の候補: 番組\n- 目的語の候補: なし（「ついてだった」は自動詞）\n\n「締めくくられた」\n- 主語の候補: 番組\n- 目的語の候補: 言葉\n\n【主語と目的語の候補の3つ組の作成】\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 訪米した | 筆者 | テレビ番組 |\n| 訪米した | 日本の男性 | テレビ番組 |\n| 見た | 筆者 | テレビ番組の特集 |\n| 取り上げられていた | 日本の男性 | なし |\n| 増えている | 草食系男子 | なし |\n| ついてだった | 番組 | なし |\n| 締めくくられた | 番組 | 言葉 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000258548": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Ke0s9ALVkID6wsAjiDxYBeWF9Q6L",
+            "object": "chat.completion",
+            "created": 1685154726,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 498,
+                "completion_tokens": 285,
+                "total_tokens": 783
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1：\n- 述語1: 有名だ\n  - 主語の候補: 紅茶、宝石の産地\n- 述語2: 豊かだ、味わいが良い\n  - 主語の候補: 紅茶\n\n文2：\n- 述語1: ある\n  - 主語の候補: ジャングル\n  - 目的語の候補: 野生動物\n- 述語2: ある\n  - 主語の候補: ジャングル\n  - 目的語の候補: 楽園、野生動物の楽園\n\n文3：\n- 述語1: お届けする\n  - 主語の候補: 筆者、スリランカ\n  - 目的語の候補: 夢とロマンの国のお土産\n- 述語2: なる\n  - 主語の候補: スリランカのお土産"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000261611": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Ke1CyMYNf15idDApg7SysdEvYsjv",
+            "object": "chat.completion",
+            "created": 1685154746,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 533,
+                "completion_tokens": 446,
+                "total_tokens": 979
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1：\n- 述語1: 結ばれています（動詞）\n  - 主語の候補: 富山、小松、広島、八丈島\n  - 目的語の候補: なし\n\n文2：\n- 述語1: ありました（動詞）\n  - 主語の候補: 空港\n  - 目的語の候補: なし\n- 述語2: 出入りできる（動詞）\n  - 主語の候補: 民間のジェット機\n  - 目的語の候補: なし\n\n文3：\n- 述語1: 楽しむ（動詞）\n  - 主語の候補: 観光客\n  - 目的語の候補: マリンリゾート\n- 述語2: あります（動詞）\n  - 主語の候補: 利用率\n  - 目的語の候補: なし\n\n【テーブル形式】\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 結ばれています | 富山、小松、広島、八丈島 | なし |\n| ありました | 空港 | なし |\n| 出入りできる | 民間のジェット機 | なし |\n| 楽しむ | 観光客 | マリンリゾート |\n| あります | 利用率 | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000263204": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Ke1iFQEL3eUqx7qVqkLZHtwdtWUY",
+            "object": "chat.completion",
+            "created": 1685154778,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 520,
+                "completion_tokens": 367,
+                "total_tokens": 887
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 乳房は並んでいます\n- 乳房：主語\n- 並んでいます：述語\n\n文2: 乳腺はつながっています\n- 乳腺：主語\n- つながっています：述語\n\n文3: 乳管から発生します、呼ばれます\n- 乳管：主語\n- 発生します：述語\n- 呼ばれます：述語\n\n【主語と目的語の候補の列挙】\n\n- 乳房：女性、乳腺\n- 乳腺：それぞれの乳腺、小葉、乳管\n- 乳管：乳がん\n\n【述語ごとの主語と目的語の候補の3つ組】\n\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| 並んでいます | 乳房 | 女性、乳腺 |\n| つながっています | 乳腺 | それぞれの乳腺、小葉、乳管 |\n| 発生します | 乳管 | 乳がん |\n| 呼ばれます | 乳管 | 乳管がん |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000267637": {
+        "status": "ng",
+        "error_message": "The server had an error while processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID 63b11aefb340eb671b887fa896d7db7c in your message.) {\n  \"error\": {\n    \"message\": \"The server had an error while processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID 63b11aefb340eb671b887fa896d7db7c in your message.)\",\n    \"type\": \"server_error\",\n    \"param\": null,\n    \"code\": null\n  }\n}\n 500 {'error': {'message': 'The server had an error while processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID 63b11aefb340eb671b887fa896d7db7c in your message.)', 'type': 'server_error', 'param': None, 'code': None}} {'Date': 'Sat, 27 May 2023 02:33:22 GMT', 'Content-Type': 'application/json', 'Content-Length': '366', 'Connection': 'keep-alive', 'access-control-allow-origin': '*', 'openai-processing-ms': '137', 'openai-version': '2020-10-01', 'strict-transport-security': 'max-age=15724800; includeSubDomains', 'x-ratelimit-limit-requests': '3500', 'x-ratelimit-limit-tokens': '90000', 'x-ratelimit-remaining-requests': '3499', 'x-ratelimit-remaining-tokens': '89646', 'x-ratelimit-reset-requests': '17ms', 'x-ratelimit-reset-tokens': '235ms', 'x-request-id': '63b11aefb340eb671b887fa896d7db7c', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '7cdada4a28264531-ATL', 'alt-svc': 'h3=\":443\"; ma=86400'}"
+    },
+    "w201106-0000268544": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Ke26OYfHsBPOyVsQzo8o9H19Dr2G",
+            "object": "chat.completion",
+            "created": 1685154802,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 474,
+                "completion_tokens": 376,
+                "total_tokens": 850
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n- 文1: 教えてください\n- 文2: 行きます\n- 文3: 質問させていただきます\n\n【主語と目的語の候補の列挙】\n- 「電車の乗り換えについて」\n  - 主語の候補: なし（省略）\n  - 目的語の候補: なし（省略）\n- 「今度なんばマルイへ」\n  - 主語の候補: なし（省略）\n  - 目的語の候補: なんばマルイ\n- 「その際、乗り換えがすごく不安で」\n  - 主語の候補: 私（筆者）\n  - 目的語の候補: 乗り換え\n\n【述語ごとの主語と目的語の候補の3つ組】\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 教えてください | なし（省略） | なし（省略） |\n| 行きます | なし（省略） | なんばマルイ |\n| 質問させていただきます | 私（筆者） | 乗り換え |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000269238": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Ke2USeEvu38o5Onr9V63iq2zMO6F",
+            "object": "chat.completion",
+            "created": 1685154826,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 465,
+                "completion_tokens": 356,
+                "total_tokens": 821
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1:\n- 最初が英文字で始まる\n- 必要がある\n\n文2:\n- 使用することができる\n\n文3:\n- 区別をする\n- 注意する\n\n【主語と目的語の候補の列挙】\n\n最初が英文字で始まる:\n- 主語: 変数名\n- 目的語: なし\n\n必要がある:\n- 主語: なし\n- 目的語: 変数名\n\n使用することができる:\n- 主語: なし\n- 目的語: アンダーバー、数字\n\n区別をする:\n- 主語: なし\n- 目的語: 大文字、小文字\n\n注意する:\n- 主語: なし\n- 目的語: なし\n\n【主語と目的語の候補の3つ組】\n\n| 述語 | 主語 | 目的語 |\n| --- | --- | --- |\n| 最初が英文字で始まる | 変数名 | なし |\n| 必要がある | なし | 変数名 |\n| 使用することができる | なし | アンダーバー、数字 |\n| 区別をする | なし | 大文字、小文字 |\n| 注意する | なし | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000282921": {
+        "status": "ng",
+        "error_message": "Gateway timeout. {\"error\":{\"code\":524,\"message\":\"Gateway timeout.\",\"param\":null,\"type\":\"cf_gateway_timeout\"}} 524 {'error': {'code': 524, 'message': 'Gateway timeout.', 'param': None, 'type': 'cf_gateway_timeout'}} {'Date': 'Sat, 27 May 2023 02:44:10 GMT', 'Content-Type': 'application/json', 'Content-Length': '92', 'Connection': 'keep-alive', 'X-Frame-Options': 'SAMEORIGIN', 'Referrer-Policy': 'same-origin', 'Cache-Control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'Expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'Server': 'cloudflare', 'CF-RAY': '7cdadb75ec0f4531-ATL'}"
+    },
+    "w201106-0000292945": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeCZKLF3QxU2rWoSi6FT4Qt2UNC2",
+            "object": "chat.completion",
+            "created": 1685155451,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 470,
+                "completion_tokens": 471,
+                "total_tokens": 941
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 咲く、育っていきます\n  - 主語の候補: ６あまり咲く花、１個\n  - 目的語の候補: 実\n- 述語: ない\n  - 主語の候補: なし\n  - 目的語の候補: なし\n\n文2:\n- 述語: つく\n  - 主語の候補: 実\n  - 目的語の候補: 柄\n- 述語: 曲がります\n  - 主語の候補: 柄\n  - 目的語の候補: なし\n\n文3:\n- 述語: つく\n  - 主語の候補: 実\n  - 目的語の候補: ２、３個\n- 述語: あります\n  - 主語の候補: まれに実が２、３個つくこと\n  - 目的語の候補: なし\n\n【テーブル形式】\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 咲く | ６あまり咲く花、１個 | 実 |\n| 育っていきます | ６あまり咲く花、１個 | 実 |\n| ない | なし | なし |\n| つく | 実 | 柄 |\n| 曲がります | 柄 | なし |\n| つく | 実 | ２、３個 |\n| あります | まれに実が２、３個つくこと | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000300573": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeD7k2wGQ5I3tbbOVx9sQVu6OHSa",
+            "object": "chat.completion",
+            "created": 1685155485,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 516,
+                "completion_tokens": 287,
+                "total_tokens": 803
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: です\n  - 主語の候補: ウォールキャビネット\n  - 目的語の候補: なし\n- 述語: 塗装の剥げかけた感じが\n  - 主語の候補: 塗装\n  - 目的語の候補: 感じ\n- 述語: ノスタルジックな印象の\n  - 主語の候補: 塗装の剥げかけた感じ\n  - 目的語の候補: 印象\n\n文2:\n- 述語: なっています\n  - 主語の候補: 中\n  - 目的語の候補: ３段棚\n\n文3:\n- 述語: おすすめです\n  - 主語の候補: なし\n  - 目的語の候補: 細かなものの収納や小さいコレクションアイテムなど"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000305501": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeDSmEKLPi4Bp1WCMJ59d9xdeUrv",
+            "object": "chat.completion",
+            "created": 1685155506,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 519,
+                "completion_tokens": 328,
+                "total_tokens": 847
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 覆われます\n  - 主語の候補: 何ともいえない美しい景観色\n  - 目的語の候補: なし\n\n文2:\n- 述語1: にぎわって\n  - 主語の候補: かなりの人\n  - 目的語の候補: なし\n- 述語2: 渋滞する\n  - 主語の候補: 交通\n  - 目的語の候補: なし\n\n文3:\n- 述語: 仕方がない\n  - 主語の候補: 渋滞\n  - 目的語の候補: なし\n\n【テーブル形式】\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 覆われます | 何ともいえない美しい景観色 | なし |\n| にぎわって | かなりの人 | なし |\n| 渋滞する | 交通 | なし |\n| 仕方がない | 渋滞 | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000305988": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeDpRKWWYQj9PhQwoOAIaS0rtbtr",
+            "object": "chat.completion",
+            "created": 1685155529,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 520,
+                "completion_tokens": 335,
+                "total_tokens": 855
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 引っ越して来た\n文2: 馴染めずにいた\n文3: 出会う\n\n【主語と目的語の候補の列挙】\n\n引っ越して来た\n- 主語の候補: デヴォン\n- 目的語の候補: キャメロット・ガーデン\n\n馴染めずにいた\n- 主語の候補: デヴォン\n- 目的語の候補: なし\n\n出会う\n- 主語の候補: デヴォン、トレント\n- 目的語の候補: なし\n\n【主語と目的語の候補の3つ組の作成】\n\n| 述語 | 主語の候補 | 目的語の候補 |\n| --- | --- | --- |\n| 引っ越して来た | デヴォン | キャメロット・ガーデン |\n| 馴染めずにいた | デヴォン | なし |\n| 出会う | デヴォン、トレント | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000306597": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeEDC5JNr91TLjmrWYmFThchKLIX",
+            "object": "chat.completion",
+            "created": 1685155553,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 510,
+                "completion_tokens": 189,
+                "total_tokens": 699
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 提供する\n- 主語の候補: 日本事業通信網\n- 目的語の候補: 中国株メールマガジン\n\n文2:\n- 述語1: 送りする\n- 主語の候補1: 私たち\n- 目的語の候補1: 本当に使える情報\n- 述語2: 満載だ\n- 主語の候補2: 情報\n\n文3:\n- 述語: 見る\n- 主語の候補: あなた\n- 目的語の候補: サンプル"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000307239": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeEQOB3rcTUCI4jIBA1wr8zMpHMe",
+            "object": "chat.completion",
+            "created": 1685155566,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 516,
+                "completion_tokens": 445,
+                "total_tokens": 961
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 紹介しています\n文2: 対象です、借りることが出来ます\n文3: 予約できる、ラクです\n\n【主語と目的語の候補の列挙】\n\n- 紹介しています\n  - 主語: このページ\n  - 目的語: ネットでレンタカーを予約できるサイト\n- 対象です\n  - 主語: サイト\n  - 目的語: 全国各地のレンタカー\n- 借りることが出来ます\n  - 主語: (省略)\n  - 目的語: 最寄のレンタカー\n- 予約できる\n  - 主語: (省略)\n  - 目的語: レンタカー\n- ラクです\n  - 主語: (省略)\n  - 目的語: (省略)\n\n【主語と目的語の候補の3つ組の作成】\n\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| 紹介しています | このページ | ネットでレンタカーを予約できるサイト |\n| 対象です | サイト | 全国各地のレンタカー |\n| 借りることが出来ます | (省略) | 最寄のレンタカー |\n| 予約できる | (省略) | レンタカー |\n| ラクです | (省略) | (省略) |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000308051": {
+        "status": "ng",
+        "error_message": "Bad gateway. {\"error\":{\"code\":502,\"message\":\"Bad gateway.\",\"param\":null,\"type\":\"cf_bad_gateway\"}} 502 {'error': {'code': 502, 'message': 'Bad gateway.', 'param': None, 'type': 'cf_bad_gateway'}} {'Date': 'Sat, 27 May 2023 02:52:08 GMT', 'Content-Type': 'application/json', 'Content-Length': '84', 'Connection': 'keep-alive', 'X-Frame-Options': 'SAMEORIGIN', 'Referrer-Policy': 'same-origin', 'Cache-Control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'Expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'Server': 'cloudflare', 'CF-RAY': '7cdaedb92fb64531-ATL', 'alt-svc': 'h3=\":443\"; ma=86400'}"
+    },
+    "w201106-0000312992": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeKGsa6jkqtbTZDj0ryOsS92YeSG",
+            "object": "chat.completion",
+            "created": 1685155928,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 478,
+                "completion_tokens": 405,
+                "total_tokens": 883
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n- 文1: 「しました」\n- 文2: 「始めています」\n- 文3: 「なってしまって」、「する」\n\n【主語と目的語の候補の列挙】\n- 「しました」の主語候補: 筆者\n- 「しました」の目的語候補: 新作バッグ、セミオーダーの生地カット\n- 「始めています」の主語候補: 筆者\n- 「始めています」の目的語候補: １２月の作成分\n- 「なってしまって」の主語候補: 筆者\n- 「なってしまって」の目的語候補: なし（省略されている）\n- 「する」の主語候補: 筆者\n- 「する」の目的語候補: バタバタするの\n\n【主語と目的語の候補の3つ組の作成】\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| しました | 筆者 | 新作バッグ、セミオーダーの生地カット |\n| 始めています | 筆者 | １２月の作成分 |\n| なってしまって | 筆者 | なし（省略されている） |\n| する | 筆者 | バタバタするの |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000315638": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeKmwDmiOeKiR66q9OVIvpa3n5A7",
+            "object": "chat.completion",
+            "created": 1685155960,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 483,
+                "completion_tokens": 370,
+                "total_tokens": 853
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 聞いたことがあります\n- 主語の候補: なし（省略されている）\n- 目的語の候補: 便秘、ココア\n\n文2:\n- 述語1: 宣伝されていたりします\n- 主語の候補1: ココア\n- 目的語の候補1: なし（省略されている）\n- 述語2: 良いと\n- 主語の候補2: なし（省略されている）\n- 目的語の候補2: なし（省略されている）\n\n文3:\n- 述語: ある\n- 主語の候補: ココア\n- 目的語の候補: いろいろな効果\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\n聞いたことがあります | なし（省略されている） | 便秘、ココア\n宣伝されていたりします | ココア | なし（省略されている）\n良いと | なし（省略されている） | なし（省略されている）\nある | ココア | いろいろな効果"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000319732": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeLHD0R8HzOEzqi4GdVb5Ui4xYpX",
+            "object": "chat.completion",
+            "created": 1685155991,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 464,
+                "completion_tokens": 243,
+                "total_tokens": 707
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 比べる\n  - 主語の候補: 筆者、読者、人々、私たち、何らかのグループ\n  - 目的語の候補: 以前と現在の状況、問題の数、問題の難易度\n\n文2:\n- 述語: 減る、易化する\n  - 主語の候補: 筆者、出題者、何らかのグループ\n  - 目的語の候補: 設問数、問題の難易度\n\n文3:\n- 述語: 必要とする\n  - 主語の候補: 筆者、読者、人々、私たち、何らかのグループ\n  - 目的語の候補: 計算力、発想力"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000321512": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeLWATxIKaQjWtvsbP7CyAfUWPwZ",
+            "object": "chat.completion",
+            "created": 1685156006,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 551,
+                "completion_tokens": 271,
+                "total_tokens": 822
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: デビューする\n- 主語の候補: リバティーンズ\n- 目的語の候補: なし\n\n文2:\n- 述語1: 迎える\n- 主語の候補1: リバティーンズ\n- 目的語の候補1: ミック・ジョーンズ\n- 述語2: 人気者になる\n- 主語の候補2: リバティーンズ\n- 目的語の候補2: なし\n\n文3:\n- 述語1: トラブルを起こす\n- 主語の候補1: ピート・ドハーティ\n- 目的語の候補1: なし\n- 述語2: 去る\n- 主語の候補2: ピート・ドハーティ\n- 目的語の候補2: バンド"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000321901": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeLsbAanIS2pjpgRgnqkTQBYrUwZ",
+            "object": "chat.completion",
+            "created": 1685156028,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 511,
+                "completion_tokens": 222,
+                "total_tokens": 733
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: する、なる\n- 主語の候補: 荷物、(筆者)\n- 目的語の候補: 夕張、寒いところ、荷物、(筆者)\n\n文2:\n- 述語: かつぐ、出勤する、する、打ち合わせる\n- 主語の候補: 筆者、(荷物)\n- 目的語の候補: 日仏学院、フランス映画祭スタッフ、打ち合わせ\n\n文3:\n- 述語: する、お手伝いする\n- 主語の候補: 筆者、(今年)\n- 目的語の候補: ちょびっとだけ、お手伝いすること"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000324472": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeM9obgfDvRZJruEzEEgD9uyXl9g",
+            "object": "chat.completion",
+            "created": 1685156045,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 542,
+                "completion_tokens": 340,
+                "total_tokens": 882
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 見ぬ、変わりしていた\n文2: 落ちる、変わる\n文3: 過ぎる\n\n【主語と目的語の候補の列挙】\n\n見ぬ: 住吉神社の銀杏の木、誰か\n変わりしていた: 住吉神社の銀杏の木、葉、色\n落ちる: 木の葉\n変わる: 冬景色\n過ぎる: 今月\n\n【述語ごとの主語と目的語の候補の3つ組】\n\n| 述語 | 主語候補 | 目的語候補 |  |\n| --- | --- | --- | --- |\n| 見ぬ | 住吉神社の銀杏の木、誰か | - | 文1 |\n| 変わりしていた | 住吉神社の銀杏の木、葉、色 | - | 文1 |\n| 落ちる | 木の葉 | - | 文2 |\n| 変わる | - | 冬景色 | 文2 |\n| 過ぎる | 今月 | - | 文3 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000328267": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeMZPlzURor41AS6J0P6x4MdGH3R",
+            "object": "chat.completion",
+            "created": 1685156071,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 503,
+                "completion_tokens": 446,
+                "total_tokens": 949
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n- 文1: 使われていた\n- 文2: 使われ、収容されていた\n- 文3: 残され、伝えている\n\n【主語と目的語の候補の列挙】\n\n- 使われていた\n  - 主語: 王室\n  - 目的語: 居城\n- 使われ\n  - 主語: 省略されている\n  - 目的語: 省略されている\n- 収容されていた\n  - 主語: 省略されている\n  - 目的語: 政治犯ら\n- 残され\n  - 主語: 処刑台の跡\n  - 目的語: 省略されている\n- 伝えている\n  - 主語: 悲しい歴史\n  - 目的語: 省略されている\n\n【主語と目的語の候補の3つ組】\n\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| 使われていた | 王室 | 居城 |\n| 使われ | 省略されている | 省略されている |\n| 収容されていた | 省略されている | 政治犯ら |\n| 残され | 処刑台の跡 | 省略されている |\n| 伝えている | 悲しい歴史 | 省略されている |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000331133": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeN6CEyloJSGHRDTViC8XFQpkSyj",
+            "object": "chat.completion",
+            "created": 1685156104,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 482,
+                "completion_tokens": 268,
+                "total_tokens": 750
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: さがしている\n- 主語の候補: 筆者\n- 目的語の候補: 高齢者専用の住宅\n\n文2:\n- 述語: くらせる\n- 主語の候補: 筆者\n- 目的語の候補: 安心して、楽しくくらせるようなところ\n\n文3:\n- 述語: 過ごしたい\n- 主語の候補: 筆者\n- 目的語の候補: 老後\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\nさがしている | 筆者 | 高齢者専用の住宅\nくらせる | 筆者 | 安心して、楽しくくらせるようなところ\n過ごしたい | 筆者 | 老後"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000335177": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeNRtJ9K5Two8RTtqLzJbU8DZIVw",
+            "object": "chat.completion",
+            "created": 1685156125,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 526,
+                "completion_tokens": 341,
+                "total_tokens": 867
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1：\n- 述語：させていただきます\n- 主語の候補：不明（省略されている可能性があります）\n- 目的語の候補：不明（省略されている可能性があります）\n\n文2：\n- 述語1：ございました\n- 主語の候補1：仙谷行政刷新担当大臣、藤井財務大臣、鳩山総理\n- 目的語の候補1：平成２２年度予算概算要求についての発言\n\n- 述語2：あった\n- 主語の候補2：不明（省略されている可能性があります）\n- 目的語の候補2：概算要求\n\n文3：\n- 述語1：ございました\n- 主語の候補1：不明（省略されている可能性があります）\n- 目的語の候補1：話\n\n- 述語2：していく\n- 主語の候補2：不明（省略されている可能性があります）\n- 目的語の候補2：その中身を精査"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000335563": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeNrRyCHsvGN06DKFwQfoHsvj3HC",
+            "object": "chat.completion",
+            "created": 1685156151,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 525,
+                "completion_tokens": 338,
+                "total_tokens": 863
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 経営する\n- 主語の候補: 親\n- 目的語の候補: ショット・バー\n\n文2:\n- 述語1: 通う\n- 主語の候補1: 無し (省略されている)\n- 目的語の候補1: アメリカンスクール\n- 述語2: 幼稚園に通う\n- 主語の候補2: 無し (省略されている)\n- 目的語の候補2: アメリカンスクール\n\n文3:\n- 述語1: 持つ\n- 主語の候補1: 無し (筆者が明示していない)\n- 目的語の候補1: ミュージカルへの出演、アルト・サックス奏者としてジャズ・バンドに抜擢された経験\n- 述語2: 抜擢する\n- 主語の候補2: 無し (筆者が明示していない)\n- 目的語の候補2: アルト・サックス奏者"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000342594": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeOH2lsoKFg0BHyRICjVSMSuNn5S",
+            "object": "chat.completion",
+            "created": 1685156177,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 475,
+                "completion_tokens": 323,
+                "total_tokens": 798
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1:\n- 述語: 受け入れられません\n- 主語の候補: ママ、あなた\n- 目的語の候補: こと\n\n文2:\n- 述語: いてほしい\n- 主語の候補: なし（省略）\n- 目的語の候補: 一緒にここに\n\n文3:\n- 述語1: きた\n- 主語の候補1: ちゃーちゃん\n- 目的語の候補1: なし（自動詞）\n- 述語2: なんだ\n- 主語の候補2: それ\n- 目的語の候補2: 去年\n\n述語 | 主語の候補 | 目的語の候補\n--- | --- | ---\n受け入れられません | ママ、あなた | こと\nいてほしい | なし（省略） | 一緒にここに\nきた | ちゃーちゃん | なし（自動詞）\nなんだ | それ | 去年"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000342710": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeOg6YxdsKCdwoxOqYOoSHdqHc5D",
+            "object": "chat.completion",
+            "created": 1685156202,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 489,
+                "completion_tokens": 271,
+                "total_tokens": 760
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "【述語の抽出】\n\n文1: 見に行きました(masu-form)\n文2: ありません\n文3: ありません\n文4: 書いた(thought)\n\n【主語と目的語の候補の列挙】\n\n- 見に行きました(masu-form)\n  - 主語: 私、姉\n  - 目的語: 妹の高校の文化祭\n\n- 書いた(thought)\n  - 主語: 筆者\n  - 目的語: 妹が写真部だということ\n\n【述語ごとの主語と目的語の候補の3つ組】\n\n| 述語 | 主語候補 | 目的語候補 |\n| --- | --- | --- |\n| 見に行きました(masu-form) | 私、姉 | 妹の高校の文化祭 |\n| 書いた(thought) | 筆者 | 妹が写真部だということ |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000346300": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KeP0w9CaPlzszM8DB6utYjfMrLNS",
+            "object": "chat.completion",
+            "created": 1685156222,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 530,
+                "completion_tokens": 314,
+                "total_tokens": 844
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1：\n- 述語：検索する\n  - 主語の候補：「町名から市立小・中学校の学区」\n  - 目的語の候補：なし\n\n文2：\n- 述語1：検索する\n  - 主語の候補：なし\n  - 目的語の候補：「学校ごとの学区」\n- 述語2：ご覧ください\n  - 主語の候補：「小学校及び中学校の通学区域に関する規則」\n  - 目的語の候補：なし\n\n文3：\n- 述語1：ついては\n  - 主語の候補：「規則の中の「○○の一部」」\n  - 目的語の候補：「下表「町名からの学区検索」」\n- 述語2：ご確認ください\n  - 主語の候補：なし\n  - 目的語の候補：「下表「町名からの学区検索」」"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    },
+    "w201106-0000347315": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7KePNbpyY3VkPZcUFKSszuq4GQwJb",
+            "object": "chat.completion",
+            "created": 1685156245,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 543,
+                "completion_tokens": 231,
+                "total_tokens": 774
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "文1の述語: 図る、実施する\n- 主語の候補: 本市、アシスタントティーチャー派遣事業\n- 目的語の候補: 各学校園教員の指導力向上\n\n文2の述語: する、支援対象とする\n- 主語の候補: 同事業、西宮市立学校園の教員\n- 目的語の候補: なし\n\n文3の述語: 退職する、退かれる、貸す\n- 主語の候補: 皆様、第一線から退かれている皆様、お力\n- 目的語の候補: 西宮市立学校園"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        }
+    }
+}

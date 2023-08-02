@@ -1,0 +1,2502 @@
+{
+    "w201106-0002000000": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbNRWi0Fgywurghbxs52ZtpyzxFW",
+            "object": "chat.completion",
+            "created": 1685859577,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 686,
+                "completion_tokens": 162,
+                "total_tokens": 848
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|関わる|作家、ゲスト|「ドラゴン」シリーズ| |\n|2|手がける|矢野了平|「トリビアの泉」、「田村ゆかりのいたずら黒うさぎ」| |\n|3|呼ばれる| |「まぢおにさん」| |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000001": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbNeTkobNllVgtrM8XdT97uYSltJ",
+            "object": "chat.completion",
+            "created": 1685859590,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 652,
+                "completion_tokens": 150,
+                "total_tokens": 802
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 閉ざされてしまう | 土地、辺ぴな土地 | | 冬、雪 |\n| 2 | ある | ここ、おらが村 | | |\n| 3 | あり、営んできた | 代々、暮らしが、人生が | | |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000002": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbNq99mZyu8RKEBu0s9mGIcr49hy",
+            "object": "chat.completion",
+            "created": 1685859602,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 707,
+                "completion_tokens": 174,
+                "total_tokens": 881
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|全国クラス|男性のスタイルの幅やセンス| | |\n|1|対応出来る|技術力|ジャンルのスタイル| |\n|2|追求し|男性|居心地の良さ| |\n|2|セレクト|外装・内装・インテリア| | |\n \nというように表形式で出力します。"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000003": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbO50qn55f8pdhQwfLS1JnvzAFMS",
+            "object": "chat.completion",
+            "created": 1685859617,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 684,
+                "completion_tokens": 142,
+                "total_tokens": 826
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|残っている|日本、４８清音、濁音半濁音| | |\n|2|持っていた|１つ１つ|意味| |\n|3|言う|人間意識|７２の意味づけ|こと、有った|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000004": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbOHdaxd14a573eIa5h5PWtANqnE",
+            "object": "chat.completion",
+            "created": 1685859629,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 736,
+                "completion_tokens": 176,
+                "total_tokens": 912
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|なる|バンド| | |\n|1|ヒットする|曲| | |\n|2|注目される|ハリー| | |\n|3|作詞作曲する|ハリー、ジョルジオ・モロダー| | |\n|3|提供する|曲|映画『アメリカン・ジゴロ』| |\n|3|なる|ヒット| |米英|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000005": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbOWv02P4Tc6KvYHzB2nO9ZTE5qw",
+            "object": "chat.completion",
+            "created": 1685859644,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 647,
+                "completion_tokens": 123,
+                "total_tokens": 770
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|気になっていた|自分|ぬくりさん|なし|\n|2|予約して行ってきました|自分|なし|なし|\n|3|です|お店|なし|なし|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000007": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbOhApxKoTDmZ4ZxiuU7cwhcshCa",
+            "object": "chat.completion",
+            "created": 1685859655,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 692,
+                "completion_tokens": 184,
+                "total_tokens": 876
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 焼く | (著者) | 焼肉用スライス肉 | が |\n| 2 | おすすめだ | ミートガイ | ＢＢＱセット | ならではの |\n| 2 | ある | (著者) | ミートガイ | に |\n| 3 | 焼く | お肉 | (著者) | グリルで |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000008": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbOx4Wi3yc46PNNQsuSgQ8FFe5DD",
+            "object": "chat.completion",
+            "created": 1685859671,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 674,
+                "completion_tokens": 132,
+                "total_tokens": 806
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|共有する|車１台、２人|なし|なし|\n|2|できる|金銭などの財産的補償|なし|他方|\n|3|ある|これ|なし|なし|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000009": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbP97xtTpL3WCPLa7cKeIMBnTwMz",
+            "object": "chat.completion",
+            "created": 1685859683,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 673,
+                "completion_tokens": 157,
+                "total_tokens": 830
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 進学している | 卒業生のほとんど、人一般 |  |  |\n| 2 | 行われる | 授業 |  |  |\n| 3 | なった | 一学年、入学生、人数減 |  | 翌２００４年度、一学年 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000010": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbPMGlCEbHExz7ndD1FJ2ymdkhpP",
+            "object": "chat.completion",
+            "created": 1685859696,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 620,
+                "completion_tokens": 123,
+                "total_tokens": 743
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | ない | - | 色とデザイン | - |\n| 2 | 合う | - | 色合い | - |\n| 3 | 拭き取り | - | - | - |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000012": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbPWhZqi0X7z3nxwXpPnJOst1RkJ",
+            "object": "chat.completion",
+            "created": 1685859706,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 636,
+                "completion_tokens": 163,
+                "total_tokens": 799
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | は | 妖精 |  |  |\n| 1 | する | 妖精 |  |  |\n| 2 | 使っている | 誰か | ポロン |  |\n| 3 | は | 魔法の呪文 |  |  |\n| 3 | する | 魔法の呪文 |  |  |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000013": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbPjuo6pfWfmZ0O7EYfQUDhUwOom",
+            "object": "chat.completion",
+            "created": 1685859719,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 739,
+                "completion_tokens": 246,
+                "total_tokens": 985
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "以下が、求められた情報をテーブル形式で出力したものです。\n\n| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 率いる | ムルジ | ＵＤＦ | なし |\n| 1 | なる | ムルジ | 代弁者 | なし |\n| 2 | 費やす | ムルジ | 日々 | なし |\n| 3 | 始まる | 旱魃 | なし | 直前 |\n| 3 | もたらす | 旱魃 | 飢饉 | 国中 |\n| 3 | 売却する | 著者 | 備蓄 | 他国へ |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000015": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbQBl5S7P8bbvARl3iRlVltIrjwg",
+            "object": "chat.completion",
+            "created": 1685859747,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 643,
+                "completion_tokens": 162,
+                "total_tokens": 805
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | きた | じいちゃん | あかり |  |\n| 2 | 作ってくれた | 誰か | ジャガイモ |  |\n| 2 | 甘い | ジャガイモ |  |  |\n| 3 | みたいだ | サツマイモ |  |  |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000016": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbQNxBpVm8NRpKFCxrglhQJTZMIz",
+            "object": "chat.completion",
+            "created": 1685859759,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 637,
+                "completion_tokens": 487,
+                "total_tokens": 1124
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "以下が回答です。\n\n| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | はじめまして | 著者、話し手、私、わたし、僕、俺、自分、人、人間、皆さん、みなさん、あなた、貴方、君、お前 | なし | なし |\n| 2 | いる | 主婦、私、わたし、僕、俺、人、人間、子供、子ども、子、家族、家庭、女性、彼女、彼、夫、夫婦、両親、親、祖父母、祖父、祖母、父親、母親、父、母、兄弟、姉妹、兄、弟、姉、妹、親戚、友達、知人、同僚、上司、部下、先輩、後輩、相手、人、人間、皆さん、みなさん、あなた、貴方、君、お前 | なし | なし |\n| 2 | いる | なし | 子供、子ども、子 | なし |\n| 3 | 働き始める | 私、わたし、僕、俺、人、人間、皆さん、みなさん、あなた、貴方、君、お前 | なし | 新しい一歩、一歩、仕事、パート、職場、会社、場所、環境、人、人間、皆さん、みなさん、あなた、貴方、君、お前 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000017": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbR1a99i99wpGkpLHuDhK6y5YlO4",
+            "object": "chat.completion",
+            "created": 1685859799,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 649,
+                "completion_tokens": 155,
+                "total_tokens": 804
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 聞きそびれました | 著者、人 | 乾燥か、水で戻したものか | - |\n| 2 | 心がけています | 私 | - | 少しでもコンブ |\n| 3 | 気休めかもしれません | - | - | - |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000019": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbRFXR91UsKmQr2Frg23yvzp77dF",
+            "object": "chat.completion",
+            "created": 1685859813,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 646,
+                "completion_tokens": 172,
+                "total_tokens": 818
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 確認する | (あなた) | (商品のもっと詳しい説明) | (メーカーにて) |\n| 2 | 確認する | (あなた) | (写真の方) |  |\n| 3 | お願いする | (著者) |  | (ノークレームノーリターンで) |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000020": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbRUoPrOWA6VmOYLwWnHhqyLvHaQ",
+            "object": "chat.completion",
+            "created": 1685859828,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 638,
+                "completion_tokens": 143,
+                "total_tokens": 781
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | してもらってて | 著者、お気に入り女子さん | | |\n| 2 | ステップアップ | 著者 | | |\n| 3 | 紹介されて | 著者、違う女子さん | | 女子さん |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000022": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbRjVCXTzpVr9uorTyhEncIjEauD",
+            "object": "chat.completion",
+            "created": 1685859843,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 730,
+                "completion_tokens": 214,
+                "total_tokens": 944
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|関わる|シュナイダーエレクトリック|送電事業|アルストム|\n|1|引き継ぐ|シュナイダーエレクトリック|配電事業|なし|\n|2|売却する|アルストム|送電部門|アレヴァ|\n|2|買い戻す|アルストム|送電部門|なし|\n|3|ある|本社|なし|フランス・パリ近郊のラ・デファンス|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000023": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbS2mKOe76W3pqBvA6OQ9kekVT2R",
+            "object": "chat.completion",
+            "created": 1685859862,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 687,
+                "completion_tokens": 286,
+                "total_tokens": 973
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|ある（シルエットが秀逸）|シルエット| | |\n|2|あふれる（気品が）|気品| | |\n|2|魅力だ（デザインが）|デザイン| | |\n|3|なっている（大胆なデザインに）|デザイン| |スペシャルアイテム、今回|\n \n※「主語（ガ格）の候補」や「目的語（ヲ格）の候補」、「斜格の要素（ニ格）の候補」が複数ある場合は、カンマで区切って列挙しています。また、文2には「目的語（ヲ格）の候補」がありませんが、空欄として表に出力しています。"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000024": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbSPHhzf2DEa5ikFGVdiVxiVVWsW",
+            "object": "chat.completion",
+            "created": 1685859885,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 731,
+                "completion_tokens": 150,
+                "total_tokens": 881
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|勝利する|フランス|中華人民共和国|サッカー国際試合|\n|2|殺害する|何者か|グリュアム|毒矢|\n|3|消え去る|指輪「ピンクパンサー」|彼|なし|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000026": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbSc92arCIR6BkwlIj0d9gaSAwDz",
+            "object": "chat.completion",
+            "created": 1685859898,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 659,
+                "completion_tokens": 167,
+                "total_tokens": 826
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | おめでとうございます | 著者、人称代名詞「あなた」 | - | - |\n| 2 | 見る | 「その人形劇」、人称代名詞「私」 | - | - |\n| 3 | 喜ばれる | 「娘様」、人称代名詞「彼女」 | - | - |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000028": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbSqKMIkC4eSsKi5ka7yJtQSqimM",
+            "object": "chat.completion",
+            "created": 1685859912,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 742,
+                "completion_tokens": 181,
+                "total_tokens": 923
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|いわれる|プジョー|自動車|世界で初めて|\n|2|構成する|PSA・プジョーシトロエン| |同じフランスのシトロエンと|\n|3|続く|乗用車の車名の伝統| |近年「RCZ」等、数字を用いない車種名も採用している|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000029": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbT6NZIVS7yRIOxQKbSSP7EpTVHF",
+            "object": "chat.completion",
+            "created": 1685859928,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 658,
+                "completion_tokens": 133,
+                "total_tokens": 791
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | ありません | 打ち粉 |  |  |\n| 2 | まぶす | 手や板や麺棒 | 粉 |  |\n| 3 | 使った | 打ち粉 | 方 |  |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000030": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbTJeMAT7RpEZhUzZpbpnBS4XubN",
+            "object": "chat.completion",
+            "created": 1685859941,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 674,
+                "completion_tokens": 179,
+                "total_tokens": 853
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|違う|スタイル、(日本とオーストラリア)|-|-|\n|2|もてなす|日本、(ホームステイの学生)|お客様、(ホームステイの学生)|-|\n|3|もてなす|生徒さん、(異文化でもできるだけ不便なく、楽しく過ごせるよう)|-|-|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000031": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbTYTkzmXEf5BEpWEYTuXkCL3F80",
+            "object": "chat.completion",
+            "created": 1685859956,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 741,
+                "completion_tokens": 211,
+                "total_tokens": 952
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|ある|都市圏内郊外| |ダラス・フォートワース大都市圏の主要部|\n|2|ある|人口| | |\n|2|ある|人口|大きさ|テキサス州内では人口で１２番目、アメリカ合衆国内では８７番目の|\n|3|ある|大半| | |\n|3|ある|主要な見どころ| |ダラスやフォートワースの地域にある、直ぐの距離に|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000032": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbTpHyqgdNr1suBEaTmdPFTlOzfr",
+            "object": "chat.completion",
+            "created": 1685859973,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 717,
+                "completion_tokens": 160,
+                "total_tokens": 877
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|変更して頂きました|著者、カウンセリング|コース|その時|\n|1|組み合わせた|手技と機械|施術|なし|\n|2|感じました|効果|なし|他エステ|\n|3|思います|著者|なし|なし|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000037": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbU2lK8fCfJQZWSuLwwsUcV8S5AZ",
+            "object": "chat.completion",
+            "created": 1685859986,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 625,
+                "completion_tokens": 160,
+                "total_tokens": 785
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "以下が回答です。\n\n| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | なし | なし | なし | なし |\n| 2 | 教える | 俺 | 弓 | 道 |\n| 2 | 教えない | 俺 | 道 | なし |\n| 3 | 求めなさい | あなた | 道 | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000038": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbUFcFfzCq0P4bnCHNg4WjQUrOf6",
+            "object": "chat.completion",
+            "created": 1685859999,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 679,
+                "completion_tokens": 121,
+                "total_tokens": 800
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|ある|作品|最後| |\n|2|なる| | | |\n|3|見る|池井戸さん|銀行員|銀行に愛想つかす|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000040": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbUUd2i8U1lyMIUy1oct63Y36Phn",
+            "object": "chat.completion",
+            "created": 1685860014,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 654,
+                "completion_tokens": 204,
+                "total_tokens": 858
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | ない | どこ |  |  |\n| 1 | ある | 救い |  |  |\n| 2 | いる | 登場人物たち |  |  |\n| 2 | 引き立てる | 切なさ |  |\n| 3 | なる | 胸 |  |  |\n| 3 | 痛く |  |  |  |\n| 3 | する | 本 |  |  |\n| 3 | なる | 優しさと切なさ |  |  |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000041": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbUmg1sDgNnRBQXJobD26GJ3okV0",
+            "object": "chat.completion",
+            "created": 1685860032,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 716,
+                "completion_tokens": 169,
+                "total_tokens": 885
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|建設が始まった|エトワール凱旋門| |ナポレオン・ボナパルトの命|\n|2|完成した| | |ルイ・フィリップの復古王政時代|\n|3|死去しており、彼がくぐった|彼|凱旋門|改葬された時|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000043": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbV29Doc7MZa5mUDuRLkuUjkQhNY",
+            "object": "chat.completion",
+            "created": 1685860048,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 682,
+                "completion_tokens": 130,
+                "total_tokens": 812
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|開幕した|オープン戦|こと|ロッテ|\n|2|デビューしている|顔|（なし）|球団|\n|3|思います|著者|選手|他球団|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000044": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbVEwAOShe1I6R8bnIg6yaUKuMwk",
+            "object": "chat.completion",
+            "created": 1685860060,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 737,
+                "completion_tokens": 179,
+                "total_tokens": 916
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|搭載する|メインディスプレイ|大画面高精細液晶| |\n|2|用意する|擬似３Ｄ表示|画像| |\n|2|変換する|画像| | |\n|2|表示する|擬似３Ｄ表示| | |\n|3|搭載する|サブディスプレイ|多色のもの| |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000046": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbVTo5UtmSRRnSka0ZFsv0JoyXvq",
+            "object": "chat.completion",
+            "created": 1685860075,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 713,
+                "completion_tokens": 198,
+                "total_tokens": 911
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "以下が、求められた情報をテーブル形式で出力したものです。\n\n| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 参加する | 私（著者）、ジェリー藤尾 | - | セカンドシンガーとして |\n| 2 | いる | 高木智之 | - | - |\n| 3 | 参加する、ある | 加藤英文、私（著者） | クレイジーウエスト | ともに、前に |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000048": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbVl5W9QZsoPCz9p4k6lqZvaOQIG",
+            "object": "chat.completion",
+            "created": 1685860093,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 717,
+                "completion_tokens": 160,
+                "total_tokens": 877
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 旅する | 夢の島 | 空 |  |\n| 2 | 勢ぞろいする | アトラクション |  |  |\n| 3 | 遊ぶ | 誰でも | ミニゲーム | カーニバルアイランドを元の輝いた島に |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000050": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbW3Frhixy8Qh9MyURAXYin3XMPx",
+            "object": "chat.completion",
+            "created": 1685860111,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 682,
+                "completion_tokens": 183,
+                "total_tokens": 865
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|注目されている|人気商品、(著者)、(人一般)|-|ユーザー、(著者)、(人一般)|\n|2|更新されます|ランキング、(著者)、(人一般)|-|-|\n|3|チェックしてみては|人、(著者)、(人一般)|-|商品選びで悩んでる人|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000052": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbWJDCVAqGa0rH0g4EsegcgYAhH3",
+            "object": "chat.completion",
+            "created": 1685860127,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 746,
+                "completion_tokens": 152,
+                "total_tokens": 898
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|創業する|著者| |うるま市|\n|2|設置する|著者| |基地外|\n|2|開始する|販売| |基地外|\n|3|設立する|フォーモスト・ブルーシール株式会社| |浦添市|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000054": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbWX2UlNr85OkUDs5szUlurIvvaA",
+            "object": "chat.completion",
+            "created": 1685860141,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 674,
+                "completion_tokens": 130,
+                "total_tokens": 804
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|開催する|セミナー| |神戸センタープラザ、消費税|\n|2|ありがとう|方々| | |\n|3|開催する| | |方、ご興味ある方|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000055": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbWi23tA2CZxQlTLj2VFocPXj1yp",
+            "object": "chat.completion",
+            "created": 1685860152,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 632,
+                "completion_tokens": 148,
+                "total_tokens": 780
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 受け取っている | 商品 |  |  |\n| 2 | させていただきました | このたび |  |  |\n| 2 | いたします |  |  | 機会 |\n| 3 | お願いいたします |  |  | 機会 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000056": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbWthazpGMVQFxwQHJHUZJF37shW",
+            "object": "chat.completion",
+            "created": 1685860163,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 655,
+                "completion_tokens": 146,
+                "total_tokens": 801
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 兼ね備えた | モデル | 高級感、スポーティさ |  |\n| 2 | ついている |  | 安心 |  |\n| 3 | おすすめ |  |  | プレゼント、ギフト |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000057": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbX6IN4inP2c2OEbLMIyvRIbLXuL",
+            "object": "chat.completion",
+            "created": 1685860176,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 630,
+                "completion_tokens": 208,
+                "total_tokens": 838
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "以下が回答です。\n\n| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 来た | 銀１０００、著者、人一般 | なし | なし |\n| 1 | 行った | 著者、人一般 | なし | なし |\n| 2 | なし | なし | １１１３編成、著者、人一般 | なし |\n| 3 | 連れてきました | なし | １４０５編成、著者、人一般 | 後ろに |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000058": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbXOIW6uCLIMy88Qf6Uxg4sLdTbw",
+            "object": "chat.completion",
+            "created": 1685860194,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 619,
+                "completion_tokens": 135,
+                "total_tokens": 754
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 感じる | (私たち) | こと | なって |\n| 2 | ない | (私) | お疲れさま | なし |\n| 3 | ない | (私) | ありがとう | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000060": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbXa6zmsmBqUAyh63QEEiKZAZ4tj",
+            "object": "chat.completion",
+            "created": 1685860206,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 672,
+                "completion_tokens": 194,
+                "total_tokens": 866
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|収録されている|「愛を教えて」、「主題歌」、「遺留捜査」|なし|なし|\n|2|記念した|「オールタイムベストアルバム」、「自身」、「著者」、「人一般」|なし|なし|\n|3|収録しています|「自身」、「楽曲」、「著者」、「人一般」|なし|なし|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000063": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbXrVGJDHJpJH9IdRxMsXGrP94us",
+            "object": "chat.completion",
+            "created": 1685860223,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 690,
+                "completion_tokens": 213,
+                "total_tokens": 903
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "以下が、求められた情報をテーブル形式で出力したものです。\n\n| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 混ぜる | おかゆ、おかゆの具シリーズ |  |  |\n| 1 | なる | 水っぽく |  |  |\n| 2 | 楽しめる、工夫する |  | お寿司、味のバランス |  |\n| 3 | 使用する | 五穀酢 |  |  |\n| 3 | しまう | ツン |  |  |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000066": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbY9MfhChVZp0NOHJkQUxQogvXbm",
+            "object": "chat.completion",
+            "created": 1685860241,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 661,
+                "completion_tokens": 203,
+                "total_tokens": 864
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | つきにくい | 電話器 |  |  |\n| 2 | できる | 自由に文字入れが出来るオーダーメイドアクセサリー |  | 名前や好きな言葉、記念日など |\n| 2 | 刻印可能だ |  |  | 簡単な数字やハートマークなども |\n| 3 | ある |  |  | 簡単な数字やハートマークなど |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000067": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbYPMUOWBBbxXaNoABz3Byp6kgTl",
+            "object": "chat.completion",
+            "created": 1685860257,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 653,
+                "completion_tokens": 126,
+                "total_tokens": 779
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | - | - | - | - |\n| 2 | はいる | 引出し付き | フリー | - |\n| 3 | 収納出来る | 棚 | 種類 | - |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000068": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbYbpR8uJhukUq4k5MGegXKrNdQ4",
+            "object": "chat.completion",
+            "created": 1685860269,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 659,
+                "completion_tokens": 151,
+                "total_tokens": 810
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | お気に入りである | キャットタワー | なし | 窓から外を眺める |\n| 2 | 入る | 猫 | なし | 中段にあるお部屋 |\n| 3 | いる | 猫 | なし | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000069": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbYpeDvO5sZ6nNkY3FObsUGW9MdX",
+            "object": "chat.completion",
+            "created": 1685860283,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 627,
+                "completion_tokens": 142,
+                "total_tokens": 769
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | なかよしの二人 | 二人 | なし | なし |\n| 2 | 一緒に | なし | エブリデイバッグ | なし |\n| 3 | 掛ける | なし | なし | 腰 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000071": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbZ1Tge7rxJIS4knhED5W59xXJqm",
+            "object": "chat.completion",
+            "created": 1685860295,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 631,
+                "completion_tokens": 144,
+                "total_tokens": 775
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 持たなければならない | 家 |  |  |\n| 2 | 持たなければならない |  | 愛着 |  |\n| 3 | 愛していなければならない |  | 家族 |  |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000073": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbZE6D3W2BNaShIMYUgE7RZFJrym",
+            "object": "chat.completion",
+            "created": 1685860308,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 643,
+                "completion_tokens": 136,
+                "total_tokens": 779
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 遅れる | 著者 | - | - |\n| 2 | 見つかる | 第76局扉絵の舞台 | - | - |\n| 3 | 発見される | それ | - | 天竜峡 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000077": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbZQTZi5ze41PF0sL0UpNpupFEEb",
+            "object": "chat.completion",
+            "created": 1685860320,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 712,
+                "completion_tokens": 150,
+                "total_tokens": 862
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|入荷する|トートバッグ| |コーチのアウトレットラインから、ソーホーライン|\n|2|デザインする|フロントのベルトバックル| | |\n|3|オシャレだ|パステルカラー|リネン素材| |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000078": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbZePXqEAqqaJKtiuqxG34tKY5fz",
+            "object": "chat.completion",
+            "created": 1685860334,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 718,
+                "completion_tokens": 163,
+                "total_tokens": 881
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|出身する|ビザックイーノ| | |\n|2|生まれる<br>営む|家庭<br>家族| |ぶどう園|\n|3|働く<br>助ける|父<br>キャプラ自身|家計|新聞の売り子<br>酒場でバンジョー弾き|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000081": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbZscYSLQarRKI7tHvxtAS0v8cEm",
+            "object": "chat.completion",
+            "created": 1685860348,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 707,
+                "completion_tokens": 154,
+                "total_tokens": 861
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|行われた|それら|なし|ヴァイキング活動によって殖民されたところでも|\n|2|行われている|アルシング|なし|ゴットランド|\n|3|言われている|自治|持ち込んだシング|ノルマン人が|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000082": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nba5LSF9ka4Gv6QXw9EllGJlafkp",
+            "object": "chat.completion",
+            "created": 1685860361,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 710,
+                "completion_tokens": 240,
+                "total_tokens": 950
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "以下が、求められた情報をテーブル形式で出力したものです。\n\n| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 取り戻す | サイモン | 記憶 | - |\n| 1 | 遭う | 自分 | 交通事故 | - |\n| 1 | 思い出す | サイモン | こと | - |\n| 1 | 行こうとする | 自分 | 兄ピーターのもと | - |\n| 2 | 死ぬ | ピーター | - | - |\n| 3 | 告げる | アナ | サイモンがピーターを殺した | - |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000085": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbaPgZ9IjSowGpLkp25vQIJcIOpc",
+            "object": "chat.completion",
+            "created": 1685860381,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 620,
+                "completion_tokens": 122,
+                "total_tokens": 742
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | - | - | - | - |\n| 2 | 凄いです | 最後の２枚 | 何とも | - |\n| 3 | 大噴火した | 何回 | - | - |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000086": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbaZ98Y9qp46FaP0hXRU9QY8BfFQ",
+            "object": "chat.completion",
+            "created": 1685860391,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 645,
+                "completion_tokens": 162,
+                "total_tokens": 807
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 利用する | 私（著者）、人（省略） | スーパーホテル | 出張 |\n| 2 | 揃う、快適だ | 部屋、アメニティ | なし | なし |\n| 3 | 良いだ | 部屋 | なし | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000090": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nbam27qtoyzhtwe6b0gj8BegoLK1",
+            "object": "chat.completion",
+            "created": 1685860404,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 638,
+                "completion_tokens": 275,
+                "total_tokens": 913
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "以下が、各文の述語、主語（ガ格）の候補、目的語（ヲ格）の候補、斜格の要素（ニ格）の候補の表です。\n\n| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 座る、する | バスタブ、部屋、それ | なし | なし |\n| 2 | いただく | 私、著者、人 | 和食 | なし |\n| 3 | 美味しい | なし | なし | なし |\n\nなお、文3には述語しか存在しないため、主語（ガ格）の候補、目的語（ヲ格）の候補、斜格の要素（ニ格）の候補はありません。"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000091": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nbb9c9aVJI20qwhlo506L58eEtZM",
+            "object": "chat.completion",
+            "created": 1685860427,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 650,
+                "completion_tokens": 164,
+                "total_tokens": 814
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 帰ってきて | あたし | - | 退院から |\n| 1 | 良くないです | 調子 | - | - |\n| 2 | なりました | 15歳の女の子 | - | とお友達に |\n| 3 | 悩んでました | 著者 | 勉強の事 | - |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000092": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbbNd4AdfwX1De4CSmPjMOMCf7NS",
+            "object": "chat.completion",
+            "created": 1685860441,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 728,
+                "completion_tokens": 171,
+                "total_tokens": 899
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|使われる|グリーン車のネタ| | |\n|1|いる|中條健一| |場に|\n|2|思われる|山田亮| | |\n|2|使った|山田亮|グリーン車のネタ| |\n|3|入る|ファーン| |伊賀が動くたびに|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000094": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbbdgdSn46TRDuXCkBhQF9KGqCXT",
+            "object": "chat.completion",
+            "created": 1685860457,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 676,
+                "completion_tokens": 183,
+                "total_tokens": 859
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 施した | 誰か | フラワーデザイン |  |\n| 1 | セット | 誰か | マンダリンガーネット |  |\n| 2 | 仕立てました | 誰か | 上品ネックレス |  |\n| 3 | 想わせる | 太陽 | エネルギッシュなオレンジカラー |  |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000095": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbbuzeBudqojowrvkQr0sksIPdVb",
+            "object": "chat.completion",
+            "created": 1685860474,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 680,
+                "completion_tokens": 152,
+                "total_tokens": 832
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 送っていただきました | 誰か（省略） | 写真 | メールにて |\n| 2 | 決めてしまいました | 私 | 購入 | なし |\n| 3 | 助かりました | 駅からお店まで | なし | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000096": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nbc7hmTPp4K7tpGxxPzesGrnTb8z",
+            "object": "chat.completion",
+            "created": 1685860487,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 613,
+                "completion_tokens": 138,
+                "total_tokens": 751
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | ありがとうございました | 誰か | ご心配 | - |\n| 2 | 目が覚めました | 私（著者） | - | 中村様のコメント |\n| 3 | 出直しです | - | - | 一から |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000097": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbcJqdgwvupkM7Jfga7fDi8aQ4NW",
+            "object": "chat.completion",
+            "created": 1685860499,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 726,
+                "completion_tokens": 181,
+                "total_tokens": 907
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|誤解される|すべてのＮＥＣ系企業| |大阪拠点と|\n|2|持っていない|ＮＥＣインフロンティア、ＮＥＣライティング|拠点|このビル内に|\n|3|入居している|ＮＥＣ系でもＩＴを中心とする企業| |このビルに|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000098": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbcYKXM6C8CKL10ZU38swrH6Kh65",
+            "object": "chat.completion",
+            "created": 1685860514,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 692,
+                "completion_tokens": 179,
+                "total_tokens": 871
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | です | ブレスレット |  |  |\n| 2 | です、込める | 色合い、組み合わせ | 願い |  |\n| 3 | いわれる | ピンクオパール | 自己表現力 |  |\n| 3 | 高める、サポートする | 自己表現力、自分の魅力 |  |  |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000099": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nbcne3AZuGodGW6dmfNaQNfLpYLU",
+            "object": "chat.completion",
+            "created": 1685860529,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 629,
+                "completion_tokens": 117,
+                "total_tokens": 746
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | - | - | - | - |\n| 2 | 本番だ | 明日 | - | - |\n| 3 | しめくくる | 皆 | 一年 | - |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000100": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbcwxnxyWhf0B6DdEG3U0GNttMu1",
+            "object": "chat.completion",
+            "created": 1685860538,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 631,
+                "completion_tokens": 143,
+                "total_tokens": 774
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | あります | 商品 | 価格 | なし |\n| 1 | あります | 商品 | 商品 | なし |\n| 2 | あります | それ | なし | なし |\n| 3 | できました | 買い物 | なし | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000101": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nbd8GHeQBs1bn6rbulCzbFk5osL3",
+            "object": "chat.completion",
+            "created": 1685860550,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 646,
+                "completion_tokens": 159,
+                "total_tokens": 805
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | オープンする | (浄心エイト) | - | (名古屋市西区浄心) |\n| 2 | 楽しめる | (気軽) | - | (イタリアン) |\n| 3 | みる | (ワイン手作りデザート) | - | (がぶ) |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000104": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbdLBYWa7ALnpgr0VWywM1UaqdsB",
+            "object": "chat.completion",
+            "created": 1685860563,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 651,
+                "completion_tokens": 148,
+                "total_tokens": 799
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | です | 枕、ヒノキオガ１００％ |  |  |\n| 2 | 感じて頂ければ、思います |  | 森林浴気分 |  |\n| 3 | しております | 中味 |  | 販売 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000106": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbdWRg2LrzTzYw73ha3MnULTD8jP",
+            "object": "chat.completion",
+            "created": 1685860574,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 709,
+                "completion_tokens": 186,
+                "total_tokens": 895
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 用意する | ルアーマガジンＤＶＤチーム |  | テーマ |\n| 2 | 捉える | ワイドレンズカメラ、手持ちカメラ |  | フィールド、アプローチ、ルアー |\n| 3 | 暴き出す | ２つのＨＤカメラ | 秘密 | 青木大介の強さ |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000107": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbdlbuKyGvAxjlhA3XG4L5BJB945",
+            "object": "chat.completion",
+            "created": 1685860589,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 686,
+                "completion_tokens": 205,
+                "total_tokens": 891
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "以下が、求められた情報をテーブル形式で出力したものです。\n\n| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 入省する | ウェルズ | - | 国務省外交部 |\n| 2 | 割り当てる | - | ウェルズ | 東京での職務 |\n| 3 | 持つ | ウェルズ | - | ラテンアメリカに関心 | \n| 3 | 派遣する | - | ウェルズ | アルゼンチン |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000108": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nbe116Jgdbzj1Imk0bJlu1B78Oj6",
+            "object": "chat.completion",
+            "created": 1685860605,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 652,
+                "completion_tokens": 165,
+                "total_tokens": 817
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 入ってます | エビ |  |  |\n| 2 | 風の味 |  |  |  |\n| 3 | 扱ってます / 好きです | 私 / 著者 / 人一般 | タイ料理 / 味 | アールティー / タイのホテル / こっちの味 / 方 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000109": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbeFHWXJJPQeN3G5TdG6JFiwjbm8",
+            "object": "chat.completion",
+            "created": 1685860619,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 616,
+                "completion_tokens": 123,
+                "total_tokens": 739
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | はじめまして | - | - | - |\n| 2 | です | ガキ | - | - |\n| 3 | 書いちゃってたりもする | 自分 | - | 本 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000110": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbePnGv1tt8tenMhA0FfI1g5DUZJ",
+            "object": "chat.completion",
+            "created": 1685860629,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 738,
+                "completion_tokens": 315,
+                "total_tokens": 1053
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "以下が、求められた情報をテーブル形式で出力したものです。\n\n| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 開発された | アルミニウム製スーツケース | なし | 熱帯地方への旅行 |\n| 1 | 軽く、頑丈だ | アルミニウム製スーツケース | なし | なし |\n| 2 | 強い | シリーズ | なし | 衝撃、急激な気温の変化 |\n| 3 | 感じさせてくれる | デザイン | リモワの伝統 | なし |\n\nなお、文1については、述語が2つあるため、2行に分けて出力しています。また、目的語や斜格の要素がない場合には、「なし」と記載しています。"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000111": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nbepij5wl88S5s3UIOdNdDqt7AHh",
+            "object": "chat.completion",
+            "created": 1685860655,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 668,
+                "completion_tokens": 125,
+                "total_tokens": 793
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 来る | 方 | | |\n| 2 | させる | 手助け | | |\n| 3 | 創る | 私 | スタイル | お客様に似合う |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000113": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nbf1sKpqKG5j1bvoGlhxpjrIZLAJ",
+            "object": "chat.completion",
+            "created": 1685860667,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 667,
+                "completion_tokens": 159,
+                "total_tokens": 826
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | ない | パック |  |  |\n| 2 | する | ヒップベルト |  |  |\n| 2 | 取り外す | ヒップベルト |  |  |\n| 3 | 備える |  | セーフティライトアタッチメント | フロント下部 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000117": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbfEkvq2pZRwupDeS6nPqXpaVvHn",
+            "object": "chat.completion",
+            "created": 1685860680,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 639,
+                "completion_tokens": 175,
+                "total_tokens": 814
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 与える | 女の子、著者、人一般 | 仕事、ポルタ | なし |\n| 2 | 駆けつける | 優しい子、著者、人一般 | ピンチ、ポルタ | なし |\n| 3 | 好き | 著者、人一般 | ポルタ | なし |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000118": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbfR41eX0pUFkCxX0O0oWZ2abuqa",
+            "object": "chat.completion",
+            "created": 1685860693,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 637,
+                "completion_tokens": 159,
+                "total_tokens": 796
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 離れます | 著者 | インターネット、ツイッター | 事情 |\n| 2 | ありました | 著者、相手 | なし | なし |\n| 3 | 祈っています | 著者 | なし | 日本、原発の無い日本、こと |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000121": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nbfe8KqLa2WfNAcAChMTwhfYeTRF",
+            "object": "chat.completion",
+            "created": 1685860706,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 662,
+                "completion_tokens": 176,
+                "total_tokens": 838
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 登録＆メール受け取りでチェック | (著者) | (ツアー日程、リリース情報など) | (なし) |\n| 2 | お見逃しないように | (著者) | (更新) | (なし) |\n| 3 | なし | (迷惑メール) | (なし) | (なし) |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000123": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbfzAf1pbLrw5pMSRit4RcakbC8f",
+            "object": "chat.completion",
+            "created": 1685860727,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 673,
+                "completion_tokens": 156,
+                "total_tokens": 829
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | なる | スポーツ心理学者 |  | フロリダテニスアカデミーのメンタルコンディショニングコーチ |\n| 2 | 話す |  | 日本語 |  |\n| 3 | 思われる |  |  | 奈津から |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000125": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbgC7JnbnH1gyHjkI46RB0EGnvg6",
+            "object": "chat.completion",
+            "created": 1685860740,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 640,
+                "completion_tokens": 149,
+                "total_tokens": 789
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|見たら|私、著者、人|ロシアン|ペットショップ|\n|2|見える|ロシアン|どれも|同じ|\n|3|つきません|区別|省略されている要素なし|省略されている要素なし|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000126": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbgThS4slS0AwttSrVpHs9vHtYAk",
+            "object": "chat.completion",
+            "created": 1685860757,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 648,
+                "completion_tokens": 144,
+                "total_tokens": 792
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | やる | 誰 |  |  |\n| 2 | 始まる | プロ野球を愛する全ての方 | プロ野球ライフ |  |\n| 3 | なる |  |  | プロスピに遊ぶ人 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000128": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbgfrAYG0q0HYNsrbjtanQHlS3vc",
+            "object": "chat.completion",
+            "created": 1685860769,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 682,
+                "completion_tokens": 186,
+                "total_tokens": 868
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 開発しました | 私たち、開発者、エンジンメンテナンス | レーシングオイルフィラーキャップ | 使用性 |\n| 2 | 最適化した | 私たち、開発者 | グリップ | - |\n| 3 | 装着する | 私たち、開発者 | ストッパースプリング | スプリングホール |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000130": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbguWcsIzdiadWLJCJNDrRj4KBU2",
+            "object": "chat.completion",
+            "created": 1685860784,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 634,
+                "completion_tokens": 156,
+                "total_tokens": 790
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | なし | コンサドーレ札幌 | なし | なし |\n| 2 | 勝つ | 話者（著者） | なし | なし |\n| 3 | たぐり寄せる | それ | なし | 審判も甘かったですが |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000133": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nbh8tUf4ny3Fy1eNEXPaUqYwSdDa",
+            "object": "chat.completion",
+            "created": 1685860798,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 647,
+                "completion_tokens": 167,
+                "total_tokens": 814
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 渇いていた | 口 | (省略) | (省略) |\n| 1 | なる | (省略) | (省略) | (省略) |\n| 2 | 思う | (省略) | お味 | (省略) |\n| 3 | 買う | 著者 | (省略) | 冬 |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000134": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbhSjIdrCuvIGITL9C2dFVw1jESQ",
+            "object": "chat.completion",
+            "created": 1685860818,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 628,
+                "completion_tokens": 132,
+                "total_tokens": 760
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 買える | 貴方 | 車 |  |\n| 2 | お答えいたします |  |  |  |\n| 3 | 好評です | 代行 |  | オークション |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000136": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbhdmiwGIzbHp7XXD5ogGcKycACq",
+            "object": "chat.completion",
+            "created": 1685860829,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 718,
+                "completion_tokens": 134,
+                "total_tokens": 852
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|戻ってしまった|影響|なし|［１］|\n|2|ある|なし|こと|低調なこと|\n|3|勝つ|作品|なし|『木曜ドラマ９』に|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000139": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbhoBdP0FaKhx5ZqikvxSEHiLkha",
+            "object": "chat.completion",
+            "created": 1685860840,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 632,
+                "completion_tokens": 137,
+                "total_tokens": 769
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 小ぶりでした | (著者) | | |\n| 2 | 組み立ても楽しかったです | (著者) | | |\n| 3 | おいて | (著者) | | リビング |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000140": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nbi527WnE4Uz4Zle01XQwGOgOtNM",
+            "object": "chat.completion",
+            "created": 1685860857,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 654,
+                "completion_tokens": 170,
+                "total_tokens": 824
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|完成する|山ぶどう酒２００８|なし|なし|\n|1|開始する|発売|なし|12月22日から|\n|2|始まる|予約|なし|なし|\n|2|完売する|ほとんど|なし|なし|\n|3|絶好調だ|売れ行き|なし|よう|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000141": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbiJ4PaS3vdw1RPi1l1okW3lCnsr",
+            "object": "chat.completion",
+            "created": 1685860871,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 695,
+                "completion_tokens": 216,
+                "total_tokens": 911
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|ある|キャリーオーバー|当せん金額|場合|\n|1|ある|場合|当せん金額|最高４億円|\n|1|ある|場合|最高２億円|場合|\n|2|認める|重複当せん|各等級間|\n|3|購入する|人|口|200円で|\n|3|ある|キャリーオーバー|状態|ない|\n|3|なる|期待値|約90円|ある|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000142": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbibCr2U7PTVwl8Ccgu6MwutwkEK",
+            "object": "chat.completion",
+            "created": 1685860889,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 629,
+                "completion_tokens": 137,
+                "total_tokens": 766
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 作りに良いです | ケーキ |  |  |\n| 2 | 購入できる |  |  | 枚単位 |\n| 3 | 買い物できます |  |  | 無駄なく |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000143": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbimZJ92TZsy2DehDO4Ae6myraju",
+            "object": "chat.completion",
+            "created": 1685860900,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 656,
+                "completion_tokens": 186,
+                "total_tokens": 842
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 持ち運ぶ | (著者) | | |\n| 2 | 使える | (高圧洗浄機) | | (スターターセット) |\n| 2 | ある | (スターターセット) | | |\n| 3 | 洗い落とす | (水流) | (汚れ) | | \n| 3 | 噴射する | (水流) | | |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000144": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nbj1ZZENAFFq0PkG7bxJ0reftC5e",
+            "object": "chat.completion",
+            "created": 1685860915,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 627,
+                "completion_tokens": 135,
+                "total_tokens": 762
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | ごっちゃになります | 敬語とタメ口 |  |  |\n| 2 | すいません |  |  |  |\n| 3 | 大丈夫です | 私 |  | タメ口でも |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000145": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbjD9pcgj53XB8eGRC2ESF74MIVa",
+            "object": "chat.completion",
+            "created": 1685860927,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 629,
+                "completion_tokens": 137,
+                "total_tokens": 766
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 測る | 赤ちゃん | 体温 | なかなか |\n| 2 | いる | 赤ちゃん |  |  |\n| 3 | 対策 |  | インフルエンザ |  |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000147": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbjONZJSXPcGUD2LI05IfP4vf7gg",
+            "object": "chat.completion",
+            "created": 1685860938,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 727,
+                "completion_tokens": 153,
+                "total_tokens": 880
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|誕生する|ジャアファル・アッ＝サーディク| | |\n|2|孫である|父|ムハンマド・アル＝バーキル| |\n|3|あたる| | |初代アリー、ファーティマ・ザフラー、フサイン|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000148": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nbjbm0AMWCU3NMpqBLU1VDYCCFLY",
+            "object": "chat.completion",
+            "created": 1685860951,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 673,
+                "completion_tokens": 159,
+                "total_tokens": 832
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|実施しています|（不明）|白髪染め|へナでの|\n|2|お持ちいただく|切抜き|（不明）|（不明）|\n|3|見つけていきます|（不明）|お客様目線の似合う髪形|より|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000149": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbjpOZltkHAr8dk8uLCUkXYM7FPh",
+            "object": "chat.completion",
+            "created": 1685860965,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 746,
+                "completion_tokens": 180,
+                "total_tokens": 926
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|始める|自身|ヨガ|１年あまり|\n|2|ある|心と体|ヨガの秘密と魅力|なし|\n|3|収録する|ドキュメンタリーインドヨガ聖地への旅、彼女自身|インド・ヨガ美しくなる１６のポーズ|２つのコンテンツ|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000150": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nbk4o6HPQ3GratlWaGxqFCXOph3R",
+            "object": "chat.completion",
+            "created": 1685860980,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 684,
+                "completion_tokens": 164,
+                "total_tokens": 848
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | こられた | 「せき亭」さん | - | - |\n| 2 | 登場です | 「博多くるみ」 | - | - |\n| 3 | なる | かるーい歯ざわりとほどよい甘さ | - | - |\n| 3 | くせになる | - | - | 博多くるみ |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000153": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbkH6l3dDNFJAjaWhgayWZiuecWI",
+            "object": "chat.completion",
+            "created": 1685860993,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 716,
+                "completion_tokens": 232,
+                "total_tokens": 948
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|学ぶ|著者|アクターズ・スタジオ|\n|1|する|著者|ブロードウェイ・デビュー|\n|2|する|著者|『群衆の中の一つの顔』|\n|2|デビューする|著者|『群衆の中の一つの顔』|\n|3|演じる|主人公の妻|\n|3|ノミネートする|著者|アカデミー賞|\n|3|陥る|主人公の妻|アルコール依存症|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000154": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7Nbkai8wpHniMzkWNULAKen1232pP",
+            "object": "chat.completion",
+            "created": 1685861012,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 703,
+                "completion_tokens": 167,
+                "total_tokens": 870
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "|文番号|述語|主語（ガ格）の候補|目的語（ヲ格）の候補|斜格の要素（ニ格）の候補|\n|---|---|---|---|---|\n|1|経て|著者| | |\n|1|積む|著者|トレーニング| |\n|2|いた|力道山| | |\n|3|行っていて|遠藤|マッチ|仙台市でハロルド坂田と|\n|3|される| | |遠藤のデビュー戦と|"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000161": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NbknNeLnBzjlY1BcEaO7S4pQNfHv",
+            "object": "chat.completion",
+            "created": 1685861025,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 685,
+                "completion_tokens": 327,
+                "total_tokens": 1012
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "以下が、求められた情報をテーブル形式で出力したものです。\n\n| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | 作られる | 缶 | - | 日本仕様の缶 |\n| 1 | 輸入される | 一定量 | - | リードオフジャパンを通じて |\n| 2 | 記される | - | アメリカ産 | - |\n| 3 | 委託する | ペルー | 缶の製造 | アメリカに | \n\nなお、文1については「日本仕様の缶」が「主語（ガ格）」の候補となりますが、文脈から考えると「缶」がより自然な主語となるため、ここでは「缶」を主語としています。また、文2については「この缶」が省略されているため、主語の候補はありません。"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    },
+    "w201106-0002000162": {
+        "status": "ok",
+        "response": {
+            "id": "chatcmpl-7NblEbwEytCLMGtLcZ5263kl3uNLV",
+            "object": "chat.completion",
+            "created": 1685861052,
+            "model": "gpt-3.5-turbo-0301",
+            "usage": {
+                "prompt_tokens": 648,
+                "completion_tokens": 173,
+                "total_tokens": 821
+            },
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "| 文番号 | 述語 | 主語（ガ格）の候補 | 目的語（ヲ格）の候補 | 斜格の要素（ニ格）の候補 |\n| --- | --- | --- | --- | --- |\n| 1 | グッドルッキングだ | (なし) | (なし) | (なし) |\n| 2 | 加えた | (タンクトップ) | (ステッチ) | (なし) |\n| 2 | つく | (差) | (なし) | (なし) |\n| 3 | 必要だ | (なし) | (なし) | (コーデ) |"
+                    },
+                    "finish_reason": "stop",
+                    "index": 0
+                }
+            ]
+        },
+        "phase": "dev"
+    }
+}
