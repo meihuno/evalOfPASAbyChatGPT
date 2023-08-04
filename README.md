@@ -71,6 +71,15 @@ pyhon eval_conversation.py
 Then F1 scores will be showed in the terminal.
 
 # How to conduct unit tests
+
+If you change the evaluation scripts, then you should re-make the intermediate-date for unit test by the following command.
+
+``` 
+python parse_knp_file.py -p test_data
+```
+
+Then you can counduct unit test in the following commands.
+
 ``` 
 python -m unittest discover -s ./test -p test_parse_knp_file.py
 python -m unittest discover -s ./test -p test_eval_conversation.py
