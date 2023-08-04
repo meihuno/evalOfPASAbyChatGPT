@@ -7,6 +7,8 @@ This repository contains the evaluation python scripts and python scripts for co
 
 The evaluation details is reported in the following blog post.
 
+https://meihuno.hatenablog.com/entry/2023/08/03/163316
+
 ## Existing Predicate arguments structure analysis results
 
 The exisitng predicate argument structure analysis results which I conducted by using gpt-3.5-turbo-0301 is contained in ./ok_result_dev and ./ok_result_test. Also see AnaphoraResolutionbyUsingGPT3.ipynb.
