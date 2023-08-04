@@ -5,7 +5,7 @@
 I evaluated the Japanese predicate argument structure analysis by using ChatGPT and Kyoto University Web Document Leads Corpus(KWLDLC). 
 This repository contains the evaluation python scripts and python scripts for communicate with ChatGPT via openai api.
 
-The evaluation details is reported in the following blog post.
+The evaluation details is reported in the following blog post (in Japanese).
 
 https://meihuno.hatenablog.com/entry/2023/08/03/163316
 
