@@ -1,0 +1,115 @@
+{
+    "w201106-0002000374": {
+        "result": {
+            "compare_translation": [
+                {
+                    "status": "ok",
+                    "response": {
+                        "id": "chatcmpl-8xo6xlpbkhs4uCDnrI9C45ewm2DqA",
+                        "choices": [
+                            {
+                                "finish_reason": "stop",
+                                "index": 0,
+                                "logprobs": null,
+                                "message": {
+                                    "content": "\n| 文番号 | 述語     | 主語   | 目的語 | 補語（ニ格） |\n|--------|----------|--------|--------|--------------|\n| 1      | 研修中から |        |        | リラックスな  |\n| 2      | 受信なのに |        |        | インセン有    |\n| 3      | 行う     | 弊社   | 受注   | コールセンター |",
+                                    "role": "assistant",
+                                    "function_call": null,
+                                    "tool_calls": null
+                                }
+                            }
+                        ],
+                        "created": 1709264671,
+                        "model": "gpt-3.5-turbo-0125",
+                        "object": "chat.completion",
+                        "system_fingerprint": "fp_86156a94a0",
+                        "usage": {
+                            "completion_tokens": 119,
+                            "prompt_tokens": 412,
+                            "total_tokens": 531
+                        }
+                    },
+                    "input": [
+                        {
+                            "role": "user",
+                            "content": "述語項構造解析とは、文中の動詞や述語とそれに関連する要素（項）の関係を抽出するタスクです。\n述語項構造解析では、文の中で主語、目的語、補語（ニ格）などの要素がどの動詞や述語に関連しているかを特定します。\n  以下は述語項目構造解析の対象の文です。これらの文はブログ記事の冒頭3文を抜粋したものです。\n\n文1「研修中からリラックスなコールセンターです。」\n文2「受信なのにインセン有！」\n文3「弊社は、ラジオや新聞などでおなじみの通信販売の受注をメインに行うコールセンター。」 \n\n先に挙げたブログ記事の冒頭3文に対して述語項構造解析を行い、文番号、述語、主語、目的語、補語（ニ格）を1つの行とするテーブル形式で出力してください。述語は1文に複数ある場合があり、全ての述語を抽出してください。テーブルにはヘッダーをつけてください。テーブルは必ず「|」文字で左端と右端とを閉じておいてください。\n  "
+                        }
+                    ]
+                },
+                {
+                    "status": "ok",
+                    "response": {
+                        "id": "chatcmpl-8xo76imaT7y3D1e7VdpRtiEPCsw8S",
+                        "choices": [
+                            {
+                                "finish_reason": "stop",
+                                "index": 0,
+                                "logprobs": null,
+                                "message": {
+                                    "content": "| Sentence Number | Predicate | Subject | Object | Complement |\n|-----------------|-----------|--------|--------|------------|\n| 1               | is        | center |        | relax      |\n| 2               | have      |         |        | incentive  |\n| 3               | perform   | center  | orders |            |",
+                                    "role": "assistant",
+                                    "function_call": null,
+                                    "tool_calls": null
+                                }
+                            }
+                        ],
+                        "created": 1709264680,
+                        "model": "gpt-3.5-turbo-0125",
+                        "object": "chat.completion",
+                        "system_fingerprint": "fp_86156a94a0",
+                        "usage": {
+                            "completion_tokens": 70,
+                            "prompt_tokens": 229,
+                            "total_tokens": 299
+                        }
+                    },
+                    "input": [
+                        {
+                            "role": "user",
+                            "content": "Please translate these sentences into English.\n\n  文1「研修中からリラックスなコールセンターです。」\n文2「受信なのにインセン有！」\n文3「弊社は、ラジオや新聞などでおなじみの通信販売の受注をメインに行うコールセンター。」\n  \nPredicate-argument structure analysis is a task that involves extracting the relationships between verbs or predicates and their associated case elements (arguments) in a sentence. In predicate-argument structure analysis, the goal is to identify case elements such as subjects, objects, and complements (indirect objects) in a sentence and determine how they relate to specific verbs or predicates.\n  . Perform predicate-argument structure analysis on the above translated English sentences. \n  Output the results in a tabular format with columns for sentence number, predicate, subject, object, \n  and complement (indirect object), each represented in a single row. \n  "
+                        }
+                    ]
+                },
+                {
+                    "status": "ok",
+                    "response": {
+                        "id": "chatcmpl-8xo7Ge3lzgluoX9KjifddPAwMW2rV",
+                        "choices": [
+                            {
+                                "finish_reason": "stop",
+                                "index": 0,
+                                "logprobs": null,
+                                "message": {
+                                    "content": "| 文番号 | 述語 | 主語 | 目的語 | 補語（ニ格） |\n|---|---|---|---|---|\n| 1 | 書く | 私 | 手紙 | - |\n| 1 | 書く | 彼 | - | - |\n| 2 | read | I | the book | - |\n| 2 | read | I | it | - |\n| 3 | 読む | 彼 | 本 | - |\n| 3 | 読む | 彼 | それ | - |",
+                                    "role": "assistant",
+                                    "function_call": null,
+                                    "tool_calls": null
+                                }
+                            }
+                        ],
+                        "created": 1709264690,
+                        "model": "gpt-3.5-turbo-0125",
+                        "object": "chat.completion",
+                        "system_fingerprint": "fp_2b778c6b35",
+                        "usage": {
+                            "completion_tokens": 135,
+                            "prompt_tokens": 312,
+                            "total_tokens": 447
+                        }
+                    },
+                    "input": [
+                        {
+                            "role": "user",
+                            "content": "日本語と英語の述語項構造解析の結果を比較してください。日英の結果に何か差はありますか？\n  "
+                        },
+                        {
+                            "role": "user",
+                            "content": "日本語と英語の述語項構造解析の結果を矛盾なく1つのテーブルに統合してください。英語の述語項構造の結果を日本語に翻訳した上で（日本語に翻訳する際はブログ記事の3文内のテーブル現を用いてください）、述語項構造解析のテーブルは、文番号、述語、主語、目的語、補語（ニ格）を1つの行とするテーブル形式で出力してください。述語は1文に複数ある場合があり、全ての述語を抽出してください。テーブルにはヘッダーをつけてください。テーブルは必ず「|」文字で左端と右端とを閉じておいてください。\n  "
+                        }
+                    ]
+                }
+            ]
+        },
+        "status": "ok"
+    }
+}
