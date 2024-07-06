@@ -1,154 +1,57 @@
-# orgの取得、idと文のlistで保持
 import re
 import glob
 import os
 import pprint as pp
 import json
 import unicodedata
+import sys
+import random
+from sentence_parser import SentenceParser
+# スクリプトがあるディレクトリを取得
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# libディレクトリの絶対パスを構築して追加
+lib_path = os.path.join(script_dir, 'lib')
+sys.path.append(lib_path)
+
 import option_util as opu
+import eval_util_evaluation as eval_util_evaluation
+import eval_util_knp as eval_util_knp
+import eval_util_string_match as eu_strmatch
+import eval_util_count as eu_count
+import option_util as optu
 from json_read_write import JsonReadWrite
+
+import target_file_util as tfu
+import experimental_util as experimental_util
+import prompt_util as prompt_util
+
 # KWDLC/org/w201106-00000/w201106-0000069777.org
 BASE_DIR = './'
 rel_tag_pattern = re.compile(r'(\w+)="([^"]+)"')
 
 class EvalConversation(object):
-    def __init__(self):
+    def __init__(self, verbose_flag=False):
         self.target_case_dict = {'ガ': '主語', 'ヲ' : '目的語', 'ニ' : 'ニ格'} 
-        self.gr2case_dict = {'主語': 'subj', '目的語': 'obj', 'ニ格': 'obl'} # 二格
+        self.gr2case_dict = {'主語': 'subj', '目的語': 'obj', 'ニ格': 'obl', '述語': 'pred'} # 二格
         self.table_regexp = re.compile('^\|.*\|$')
+        self.sennum_regexp = re.compile('^\|\s*文\d+\s*')
         self.case_list = ['subj', 'obj', 'obl', 'pred', 'all']
         self.rel_dist_list = ['inter_sentence', 'intra_sentence', 'outer']
+        self.rel_type_list = ['dep', 'zero', 'same_bunsetsu', 'rentai']
+        self.verbose = verbose_flag 
 
-    def _ret_init_count_dict(self):
-        count_dict = {}
-        for gr in self.case_list:
-            count_dict[gr] = self._ret_init_eval_count_dict()
-        return count_dict
+        self.error_case_dict = {'case_out': 0, 'rel_shift':0, 'pred_not_detect': 0 }
+        self.case_lost_dict = {'subj':0, 'obj':0, 'obl':0 }
 
-    def _ret_init_eval_count_dict(self):
-        num_dict = {'sout':0, 'csout':0, 'cnum': 0 }
-        return num_dict
-    
-    def _ret_init_case_count_dict(self):
-        eval_count_dict = {}
-        for gr in self.case_list:
-            eval_count_dict[gr] = 0            
-        return eval_count_dict
-
-
-    def _startswith(self, str1, str2, length=1):
-        for i in range(len(str1), 0, -1):
-            substring = str1[:i]
-            if len(substring) > length:
-                if str2.startswith(substring) == True:
-                    return True
-            else:
-                break
-        return False
-
-    def _partmatch(self, str1, str2, length=1):
-        """片方の文字列の先頭と末尾を削っていき2文字以上の場合にもう一方の文字列に一致がある場合を検出する"""
-        l = list(str1)
-        cursor1 = 0
-        cursor2 = len(l)
-        while cursor1 < cursor2:
-            cursor1 += 1
-            cstr1 = l[cursor1:cursor2]
-            if len(cstr1) > length:
-                if ''.join(cstr1) in str2:
-                    return True
-            cursor2 = cursor2 - 1
-            cstr2 = l[cursor1:cursor2]
-            if len(cstr2) > length:
-                if ''.join(cstr1) in str2:
-                    return True
-        return False
-
-    def _ret_match_type(self, crr_str, gpt_str):
-        
-        if crr_str == '筆者' and gpt_str == '著者':
-            return 'author'
-        elif crr_str == '著者' and gpt_str == '筆者':
-            return 'author'
-
-        mstr = 'not_match'
-        if gpt_str == '-' or gpt_str == '':
-            return mstr
-
-        if crr_str == gpt_str:
-            return 'match'
-        
-        if gpt_str.startswith(crr_str) == True:   
-            mstr = "gpt_start_with_crr"
-        elif crr_str.startswith(gpt_str) == True:   
-            mstr =  "crr_start_with_gpt"
-        elif crr_str in gpt_str:
-            mstr =  "gpt_long"
-        elif gpt_str in crr_str:
-            mstr = "crr_long"
-        elif self._startswith(gpt_str, crr_str, length=1):
-            mstr = "head_match"
-        elif self._startswith(crr_str, gpt_str, length=1):
-            mstr = "head_match"
-        elif self._partmatch(gpt_str, crr_str, length=1):
-            mstr = "part_match"
-        elif self._partmatch(crr_str, gpt_str, length=1):
-            mstr = "part_match"
-        
-        return mstr
-
-    def ret_evaluation_result_dict(self, count_dict):
-        rdict = {}
-        if 'all' in count_dict:
-           for key, num_dict in count_dict.items():
-                rdict[key] = self._ret_eval_result_dict(num_dict)
-        else:
-            for key, num_dict in count_dict.items():
-                rdict[key] = {}
-                rdict[key] = self.ret_evaluation_result_dict(num_dict)
-
-        return rdict
-
-    def _ret_eval_result_dict(self, count_dict):
-        cnum = count_dict['cnum']
-        sout = count_dict['sout']
-        csout = count_dict['csout']
-        rdict = self._ret_f1_score_dict(csout, sout, cnum)
-        return rdict
-
-    def _ret_f1_score_dict(self, correct_system_outputs, system_outputs, correct_num):
-        """
-        F値を計算する
-        """
-        if system_outputs == 0:
-            if correct_system_outputs == 0:
-                precision = 0.0
-            elif correct_system_outputs > 0:
-                precision = 0.0
-        else:
-            if correct_system_outputs > system_outputs:
-                precision = 0.0
-            else: 
-                precision = correct_system_outputs / system_outputs
-
-        if correct_num == 0:
-            if correct_system_outputs == 0:
-                recall = 0.0
-            else:
-                recall = 0.0
-        else:
-            recall = correct_system_outputs / correct_num
-
-        if precision + recall == 0.0:
-            f1_score = 0.0
-        else:
-            f1_score = 2 * (precision * recall) / (precision + recall)
-        return {'precision': precision, 'recall': recall, 'f1_score': f1_score}
+    def show_error_num(self):
+        print(self.error_case_dict)
+        print(self.case_lost_dict)
 
     def _cout_up_crr_sout(self, senid,  crr_target_str, gpt_target_line, case_str, crr_sout_dict):
         for gpt_target_str in gpt_target_line.split('、'):
-            check = self._ret_match_type(crr_target_str, gpt_target_str)
-            if not self._ret_match_type(crr_target_str, gpt_target_str) == 'not_match':
+            check = eu_strmatch.ret_match_type(crr_target_str, gpt_target_str)
+            if not eu_strmatch.ret_match_type(crr_target_str, gpt_target_str) == 'not_match':
                 crr_sout_dict[case_str] += 1
                 crr_sout_dict['all'] += 1
     
@@ -171,7 +74,7 @@ class EvalConversation(object):
                     crr_target = case_elem['target']
                     
                     case_str = self.gr2case_dict[case_elem['gr']]    
-                    pred_check = self._ret_match_type(crr_pred_str, gpt_pred_str)
+                    pred_check = eu_strmatch.ret_match_type(crr_pred_str, gpt_pred_str)
                     # そもそもPredがマッチしない。
                     if not pred_check == 'not_match':
                         if case_str == 'subj' or case_str == 'obj' or case_str == 'obl':
@@ -180,7 +83,7 @@ class EvalConversation(object):
                             
     def _ret_crr_sout_num_dict(self, knp_pred, chatgpt_result):
         # 出力のうち正解したものをカウントする
-        crr_sout_dict = self._ret_init_case_count_dict()
+        crr_sout_dict = eu_count.ret_init_case_count_dict(self.case_list)
         gpt_pred_dict = {}
         crr_pred_dict = {}
 
@@ -211,7 +114,7 @@ class EvalConversation(object):
                 gpt_pred_set = gpt_pred_dict[senid]
                 for crr_pred_str in list(pred_set):
                     for gpt_pred_str in list(gpt_pred_set):
-                        pred_check = self._ret_match_type(crr_pred_str, gpt_pred_str)
+                        pred_check = eu_strmatch.ret_match_type(crr_pred_str, gpt_pred_str)
                         if not pred_check == 'not_match':
                             crr_sout_dict['pred'] += 1
                             break
@@ -228,6 +131,239 @@ class EvalConversation(object):
         else:
             return False
 
+    
+    def ret_knp_count_dict(self, knp_pred_dict, org_dict, knp_pred_ana_dict, chatgpt_dict, stat_dict, target_type='anaphora'):
+        """ F1スコアを計算するための計数結果の辞書を返す。
+        
+        """
+        count_dict = {}
+        for gr in self.case_list:
+            count_dict[gr] = eu_count.ret_init_eval_count_dict()
+
+        rel_count_dict = eu_count.ret_init_rel_count_dict(self.case_list, self.rel_type_list, self.rel_dist_list)
+        
+        # 正解は全部通す
+        knp_pred = eval_util_knp.ret_knp_pred_kv_dict(knp_pred_dict, self.gr2case_dict, target_type='all')
+        
+        # 評価対象はfilterする
+        knp_pred_ana = eval_util_knp.ret_knp_pred_kv_dict(knp_pred_ana_dict, self.gr2case_dict, target_type=target_type)
+
+        for senid, crr_bunsetsu_dict in knp_pred.items():
+            ana_sen_bunsetsu_dict = knp_pred_ana[senid]
+            chatgpt_sen_dict = {}
+            if senid in chatgpt_dict:
+                chatgpt_sen_dict = chatgpt_dict[senid]
+            
+            # もしKNPにpred検出ができていない時にchatGPTさんが検出できていたら、gainじゃよ！
+            # 落としていたらloseだよ
+            # もしkNPの格を検出できてない時にChatGPTさんが検出できていたらgainだよ。落としていたらloseだよ
+            for crr_bun, pred_id_dict in crr_bunsetsu_dict.items():
+                
+                knp_pred_has = False
+                chat_gpt_pred_has = False
+                
+                knp_case_has = False
+                chat_gpt_case_has = False
+
+                ana_pred_bunsetsu_dict = {}
+                if crr_bun in ana_sen_bunsetsu_dict:
+                    ana_pred_bunsetsu_dict = ana_sen_bunsetsu_dict[crr_bun]
+                
+                for pred_id, sub_dict in pred_id_dict.items():
+                    knp_pred_dict = {'case':{} }
+
+                    crr_case_set = set(sub_dict['case'].keys())
+
+                    if pred_id in ana_pred_bunsetsu_dict:
+                        knp_pred_dict = ana_pred_bunsetsu_dict[pred_id]
+                        knp_pred_has = True
+                        knp_case_set = set(knp_pred_dict['case'].keys())
+
+                        if knp_case_set == crr_case_set:
+                            knp_case_has = True
+
+                    for gr, gr_list in sub_dict['case'].items():
+
+                        for tmp_dict in gr_list:
+                            rel_dist = tmp_dict['rel_dist']
+                            rel_type = tmp_dict['rel_type']
+                            target = tmp_dict['surface']
+                            if rel_type == 'zero':
+                                rel_type = f'{rel_type}_{rel_dist}' 
+
+                            rel_count_dict[rel_type][gr]['cnum'] += 1
+                            count_dict[gr]['cnum'] += 1
+
+                            # 正解の中にchatgptと一致するものがあるか
+                            for chat_gpt_pred, chatgpt_case_list in chatgpt_sen_dict.items():
+                                chat_gpt_pred_match_type = eu_strmatch.ret_match_type(chat_gpt_pred, crr_bun)
+                                if not chat_gpt_pred_match_type == 'not_match':
+                                    chat_gpt_pred_has = True
+                                    for e in chatgpt_case_list:
+                                        evalue = e[gr]
+                                        # 各caseごと1回チェックする
+                                        if evalue == '-' or evalue == 'なし' or evalue == '':
+                                            pass
+                                        else:
+                                            chat_gpt_match = eu_strmatch.ret_match_type(evalue, target)
+                                            # chatgpt と 正解が一致
+                                            if not chat_gpt_match == 'not_match':
+                                                # KNPさんは解析できてない
+                                                # print(["yes chatgpt", evalue, gr, crr_bun])
+                                                stat_dict['new_one'][gr] += 1    
+                                                break
+                                                
+                    count_dict['pred']['cnum'] += 1
+
+                for chat_gpt_pred, chatgpt_case_list in chatgpt_sen_dict.items():
+                    chatgpt_case_set = set()
+                    for e in chatgpt_case_list:
+                        for ckey in ['subj', 'obj', 'obl']:
+                            if e[ckey] == '-' or e[ckey] == 'なし' or e[ckey] == '':
+                                pass
+                            else:
+                                chatgpt_case_set.add(ckey)
+                    
+                    # print(["Case gogo", "chatgpt", chatgpt_case_set, "correct", crr_case_set])
+                    if chatgpt_case_set == crr_case_set:
+                        chat_gpt_case_has = True
+                
+                if chat_gpt_pred_has == True and knp_pred_has == True:
+                    stat_dict['pred']['even'] += 1
+                elif chat_gpt_pred_has == False and knp_pred_has == True:
+                    stat_dict['pred']['lost'] += 1
+                elif chat_gpt_pred_has == True and knp_pred_has == False:
+                    stat_dict['pred']['gain'] += 1
+                elif chat_gpt_pred_has == False and knp_pred_has == False:
+                    stat_dict['pred']['difficult'] += 1
+
+                if chat_gpt_case_has == True and knp_case_has == True:
+                    stat_dict['case']['even'] += 1
+                elif chat_gpt_case_has == False and knp_case_has == True:
+                    stat_dict['case']['lost'] += 1
+                elif chat_gpt_case_has == True and knp_case_has == False:
+                    stat_dict['case']['gain'] += 1
+                elif chat_gpt_case_has == False and knp_case_has == False:
+                    stat_dict['case']['difficult'] += 1
+
+        for senid, pred_bunsetsu_dict in knp_pred_ana.items():
+            crr_bunsetsu_dict = knp_pred[senid]
+
+            chatgpt_sen_dict2 = {}
+            if senid in chatgpt_dict:
+                chatgpt_sen_dict2 = chatgpt_dict[senid]
+
+            for bunsetsu, pred_id_dict in pred_bunsetsu_dict.items():
+                # KNPのpredとchatgptのpredとの比較
+                
+                if bunsetsu in crr_bunsetsu_dict:
+                    count_dict['pred']['csout'] += 1
+
+                    # chatGPとKNPのPredの一致をとる
+                    chatgpt_case_list = []
+                    for chatbun, clist in chatgpt_sen_dict2.items():
+                        cmatch_type = eu_strmatch.ret_match_type(bunsetsu, chatbun)
+                        if chatbun == bunsetsu or ( not cmatch_type == 'not match'):
+                            chatgpt_case_list = clist
+                            break
+
+                    for pred_id, subdict in pred_id_dict.items():
+                        
+                        if pred_id in crr_bunsetsu_dict[bunsetsu]:
+                            crr_case_dict = crr_bunsetsu_dict[bunsetsu][pred_id]['case']
+                            
+                            for gr, case_list in subdict['case'].items():
+                                # KNPの出力の各格について、
+
+                                for sys_out_dict in case_list:
+                                    sstr = sys_out_dict['surface']
+                                    stid = sys_out_dict['target_id']
+                                    rel_type3 = eu_count.ret_rel_type_from_dict(sys_out_dict)
+                                    
+                                    # 正解と付き合わせて正解/不正解を判定する
+                                    check_flag = False
+                                    match_flag = False
+                                    chatgpt_flag = False
+
+                                    print(f"start line {gr} {sstr}")
+                                    print(["Initial", gr, chatgpt_flag, check_flag, match_flag])
+                                    if gr in crr_case_dict:
+                                        print(f"start, {gr}")
+                                        print(["gr", gr, chatgpt_flag, check_flag, match_flag])
+                                        crr_list = crr_case_dict[gr]
+                                        chatgpt_case_elem_string = ''
+                                        for chat_elem_dict in chatgpt_case_list:
+                                            chatgpt_case_elem_string = chat_elem_dict[gr]
+                                            for crr_case_elem_dict in crr_list:
+                                                cstr = crr_case_elem_dict['surface']
+                                                cmatch_type = eu_strmatch.ret_match_type(cstr, chatgpt_case_elem_string)
+                                                print(["correct vs chatgpt",  cmatch_type, cstr, chatgpt_case_elem_string, 'knp', crr_list])
+                                                # print(f"ChatGPT {cstr} {gr} {chatgpt_case_elem_string} {cmatch_type} {crr_bun}")
+                                                if not cmatch_type == 'not_match':
+                                                    chatgpt_flag = True
+                                            
+                                            if chatgpt_flag == True:
+                                                break
+                                        print(["chatgpt_over", gr, chatgpt_flag, check_flag, match_flag])
+
+                                        for crr_case_elem_dict in crr_list:
+                                            cstr = crr_case_elem_dict['surface']
+                                            ctid = crr_case_elem_dict['target_id']
+                                            crr_rel_type3 = eu_count.ret_rel_type_from_dict(crr_case_elem_dict)
+
+                                            match_type = eu_strmatch.ret_match_type(cstr, sstr)
+                                            
+                                            print(["correct vs knp",  gr, match_type, cstr, sstr])
+                                            # print(f"KNP {cstr} {gr} {sstr} {match_type} {crr_bun}")
+                                            if stid == ctid and rel_type3 == crr_rel_type3:
+                                                check_flag = True
+                                                break
+                                            # if not match_type == 'not_match':
+                                            if not match_type == 'not_match':
+                                                match_flag = True
+
+                                            if not match_type == 'not_match' and rel_type3 == crr_rel_type3:
+                                                check_flag = True
+                                                break
+                                        
+                                        print(["knp_over", gr, chatgpt_flag, check_flag, match_flag])
+
+                                    if check_flag == True:
+                                        count_dict[gr]['csout'] += 1
+                                        rel_count_dict[rel_type3][gr]['csout'] += 1
+                                    elif match_flag == True:
+                                        count_dict[gr]['csout'] += 1
+                                    elif check_flag == False and match_flag == False:
+                                        pass
+                                    
+                                    if chatgpt_flag == True and ( match_flag == True or check_flag == True):
+                                        stat_dict['resolution']['even'] += 1
+                                        print(["resolution even", gr, 'KNP', [chatgpt_flag, match_flag, check_flag], case_list, 'ChatGPT', chatgpt_case_list, 'Correct', crr_case_dict])
+                                    elif chatgpt_flag == False and ( match_flag == True or check_flag == True) :
+                                        stat_dict['resolution']['lost'] += 1
+                                        print(["resolution lost", gr, 'KNP', [chatgpt_flag, match_flag, check_flag], case_list, 'ChatGPT', chatgpt_case_list, 'Correct', crr_case_dict])
+                                    elif chatgpt_flag == True and ( match_flag == False and check_flag == False):
+                                        stat_dict['resolution']['gain'] += 1
+                                        print(["resolution gain", gr, 'KNP', [chatgpt_flag, match_flag, check_flag], case_list, 'ChatGPT', chatgpt_case_list, 'Correct', crr_case_dict])
+                                    elif chatgpt_flag == False and (match_flag == False and check_flag == False):
+                                        stat_dict['resolution']['difficult'] += 1
+                                        print(["resolution difficult", gr, 'KNP', [chatgpt_flag, match_flag, check_flag], case_list, 'ChatGPT', chatgpt_case_list, 'Correct', crr_case_dict])
+
+                for pred_id, sub_dict in pred_id_dict.items():
+                    for gr, gr_list in sub_dict['case'].items():
+                        for tmp_dict in gr_list:
+                            rel_dist = tmp_dict['rel_dist']
+                            rel_type = tmp_dict['rel_type']
+                            if rel_type == 'zero':
+                                rel_type = f'{rel_type}_{rel_dist}' 
+                            rel_count_dict[rel_type][gr]['sout'] += 1
+                            count_dict[gr]['sout'] += 1
+                count_dict['pred']['sout'] += 1
+        
+        # print([count_dict])
+        return count_dict, rel_count_dict
+
+
     def ret_count_dict(self, knp_pred, org_dict, chatgpt_result):
         """ F1スコアを計算するための計数結果の辞書を返す。
         格要素の一致/不一致を素直にカウントして精度を算出する。
@@ -239,8 +375,9 @@ class EvalConversation(object):
         
         count_dict = {}
         for gr in self.case_list:
-            count_dict[gr] = self._ret_init_eval_count_dict()
-        
+            count_dict[gr] = eu_count.ret_init_eval_count_dict()
+                
+
         # 出力の数をカウント
         for gpt_elem in chatgpt_result:
             for cstr in ['subj', 'obj', 'obl']:
@@ -249,7 +386,6 @@ class EvalConversation(object):
                     if not self._check_no_output(case_target_str) == True:
                         count_dict[cstr]['sout'] += 1
                         count_dict['all']['sout'] += 1
-            
             # pred は 1行 につき １つ出力
             count_dict['pred']['sout'] += 1
         
@@ -339,7 +475,7 @@ class EvalConversation(object):
         """
 
         rel_count_dict = {}
-         # 初期化
+        # 初期化
         for type1 in self.rel_dist_list:
             # type1 = self._ret_type_str(case_elem)
             if not type1 in rel_count_dict:
@@ -347,10 +483,10 @@ class EvalConversation(object):
             for gr in self.case_list:
                 # pred は対象外
                 if not gr == 'pred':
-                    rel_count_dict[type1][gr] = self._ret_init_eval_count_dict()
+                    rel_count_dict[type1][gr] = eu_count.ret_init_eval_count_dict()
         
         gpt_pred_dict = {}
-         # ChatGPT の 出力を 構造化する
+        # ChatGPT の 出力を 構造化する
         for gpt_elem in chatgpt_result:
             senid1 = gpt_elem['senid']
             if not senid1 in gpt_pred_dict:
@@ -374,7 +510,7 @@ class EvalConversation(object):
                 if senid in gpt_pred_dict:
                     
                     for gpt_pred_str, gpt_case_elem_dict in gpt_pred_dict[senid].items():
-                        pred_check = self._ret_match_type(crr_pred_str, gpt_pred_str)
+                        pred_check = eu_strmatch.ret_match_type(crr_pred_str, gpt_pred_str)
                         # Predがマッチした時にのみ、cnum、sout、csoutをカウントする。
                         if not pred_check == 'not_match':
                             
@@ -395,7 +531,7 @@ class EvalConversation(object):
                                         match_pred_dict[senid][gpt_pred_str][case_key_str] = {}
                                     match_pred_dict[senid][gpt_pred_str][case_key_str][gpt_target_str] = True
                                     
-                                    check = self._ret_match_type(crr_target, gpt_target_str)
+                                    check = eu_strmatch.ret_match_type(crr_target, gpt_target_str)
 
                                     if not check == 'not_match':
                                         rel_count_dict[type1][case_key_str]['csout'] += 1
@@ -417,14 +553,12 @@ class EvalConversation(object):
 
         return rel_count_dict
 
-
     def ret_sennum_list(self, org, pred, sennum):
         sen_count = 1
         sennum = unicodedata.normalize('NFKC', sennum)
         match = re.findall('\d+', sennum)
         match_list = []
         senid_list = list(org.keys())
-        
         if match:
             sennum = int(match[0])
             if len(senid_list) >= sennum:
@@ -460,11 +594,15 @@ class EvalConversation(object):
 
     def parse_conversation(self, org_dict, conversation):
         lines = conversation.split('\n')
+        start_flag = False
         rlist = []
         for tidx, line in enumerate(lines):
             match = self.table_regexp.match(line)
+            sennum_match = self.sennum_regexp.match(line)
+            if sennum_match:
+                start_flag = True
             if match:
-                if tidx > 1:
+                if tidx > 1 or start_flag == True:
                     elem_dict = self._parse_row_line(line)
                     sennum = elem_dict['sennum']
                     pred = elem_dict['pred']
@@ -479,7 +617,6 @@ class EvalConversation(object):
                         rlist.append(tmp_dict)
         
         return rlist
-
 
     def _set_sum_stat_all1(self, dict1):
         total = 0
@@ -508,6 +645,107 @@ class EvalConversation(object):
                         rdict[key][ckey] = 0
                     rdict[key][ckey] += num
         return rdict
+
+
+    def evaluate_knp(self, knp_pred_dict, train_test_id_dict, org_dict, knp_pasa_result_dict, knp_type, phase, dir1):
+        
+        ok_pred_content_dict, result_compose_dict, _ = self.ret_result_dict_series(dir1)
+        stat_dict = {}
+        for exp_name, ok_pred_content_dict1 in ok_pred_content_dict.items():
+            
+            print(f"----- Start Evaluation {exp_name} -----")
+            eval_result_dict = box.evaluate(knp_pred_dict, train_test_id_dict, org_dict, ok_pred_content_dict1, phase, exp_name)
+            stat_dict[exp_name] = eval_result_dict['all']['f1_score']
+            print(f"----- End Of Evaluation {exp_name} -----")
+
+        print(stat_dict)
+        # 辞書を値でソートされたタプルのリストに変換する
+        sorted_items = sorted(stat_dict.items(), key=lambda x: x[1])
+
+        # ソートされた結果を出力
+        for key, value in sorted_items:
+            print(key, value)
+
+        chat_gpt_dict = {}
+        for id1, conversation in ok_pred_content_dict['zero-shot-modify-knp'].items():
+                org_one_dict = org_dict[id1]
+                case_lines = self.parse_conversation(org_one_dict, conversation)
+                if not id1 in chat_gpt_dict:
+                    chat_gpt_dict[id1] = {}
+                for chat_elem in case_lines:
+                    senid = chat_elem['senid']
+                    if not senid in chat_gpt_dict[id1]:
+                        chat_gpt_dict[id1][senid] = {}
+                    
+                    cpred = chat_elem['pred']
+                    if not cpred in chat_gpt_dict[id1][senid]:
+                        chat_gpt_dict[id1][senid][cpred] = []
+                    chat_gpt_dict[id1][senid][cpred].append(chat_elem)
+
+        # 見せてもらおうか。KNPの項構造解析能力の性能とやらを。
+        lcount = 0
+        count_dict = {}
+        for gr in self.case_list:
+            count_dict[gr] = eu_count.ret_init_eval_count_dict()
+        
+        rel_count_dict = eu_count.ret_init_rel_count_dict(self.case_list, self.rel_type_list, self.rel_dist_list)
+
+        json_open = open('./intermediate_data/knp_pred_ana2.json', 'r')
+        knp_pred_ana_dict = json.load(json_open) 
+
+        def ret_stat_dict():
+            return {'gain':0, 'lost':0, 'even': 0, 'difficult': 0}
+        
+        def ret_new_one():
+            return {'subj':0, 'obj':0, 'obl': 0}
+
+        stat_dict = {'pred': ret_stat_dict(), 'case': ret_stat_dict(), 'resolution': ret_stat_dict(), 'new_one': ret_new_one() }
+
+        exist_5_id_list = ['w201106-0002000003', 'w201106-0002000000', 'w201106-0002000390', 'w201106-0002000186', 'w201106-0002000002']
+
+        for id in train_test_id_dict[phase]:
+            knp_pred = knp_pred_dict[id]
+            org_one_dict = org_dict[id]
+            chatgpt_one_dict = chat_gpt_dict[id]
+            
+            if id in knp_pasa_result_dict:
+                
+                if not id in exist_5_id_list:
+                    # continue
+                    pass
+
+                pasa_dict = knp_pred_ana_dict[id]
+                # pasa_dict = knp_pasa_result_dict[id]
+
+                sen_count_dict, sen_rel_count_dict = self.ret_knp_count_dict(knp_pred, org_one_dict, pasa_dict, chatgpt_one_dict, stat_dict, knp_type)
+                for case_str, count_key_dict in sen_count_dict.items():
+                    for cout_key, freq in count_key_dict.items():
+                        count_dict[case_str][cout_key] += freq
+                        if not case_str == 'pred':
+                            count_dict['all'][cout_key] += freq
+
+                for reltype, subdict in sen_rel_count_dict.items():
+                    for case_str, count_key_dict in subdict.items():
+                        for cout_key, freq in count_key_dict.items():
+                            rel_count_dict[reltype][case_str][cout_key] += freq
+                            rel_count_dict[reltype]['all'][cout_key] += freq
+                
+                lcount += 1
+        
+        self.show_error_num()
+
+        pp.pprint(count_dict)
+        eval_result_dict = eval_util_evaluation.ret_evaluation_result_dict(count_dict)
+        pp.pprint(eval_result_dict)
+        
+        print("----")
+        pp.pprint(rel_count_dict)
+        detail_eval_result_dict = eval_util_evaluation.ret_evaluation_result_dict(rel_count_dict)
+        pp.pprint(detail_eval_result_dict)
+        print([lcount, float(lcount)/float(len(train_test_id_dict[phase]))])
+
+        print(stat_dict)
+
 
     def analysis(self, knp_pred_dict, train_test_id_dict):
         # 本当の正解の数をカウント
@@ -542,7 +780,6 @@ class EvalConversation(object):
                         case_count_dict[phase][rel_dist][case_str] += 1
                         case_count_rt_dict[phase][rel_type][case_str] += 1
 
-       
         # pp.pprint(case_count_rt_dict)
         dict1 = self._ret_sub_sum_dict(case_count_dict)
         # pp.pprint(dict1)
@@ -553,11 +790,17 @@ class EvalConversation(object):
         pp.pprint(self._set_sum_stat_all(dict1))
         
 
-    def evaluate(self, knp_pred_dict, train_test_id_dict, org_dict, result_dict, phase):
+    def evaluate(self, knp_pred_dict, train_test_id_dict, org_dict, result_dict, phase, exp_name):
+        """ChatGPTの結果と正解データとの結果を比較するメソッド"""
         lcount = 0
-        count_dict = self._ret_init_count_dict()
+        count_dict = eu_count.ret_init_count_dict(self.case_list)
         detail_count_dict = {}
+        st = ['w201106-0002000003', 'w201106-0002000000', 'w201106-0002000390', 'w201106-0002000186', 'w201106-0002000002']
         for id in train_test_id_dict[phase]:
+            
+            #if not id in st:
+            #    continue
+
             knp_pred = knp_pred_dict[id]
             org_one_dict = org_dict[id] 
             
@@ -565,14 +808,26 @@ class EvalConversation(object):
                 conversation = result_dict[id]
                 case_lines = self.parse_conversation(org_one_dict, conversation)
                 
-                
                 count_dict1 = self.ret_count_dict(knp_pred, org_one_dict, case_lines)
+                # pp.pprint(count_dict1)
                 for case_str, count_sub_dict in count_dict1.items():
                     for count_type, freq in count_sub_dict.items():
                         count_dict[case_str][count_type] += freq
+                
+                crr_pred_dict, _ = prompt_util.ret_table_row_dict(knp_pred)
+                
+                if self.verbose == True:
+                    print(f"----- {id} 本文 -----")
+                    pp.pprint(org_one_dict)
+                    print(f"----- {id} 出力 -----")
+                    print(conversation)
+                    pp.pprint(case_lines)
+                    print(f"----- {id} 正解 -----")
+                    pp.pprint(crr_pred_dict)
+                    print(f"----- {id} カウント -----")
+                    pp.pprint(count_dict1)
 
                 detail_count_dict1 = self.ret_detail_count_dict(knp_pred, org_one_dict, case_lines)
-                
                 for type1, detail_count_sub_dict in detail_count_dict1.items():
                     if not type1 in detail_count_dict:
                         detail_count_dict[type1] = {}
@@ -586,52 +841,31 @@ class EvalConversation(object):
                 
                 lcount += 1
                 # break
-        pp.pprint(count_dict)
-        eval_result_dict = self.ret_evaluation_result_dict(count_dict)
-        pp.pprint(eval_result_dict)
-        table_line = box.ret_eval_simple_table_line(eval_result_dict)
-        print(table_line)
-
-        pp.pprint(detail_count_dict)
-        detail_eval_result_dict = self.ret_evaluation_result_dict(detail_count_dict)
-        pp.pprint(detail_eval_result_dict)
-
-        table_line = box.ret_eval_detail_table_line(detail_eval_result_dict)
-        print(table_line)
-
-    def ret_result_dict_series(self, dirname='ok_result_dev'):
-        # json_open = open('./sample_data/sample2.json', 'r')
-        ok_pred_content_dict = {}
-        result_compose_dict = {}
-        ok_results_list = glob.glob(f'./{dirname}/*.json')
-        for file1 in ok_results_list:
-            json_open = open(file1, 'r')
-            pred_dict = json.load(json_open) 
-            for id1, conv_dict in pred_dict.items():
-                if not id1 in result_compose_dict:
-                    result_compose_dict[id1] = {}
-                status = conv_dict['status']
-                if not status in result_compose_dict[id1]:
-                    result_compose_dict[id1][status] = 0
-                result_compose_dict[id1][status] += 1
-
-                if conv_dict['status'] == 'ok':
-                    contents = conv_dict['response']["choices"][0]["message"]["content"]
-                    ok_pred_content_dict[id1] = contents
         
-        return ok_pred_content_dict, result_compose_dict
+        eval_result_dict = eval_util_evaluation.ret_evaluation_result_dict(count_dict)
+        if self.verbose == True:
+            print("----- 精度カウント -----")
+            pp.pprint(count_dict)
+            pp.pprint(eval_result_dict)
+        
+        table_line = self.ret_eval_simple_table_line(exp_name, eval_result_dict)
+        print(table_line)
+
+        return eval_result_dict
+        
+
+        # Detailは後回し
+        # pp.pprint(detail_count_dict)
+        # detail_eval_result_dict = eval_util_evaluation.ret_evaluation_result_dict(detail_count_dict)
+        # pp.pprint(detail_eval_result_dict)
+        # table_line = self.ret_eval_detail_table_line(detail_eval_result_dict)
+        # print(table_line)
+    
 
     def _round_to_significant_digits(self, number, digits):
         # 数値を指定した桁数に丸める関数
         return round(number, digits)
 
-    def ret_org_line(self, org_sub_dict):
-        rlist = []
-        for senid, sentext in org_sub_dict.items():
-            rlist.append(f'# {senid}')
-            rlist.append(sentext)
-
-        return '\n'.join(rlist)
     
     def _ret_eval_table_row_line(self, key1, ctype_f1values, case_list):
         key_count = 0
@@ -652,7 +886,8 @@ class EvalConversation(object):
             p1 = self._round_to_significant_digits(f1values['precision'],  3)
             r1 = self._round_to_significant_digits(f1values['recall'],  3)
             f1 = self._round_to_significant_digits(f1values['f1_score'],  3)
-            rows = ['', key, cstr, str(p1), str(r1), str(f1), '']
+            # rows = ['', key, cstr, str(p1), str(r1), str(f1), '']
+            rows = ['', key, str(f1), '']
             row_line = '|'.join(rows)
             rlist.append(row_line)
             key_count += 1
@@ -664,12 +899,14 @@ class EvalConversation(object):
         tlines = [row_line]
         return tlines
 
-    def ret_eval_simple_table_line(self, dict1):
+    def ret_eval_simple_table_line(self, exp_name, dict1):
         tlines = self._ret_eval_head_lines()
+        tlines = []
         clist = ['all', 'subj', 'obj', 'obl', 'pred']
-        
-        for row_line in self._ret_eval_table_row_line('empty', dict1, clist):
+        # print(dict1)
+        for row_line in self._ret_eval_table_row_line(exp_name, dict1, clist):
             tlines.append(row_line)
+            break
             
         return '\n'.join(tlines)
 
@@ -682,111 +919,209 @@ class EvalConversation(object):
             
         return '\n'.join(tlines)
 
-    def ret_table_line_from_knp(self, knp_sub_pred_dict):
-        row_lines = []
-        rows = ['', '文番号', '述語','主語(subj)', '目的語(obj)','斜格語(obl)', '']
-        row_lines.append('|'.join(rows))
-        row_dict = {}
-        for senid, elem_list in knp_sub_pred_dict.items():
-            if not senid in row_dict:
-                row_dict[senid] = {}
-            for tmp_dict in elem_list:
-                pred = tmp_dict['pred']
-                if not pred in row_dict[senid]:
-                    row_dict[senid][pred] = {'主語':[], '目的語': [], 'ニ格':[] }
-                gr = tmp_dict['gr']
-                rel_type = tmp_dict['rel_type']
-                rel_dist = tmp_dict['rel_dist']
-                target = tmp_dict['target']
-                row_dict[senid][pred][gr].append(f'{target}({rel_type}_{rel_dist})')
-        for senid, pred_dict1 in row_dict.items():
-            for pred, gr_dict in pred_dict1.items():
+
+    def ret_result_dict_series(self, dirname):
+        ok_pred_content_dict = {}
+        result_compose_dict = {}
+        input_dict = {}
+        ok_results_list = glob.glob(f'./{dirname}/*.json')
+        for file1 in ok_results_list:
+            self.set_result_dict_series(file1, ok_pred_content_dict, result_compose_dict, input_dict)
+        # print(ok_pred_content_dict)
+        return ok_pred_content_dict, result_compose_dict, input_dict
+    
+
+    def set_result_dict_series(self, file1, ok_pred_content_dict, result_compose_dict, input_dict):
+        json_open = open(file1, 'r')
+        pred_dict = json.load(json_open) 
+
+        for id1, res_dict in pred_dict.items():
+            
+            result = res_dict['result']
+
+            for exp_name, response_list in result.items(): 
+
+                conv_dict = response_list[-1]
                 
-                subj = '、'.join(gr_dict['主語'])
-                obj = '、'.join(gr_dict['目的語'])
-                obl = '、'.join(gr_dict['ニ格'])
-                if subj == '':
-                    subj = '-'
-                if obj == '':
-                    obj = '-'
-                if obl == '':
-                    obl = '-'
-                rows = ['', senid, pred,  subj, obj, obl, '']
-                row_lines.append('|'.join(rows))
+                status = conv_dict['status']
+                input = conv_dict['input']
 
-        return '\n'.join(row_lines)
+                if not exp_name in result_compose_dict:
+                    result_compose_dict[exp_name]= {}
+                    
+                if not id1 in result_compose_dict[exp_name]:
+                    result_compose_dict[exp_name][id1] = {}
 
-    def filter_id_dict_by_dist_dict(self, dist_dict, knp_pred_dict):
-        target_dict = {}
-        for id1, knp_sub_pred_dict in knp_pred_dict.items():
-            for senid, tmp_list in knp_sub_pred_dict.items():
-                for tmp_dict in tmp_list:
-                    rel_type = tmp_dict['rel_type']
-                    rel_dist = tmp_dict['rel_dist']
-                    if dist_dict['rel_type'] == tmp_dict['rel_type']:
-                        if dist_dict['rel_dist'] == tmp_dict['rel_dist']:
-                            target_dict[id1] = True
-                            break
-        return target_dict
+                if not status in result_compose_dict[exp_name][id1]:
+                    result_compose_dict[exp_name][id1][status] = 0
+                result_compose_dict[exp_name][id1][status] += 1
+
+                if not exp_name in ok_pred_content_dict:
+                    ok_pred_content_dict[exp_name] = {}
+
+                if conv_dict['status'] == 'ok':
+                    contents = conv_dict['response']["choices"][0]["message"]["content"]
+                    ok_pred_content_dict[exp_name][id1] = contents
+
+                if not exp_name in input_dict:
+                    input_dict[exp_name] = {}
+                input_dict[exp_name][id1] = input[0]['content']
+
+def evaluate_extra(args, verbose_flag=False):
+
+    def ret_case_elem_dict(line, pred):
+        l = line.split(pred)
+        # print([l, pred])
+        case_line = l[0]
+        case_dict = {'主語': [], '目的語': [], 'ニ格':[ ] }
+        for elem in case_line.split('、'):
+            subj_match = re.findall('(.*)が$', elem)
+            obj_match = re.findall('(.*)を$', elem)
+            obl_match = re.findall('(.*)に$', elem)
+            if subj_match:
+                case_dict['主語'].append(subj_match[0])
+            elif obj_match:
+                case_dict['目的語'].append(obj_match[0])
+            elif obl_match:
+                case_dict['ニ格'].append(obl_match[0])
+        return case_dict
+    
+    sbox = SentenceParser()
+    knp_pred_dict, train_test_id_dict, org_dict = tfu.ret_experimental_files()
+
+    dir1 = args.td
+    
+    box = EvalConversation(verbose_flag=verbose_flag)
+    ok_pred_content_dict, result_compose_dict, input_dict = box.ret_result_dict_series(dir1)
+
+    print([len(ok_pred_content_dict), ok_pred_content_dict.keys(), result_compose_dict.keys()])
+    for k,v in ok_pred_content_dict.items():
+        # print(v)
+        pass
+
+    file1 = './workplace/prompt/knp_pred_elem_dict.json'
+    json_open = open(file1, 'r')
+    knp_pred_elem_dict = json.load(json_open) 
+    phase = 'dev'
+    knp_pred_new_dict = {}
+    for exp_name, content_dict in ok_pred_content_dict.items():
+        if not exp_name in knp_pred_new_dict:
+            knp_pred_new_dict[exp_name] = {}
+
+        for id1, content in content_dict.items():
+            if not id1 in knp_pred_new_dict[exp_name]:
+                knp_pred_new_dict[exp_name][id1] = {}
+
+            pred_elem = knp_pred_elem_dict[id1]
+            tmp_dict = {}
+            for line in re.split('[？。]', content):
+                for senid, pred_dict in pred_elem.items():
+
+                    if not senid in tmp_dict:
+                        tmp_dict[senid] = {}
+
+                    for pred, case_dict in pred_dict.items():
+                        if pred in line:
+                            # sdict = sbox.parse(line)
+                            # print([pred, sdict])
+                            case_row_dict = ret_case_elem_dict(line, pred)
+                            tmp_dict[senid][pred] = case_row_dict
+                            prompt_util.ret_table_row_lines(tmp_dict) 
+                    
+            knp_pred_new_dict[exp_name][id1] = prompt_util.ret_table_row_lines(tmp_dict)
+    # print(knp_pred_new_dict)
+    # exit()
+    # 実験設定ごとに精度を出すのだ。
+
+    stat_dict = {}
+    for exp_name, extra_dict1 in ok_pred_content_dict.items():
+        # if not exp_name in stat_dict:
+        # print(f"----- Start Evaluation {exp_name} -----")
+        ok_pred_content_dict1 = knp_pred_new_dict[exp_name]
+        eval_result_dict = box.evaluate(knp_pred_dict, train_test_id_dict, org_dict, ok_pred_content_dict1, phase, exp_name)
+        stat_dict[exp_name] = eval_result_dict['all']['f1_score']
+        # print(f"----- End Of Evaluation {exp_name} -----")
+
+    print(stat_dict)
+
+
+def evaluate_each_experient(args, verbose_flag=False):
+
+    knp_pred_dict, train_test_id_dict, org_dict = tfu.ret_experimental_files()
+
+    dir1 = args.td
+    box = EvalConversation(verbose_flag=verbose_flag)
+    ok_pred_content_dict, result_compose_dict, _ = box.ret_result_dict_series(dir1)
+    # 実験設定ごとに精度を出すのだ。
+    # print(ok_pred_content_dict)
+
+    # pp.pprint([ok_pred_content_dict, result_compose_dict])
+    # print(len(ok_pred_content_dict), len(result_compose_dict))
+    phase = 'dev'
+    ok_ids = set()
+    for exp_name, res_dict in result_compose_dict.items():
+        ok_count = 0
+        for id1, status_dict in res_dict.items():
+            if 'ok' in status_dict:
+                # if exp_name == 'zero-shot-simple':
+                ok_ids.add(id1)
+                ok_count += 1
+            else:
+                print(f"{id1}")
+        print(["ok count", exp_name, ok_count])
+
+    for id2 in train_test_id_dict[phase]:
+        if not id2 in ok_ids:
+            # print(id2)
+            pass
+    
+    stat_dict = {}
+    for exp_name, ok_pred_content_dict1 in ok_pred_content_dict.items():
+        print(f"----- Start Evaluation {exp_name} -----")
+        eval_result_dict = box.evaluate(knp_pred_dict, train_test_id_dict, org_dict, ok_pred_content_dict1, phase, exp_name)
+        print(eval_result_dict)
+        stat_dict[exp_name] = eval_result_dict['all']['f1_score']
+        print(f"----- End Of Evaluation {exp_name} -----")
+
+    print(stat_dict)
+    # 辞書を値でソートされたタプルのリストに変換する
+    sorted_items = sorted(stat_dict.items(), key=lambda x: x[1])
+
+    # ソートされた結果を出力
+    for key, value in sorted_items:
+        print(key, value)
+
+def analysis():
+    knp_pred_dict, train_test_id_dict, org_dict = tfu.ret_experimental_files()
+
+    exp_name = 'trial'
+    dirname = f'./result/dev1/{exp_name}'
+    
+    box = EvalConversation()
+    ok_pred_content_dict, result_compose_dict = EvalConversation.ret_result_dict_series(dirname)
+    
 
 if __name__=="__main__":
+    # evaluate()
+    args = optu.get_eval_option()
+    verbose_flag = False
+    if args.verbose == 'yes':
+        verbose_flag = True
 
-    # 引数をパース
-    args = opu.get_eval_option()
+    knp_pred_dict, train_test_id_dict, org_dict = tfu.ret_experimental_files()
+    json_open = open('./intermediate_data/knp_pred_ana2.json', 'r')
+    knp_pred_ana_dict = json.load(json_open) 
+    dir1 = args.td
+    # pp.pprint(knp_pred_ana_dict)
 
-    box = EvalConversation()
-    json_open = open('./intermediate_data/knp_pred1.json', 'r')
-    knp_pred_dict = json.load(json_open) 
-
-    json_open = open('./data/train_test_id.json', 'r')
-    train_test_id_dict = json.load(json_open)  
+    if args.process == 'evaluation':
+        evaluate_each_experient(args, verbose_flag=verbose_flag)
+    elif args.process == 'knp':
+        dir1 = args.td
+        knp_type = args.kt
+        box = EvalConversation(verbose_flag=verbose_flag)
+        box.evaluate_knp(knp_pred_dict, train_test_id_dict, org_dict, knp_pred_ana_dict, knp_type, 'dev', dir1)
     
-    for phase, idlist in train_test_id_dict.items():
-        print([phase, len(idlist)])
-
-    # json_open = open('./sample_data/sample2.json', 'r')
-    json_open = open('./data/org.json', 'r')
-    org_dict = json.load(json_open) 
-
- 
-    if args.process == 'analysis':
-        box.analysis(knp_pred_dict, train_test_id_dict)
-    else:
-        # pass
-        # print(["size of results via ChatGPT: ", len(result_compose_dict), len(ok_pred_content_dict)])
-        dirname = 'ok_result_dev'
-        phase = 'dev'
-        ok_pred_content_dict, result_compose_dict = box.ret_result_dict_series(dirname)
-        print(len(ok_pred_content_dict), len(result_compose_dict))
-        okcount = 0
-        for k,v in result_compose_dict.items():
-            if 'ng' in v:
-                okcount += 1
-        print(okcount)
-
-        box.evaluate(knp_pred_dict, train_test_id_dict, org_dict, ok_pred_content_dict, phase)
-        
-        # 特定のidの文章をエラーアナリシス
-        id1 = 'w201106-0002000002'
-        line = box.ret_table_line_from_knp(knp_pred_dict[id1])
-        print(line)
-        line = box.ret_org_line(org_dict[id1])
-        print(line)
-        pp.pprint(ok_pred_content_dict[id1])
-        
-        # 文間ゼロ照応の事例をエラーアナリシスします
-        target_id_dict = box.filter_id_dict_by_dist_dict({'rel_type': 'zero', 'rel_dist': 'inter_sentence'}, knp_pred_dict)
-        show_count = 0
-        for id1, _ in target_id_dict.items():
-            
-            if id1 in ok_pred_content_dict:
-                line = box.ret_table_line_from_knp(knp_pred_dict[id1])
-                print(line)
-                line = box.ret_org_line(org_dict[id1])
-                print(line)
-                pp.pprint(ok_pred_content_dict[id1])
-                show_count += 1
-
-            if show_count == 5:
-                break
-        
+    elif args.process == 'extra':
+        evaluate_extra(args, verbose_flag=verbose_flag)
+    
