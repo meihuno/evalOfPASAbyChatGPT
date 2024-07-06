@@ -45,7 +45,7 @@ These jsons has the following contents. The ChatGPT's response is contained in r
 }
 ``` 
 
-## Operationg Environment
+## Operating Environment
 
 ### evaluation scripts（parse_knp_file.py/eval_conversation.py）
  Python 3.7.9 or later
